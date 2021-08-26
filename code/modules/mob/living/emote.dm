@@ -428,7 +428,7 @@
 			emote_type = type_override
 	. = ..()
 	message = null
-	emote_type = EMOTE_VISIBLE
+	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/custom/replace_pronoun(mob/user, message)
 	return message
