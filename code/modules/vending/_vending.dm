@@ -472,7 +472,7 @@ GLOBAL_LIST_EMPTY(vending_products)
 		for(var/mob/living/L in get_turf(fatty))
 			var/mob/living/carbon/C = L
 
-			if(istype(C))
+			if(istype(C) && !istype(C, /mob/living/carbon/human/species/shadow/nightmare))
 				var/crit_rebate = 0 // lessen the normal damage we deal for some of the crits
 
 				if(crit_case != 5) // the head asplode case has its own description
