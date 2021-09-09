@@ -61457,10 +61457,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
-"roc" = (
-/obj/structure/cable/cyan,
-/turf/open/floor/plating/airless,
-/area/space/nearstation)
 "ros" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -62440,12 +62436,6 @@
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
-"tfw" = (
-/obj/structure/cable/yellow{
-	icon_state = "0-2"
-	},
-/turf/open/floor/plating/airless,
-/area/space/nearstation)
 "tfO" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/yellow,
@@ -93421,23 +93411,23 @@ tue
 pjH
 pjH
 pjH
-roc
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-mVM
-tfw
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
+tky
 tky
 tky
 uHG
