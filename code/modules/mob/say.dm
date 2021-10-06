@@ -60,9 +60,9 @@
 		if(src.client.prefs.muted & MUTE_DEADCHAT)
 			to_chat(src, "<span class='danger'>You cannot talk in deadchat (muted).</span>")
 			return
-
-		if(src.client.handle_spam_prevention(message,MUTE_DEADCHAT))
-			return
+		if(!src.GetComponent(/datum/component/deadchat_control))
+			if(src.client.handle_spam_prevention(message,MUTE_DEADCHAT))
+				return
 
 	var/mob/dead/observer/O = src
 	if(isobserver(src) && O.deadchat_name)
