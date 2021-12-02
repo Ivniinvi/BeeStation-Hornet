@@ -248,3 +248,109 @@
 /obj/item/airlock_painter/decal/debug/Initialize(mapload)
 	. = ..()
 	ink = new /obj/item/toner/extreme(src)
+
+/obj/item/airlock_painter/floor
+	name = "floor painter"
+	desc = "An airlock painter, reprogramed to use a different style of paint in order to apply colors to floor tiles as well, in addition to repainting doors. Colors are removed when the floor tiles are removed. Alt-Click to change design."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "decal_sprayer"
+	item_state = "decalsprayer"
+	custom_materials = list(/datum/material/iron=50, /datum/material/glass=50)
+	var/floor_dir = SOUTH
+	var/floor_state = "floor"
+	var/dir_list = list(NORTH,SOUTH,EAST,WEST)
+	var/static/list/allowed_states = list("arrival", "arrivalcorner", "bar", "barber", "bcircuit", "blackcorner", "blue", "bluecorner",
+		"bluefull", "bluered", "blueyellow", "blueyellowfull", "bot", "brown", "browncorner", "browncornerold", "brownold",
+		"cafeteria", "caution", "cautioncorner", "chapel", "cmo", "dark", "delivery", "escape", "escapecorner", "floor",
+		"freezerfloor", "gcircuit", "green", "greenblue", "greenbluefull", "greencorner", "greenfull", "greenyellow",
+		"greenyellowfull", "grimy", "loadingarea", "neutral", "neutralcorner", "neutralfull", "orange", "orangecorner",
+		"orangefull", "purple", "purplecorner", "purplefull", "rcircuit", "rampbottom", "ramptop", "red", "redblue", "redbluefull",
+		"redcorner", "redfull", "redgreen", "redgreenfull", "redyellow", "redyellowfull", "warning", "warningcorner", "warnwhite",
+		"warnwhitecorner", "white", "whiteblue", "whitebluecorner", "whitebluefull", "whitebot", "whitecorner", "whitedelivery",
+		"whitegreen", "whitegreencorner", "whitegreenfull", "whitehall", "whitepurple", "whitepurplecorner", "whitepurplefull",
+		"whitered", "whiteredcorner", "whiteredfull", "whiteyellow", "whiteyellowcorner", "whiteyellowfull", "yellow",
+		"yellowcorner", "yellowcornersiding", "yellowsiding")
+
+/obj/item/airlock_painter/floor/afterattack(atom/target, mob/user, proximity)
+	. = ..()
+	if(!proximity)
+		to_chat(user, "<span class=notice>You need to get closer!")
+		return
+
+	if(!istype(target, /turf/open/floor/plasteel))
+		to_chat(user, "<span class='warning'>[src] can only be used on station flooring.</span>")
+		return
+
+	var/turf/open/floor/plasteel/F = target
+	if(F.icon_state == floor_state && F.dir == floor_dir)
+		to_chat(user, "<span class='notice'>This is already painted [floor_state] [dir2text(floor_dir)]!</span>")
+		return
+
+	if(use_paint(user))
+		F.icon_state = floor_state
+		F.icon_regular_floor = floor_state
+		F.dir = floor_dir
+
+
+/obj/item/airlock_painter/floor/AltClick(mob/user)
+	. = ..()
+	ui_interact(user)
+
+/obj/item/airlock_painter/floor/Initialize(mapload)
+	. = ..()
+	ink = new /obj/item/toner/large(src)
+
+/obj/item/airlock_painter/floor/ui_interact(mob/user, datum/tgui/ui)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "FloorPainter", name)
+		ui.set_autoupdate(FALSE)
+		ui.open()
+
+/obj/item/airlock_painter/floor/ui_data(mob/user)
+	var/list/data = list()
+	data["availableStyles"] = allowed_states
+	data["selectedStyle"] = floor_state
+	data["selectedDir"] = dir2text(floor_dir)
+
+	data["directionsPreview"] = list()
+	for(var/dir in GLOB.alldirs)
+		var/icon/floor_icon = icon('icons/turf/floors.dmi', floor_state, dir)
+		data["directionsPreview"][dir2text(dir)] = icon2base64(floor_icon)
+
+	return data
+
+/obj/item/airlock_painter/floor/ui_static_data(mob/user)
+	var/list/data = list()
+	data["allStylesPreview"] = list()
+	for(var/style in allowed_states)
+		var/icon/floor_icon = icon('icons/turf/floors.dmi', style, SOUTH)
+		data["allStylesPreview"][style] = icon2base64(floor_icon)
+
+	return data
+
+/obj/item/airlock_painter/floor/ui_act(action,list/params)
+	if(..())
+		return
+
+	if(action == "select_style")
+		var/new_style = params["style"]
+		if(allowed_states.Find(new_style) != 0)
+			floor_state = new_style
+
+	if(action == "cycle_style")
+		var/index = allowed_states.Find(floor_state)
+		index += text2num(params["offset"])
+		while(index < 1)
+			index += length(allowed_states)
+		while(index > length(allowed_states))
+			index -= length(allowed_states)
+		floor_state = allowed_states[index]
+
+	if(action == "select_direction")
+		var/dir = text2dir(params["direction"])
+		if(dir != 0)
+			floor_dir = dir
+
+	SStgui.update_uis(src)
+
