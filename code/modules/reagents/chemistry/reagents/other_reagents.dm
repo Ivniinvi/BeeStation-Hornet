@@ -1330,7 +1330,6 @@
 	ADD_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, type)
 	ADD_TRAIT(L, TRAIT_NOSTAMCRIT, type)
 	ADD_TRAIT(L, TRAIT_NOLIMBDISABLE, type)
-	ADD_TRAIT(L, TRAIT_NOBLOCK, type)
 
 /datum/reagent/stimulum/on_mob_end_metabolize(mob/living/L)
 	REMOVE_TRAIT(L, TRAIT_STUNIMMUNE, type)
@@ -1338,11 +1337,11 @@
 	REMOVE_TRAIT(L, TRAIT_IGNOREDAMAGESLOWDOWN, type)
 	REMOVE_TRAIT(L, TRAIT_NOSTAMCRIT, type)
 	REMOVE_TRAIT(L, TRAIT_NOLIMBDISABLE, type)
-	REMOVE_TRAIT(L, TRAIT_NOBLOCK, type)
 	..()
 
 /datum/reagent/stimulum/on_mob_life(mob/living/carbon/M)
 	M.adjustStaminaLoss(-2*REM, 0)
+	M.adjustToxLoss(current_cycle*0.1*REM, 0) // 1 toxin damage per cycle at cycle 10
 	..()
 
 /datum/reagent/nitryl
