@@ -1,7 +1,7 @@
 /****************Explorer's Suit and Mask****************/
 /obj/item/clothing/suit/hooded/explorer
 	name = "explorer suit"
-	desc = "An armoured suit for exploring harsh environments."
+	desc = "An armoured suit for exploring harsh envasbestosments."
 	icon_state = "explorer"
 	item_state = "explorer"
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
@@ -18,7 +18,7 @@
 
 /obj/item/clothing/head/hooded/explorer
 	name = "explorer hood"
-	desc = "An armoured hood for exploring harsh environments."
+	desc = "An armoured hood for exploring harsh envasbestosments."
 	icon_state = "explorer"
 	body_parts_covered = HEAD
 	flags_inv = HIDEHAIR|HIDEFACE|HIDEEARS
@@ -59,9 +59,9 @@
 	. = ..()
 	adjustmask()
 
-/obj/item/clothing/suit/space/hostile_environment
+/obj/item/clothing/suit/space/hostile_envasbestosment
 	name = "H.E.C.K. suit"
-	desc = "Hostile Environment Cross-Kinetic Suit: A suit designed to withstand the wide variety of hazards from Lavaland. It wasn't enough for its last owner."
+	desc = "Hostile Envasbestosment Cross-Kinetic Suit: A suit designed to withstand the wide variety of hazards from Lavaland. It wasn't enough for its last owner."
 	icon_state = "hostile_env"
 	item_state = "hostile_env"
 	clothing_flags = THICKMATERIAL //not spaceproof
@@ -72,16 +72,16 @@
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/resonator, /obj/item/mining_scanner, /obj/item/t_scanner/adv_mining_scanner, /obj/item/gun/energy/kinetic_accelerator, /obj/item/pickaxe)
 	high_pressure_multiplier = 0.6
 
-/obj/item/clothing/suit/space/hostile_environment/Initialize(mapload)
+/obj/item/clothing/suit/space/hostile_envasbestosment/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	START_PROCESSING(SSobj, src)
 
-/obj/item/clothing/suit/space/hostile_environment/Destroy()
+/obj/item/clothing/suit/space/hostile_envasbestosment/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	return ..()
 
-/obj/item/clothing/suit/space/hostile_environment/process(delta_time)
+/obj/item/clothing/suit/space/hostile_envasbestosment/process(delta_time)
 	var/mob/living/carbon/C = loc
 	if(istype(C) && DT_PROB(1, delta_time)) //cursed by bubblegum
 		if(DT_PROB(7.5, delta_time))
@@ -90,9 +90,9 @@
 		else
 			to_chat(C, "<span class='warning'>[pick("You hear faint whispers.","You smell ash.","You feel hot.","You hear a roar in the distance.")]</span>")
 
-/obj/item/clothing/head/helmet/space/hostile_environment
+/obj/item/clothing/head/helmet/space/hostile_envasbestosment
 	name = "H.E.C.K. helmet"
-	desc = "Hostile Environiment Cross-Kinetic Helmet: A helmet designed to withstand the wide variety of hazards from Lavaland. It wasn't enough for its last owner."
+	desc = "Hostile Envasbestosiment Cross-Kinetic Helmet: A helmet designed to withstand the wide variety of hazards from Lavaland. It wasn't enough for its last owner."
 	icon_state = "hostile_env"
 	item_state = "hostile_env"
 	w_class = WEIGHT_CLASS_NORMAL
@@ -102,19 +102,19 @@
 	resistance_flags = FIRE_PROOF | LAVA_PROOF
 	high_pressure_multiplier = 0.6
 
-/obj/item/clothing/head/helmet/space/hostile_environment/Initialize(mapload)
+/obj/item/clothing/head/helmet/space/hostile_envasbestosment/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/spraycan_paintable)
 	update_icon()
 
-/obj/item/clothing/head/helmet/space/hostile_environment/update_icon()
+/obj/item/clothing/head/helmet/space/hostile_envasbestosment/update_icon()
 	..()
 	cut_overlays()
 	var/mutable_appearance/glass_overlay = mutable_appearance(icon, "hostile_env_glass")
 	glass_overlay.appearance_flags = RESET_COLOR
 	add_overlay(glass_overlay)
 
-/obj/item/clothing/head/helmet/space/hostile_environment/worn_overlays(mutable_appearance/standing, isinhands)
+/obj/item/clothing/head/helmet/space/hostile_envasbestosment/worn_overlays(mutable_appearance/standing, isinhands)
 	. = ..()
 	if(!isinhands)
 		var/mutable_appearance/M = mutable_appearance('icons/mob/clothing/head.dmi', "hostile_env_glass")

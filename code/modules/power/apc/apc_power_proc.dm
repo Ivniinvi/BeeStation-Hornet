@@ -81,7 +81,7 @@
 				aidisabled = FALSE
 		if(APC_RESET_EMP)
 			equipment = 3
-			environ = 3
+			envasbestos = 3
 			update_appearance()
 			update()
 	wires.ui_update()
@@ -152,11 +152,11 @@
 	if(operating && !shorted && !failure_timer)
 		area.power_light = (lighting > 1)
 		area.power_equip = (equipment > 1)
-		area.power_environ = (environ > 1)
+		area.power_envasbestos = (envasbestos > 1)
 	else
 		area.power_light = FALSE
 		area.power_equip = FALSE
-		area.power_environ = FALSE
+		area.power_envasbestos = FALSE
 	area.power_change()
 
 /obj/machinery/power/apc/run_obj_armor(damage_amount, damage_type, damage_flag = 0, attack_dir)

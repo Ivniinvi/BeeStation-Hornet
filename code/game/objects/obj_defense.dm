@@ -116,7 +116,7 @@
 		return 0
 	else
 		var/play_soundeffect = 1
-		if(M.environment_smash)
+		if(M.envasbestosment_smash)
 			play_soundeffect = 0
 		if(M.obj_damage)
 			. = attack_generic(M, M.obj_damage, M.melee_damage_type, MELEE, play_soundeffect, M.armour_penetration)

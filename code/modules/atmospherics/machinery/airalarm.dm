@@ -65,7 +65,7 @@
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 4
 	active_power_usage = 8
-	power_channel = AREA_USAGE_ENVIRON
+	power_channel = AREA_USAGE_ENVASBESTOS
 	req_access = list(ACCESS_ATMOSPHERICS)
 	max_integrity = 250
 	integrity_failure = 80
@@ -262,37 +262,37 @@
 	data["fire_alarm"] = A.fire
 
 	var/turf/T = get_turf(src)
-	var/datum/gas_mixture/environment = T.return_air()
+	var/datum/gas_mixture/envasbestosment = T.return_air()
 	var/datum/tlv/cur_tlv
 
-	data["environment_data"] = list()
-	var/pressure = environment.return_pressure()
+	data["envasbestosment_data"] = list()
+	var/pressure = envasbestosment.return_pressure()
 	cur_tlv = TLV["pressure"]
-	data["environment_data"] += list(list(
+	data["envasbestosment_data"] += list(list(
 							"name" = "Pressure",
 							"value" = pressure,
 							"unit" = "kPa",
 							"danger_level" = cur_tlv.get_danger_level(pressure)
 	))
-	var/temperature = environment.return_temperature()
+	var/temperature = envasbestosment.return_temperature()
 	cur_tlv = TLV["temperature"]
-	data["environment_data"] += list(list(
+	data["envasbestosment_data"] += list(list(
 							"name" = "Temperature",
 							"value" = temperature,
 							"unit" = "K ([round(temperature - T0C, 0.1)]C)",
 							"danger_level" = cur_tlv.get_danger_level(temperature)
 	))
-	var/total_moles = environment.total_moles()
-	var/partial_pressure = R_IDEAL_GAS_EQUATION * environment.return_temperature() / environment.return_volume()
-	for(var/gas_id in environment.get_gases())
+	var/total_moles = envasbestosment.total_moles()
+	var/partial_pressure = R_IDEAL_GAS_EQUATION * envasbestosment.return_temperature() / envasbestosment.return_volume()
+	for(var/gas_id in envasbestosment.get_gases())
 		if(!(gas_id in TLV)) // We're not interested in this gas, it seems.
 			continue
 		cur_tlv = TLV[gas_id]
-		data["environment_data"] += list(list(
+		data["envasbestosment_data"] += list(list(
 								"name" = GLOB.gas_data.names[gas_id],
-								"value" = environment.get_moles(gas_id) / total_moles * 100,
+								"value" = envasbestosment.get_moles(gas_id) / total_moles * 100,
 								"unit" = "%",
-								"danger_level" = cur_tlv.get_danger_level(environment.get_moles(gas_id) * partial_pressure)
+								"danger_level" = cur_tlv.get_danger_level(envasbestosment.get_moles(gas_id) * partial_pressure)
 		))
 
 	if(!locked || user.has_unlimited_silicon_privilege)
@@ -651,29 +651,29 @@
 
 	var/datum/tlv/cur_tlv
 
-	var/datum/gas_mixture/environment = location.return_air()
-	var/partial_pressure = R_IDEAL_GAS_EQUATION * environment.return_temperature() / environment.return_volume()
+	var/datum/gas_mixture/envasbestosment = location.return_air()
+	var/partial_pressure = R_IDEAL_GAS_EQUATION * envasbestosment.return_temperature() / envasbestosment.return_volume()
 
 	cur_tlv = TLV["pressure"]
-	var/environment_pressure = environment.return_pressure()
-	var/pressure_dangerlevel = cur_tlv.get_danger_level(environment_pressure)
+	var/envasbestosment_pressure = envasbestosment.return_pressure()
+	var/pressure_dangerlevel = cur_tlv.get_danger_level(envasbestosment_pressure)
 
 	cur_tlv = TLV["temperature"]
-	var/temperature_dangerlevel = cur_tlv.get_danger_level(environment.return_temperature())
+	var/temperature_dangerlevel = cur_tlv.get_danger_level(envasbestosment.return_temperature())
 
 	var/gas_dangerlevel = 0
-	for(var/gas_id in environment.get_gases())
+	for(var/gas_id in envasbestosment.get_gases())
 		if(!(gas_id in TLV)) // We're not interested in this gas, it seems.
 			continue
 		cur_tlv = TLV[gas_id]
-		gas_dangerlevel = max(gas_dangerlevel, cur_tlv.get_danger_level(environment.get_moles(gas_id) * partial_pressure))
+		gas_dangerlevel = max(gas_dangerlevel, cur_tlv.get_danger_level(envasbestosment.get_moles(gas_id) * partial_pressure))
 
 	var/old_danger_level = danger_level
 	danger_level = max(pressure_dangerlevel, temperature_dangerlevel, gas_dangerlevel)
 
 	if(old_danger_level != danger_level)
 		apply_danger_level()
-	if(mode == AALARM_MODE_REPLACEMENT && environment_pressure < ONE_ATMOSPHERE * 0.05)
+	if(mode == AALARM_MODE_REPLACEMENT && envasbestosment_pressure < ONE_ATMOSPHERE * 0.05)
 		mode = AALARM_MODE_SCRUBBING
 		apply_mode(src)
 
@@ -844,7 +844,7 @@
 
 /obj/machinery/airalarm/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		new /obj/item/stack/sheet/iron(loc, 2)
+		new /obj/item/stack/sheet/asbestos(loc, 2)
 		var/obj/item/I = new /obj/item/electronics/airalarm(loc)
 		if(!disassembled)
 			I.obj_integrity = I.max_integrity * 0.5

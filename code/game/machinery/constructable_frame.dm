@@ -15,7 +15,7 @@
 
 /obj/structure/frame/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		new /obj/item/stack/sheet/iron(loc, 5)
+		new /obj/item/stack/sheet/asbestos(loc, 5)
 		if(circuit)
 			circuit.forceMove(loc)
 			circuit = null
@@ -97,7 +97,7 @@
 				if(P.use_tool(src, user, 40, volume=50))
 					if(state == 1)
 						to_chat(user, "<span class='notice'>You disassemble the frame.</span>")
-						new /obj/item/stack/sheet/iron(drop_location(), 5, TRUE, user)
+						new /obj/item/stack/sheet/asbestos(drop_location(), 5, TRUE, user)
 						qdel(src)
 				return
 			if(P.tool_behaviour == TOOL_WRENCH)

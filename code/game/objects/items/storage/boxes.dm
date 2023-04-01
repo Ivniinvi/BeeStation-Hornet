@@ -1249,7 +1249,7 @@
 
 /obj/item/storage/box/dishdrive/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/stack/sheet/iron/five = 1,
+		/obj/item/stack/sheet/asbestos/five = 1,
 		/obj/item/stack/cable_coil = 1,
 		/obj/item/circuitboard/machine/dish_drive = 1,
 		/obj/item/stack/sheet/glass = 1,
@@ -1272,7 +1272,7 @@
 
 /obj/item/storage/box/material/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/stack/sheet/iron/fifty=1, \
+		/obj/item/stack/sheet/asbestos/fifty=1, \
 		/obj/item/stack/sheet/glass/fifty=1,\
 		/obj/item/stack/sheet/rglass=50,\
 		/obj/item/stack/sheet/mineral/copper/fifty=1,\

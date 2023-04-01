@@ -70,11 +70,11 @@
 		sleeptime = 1
 	addtimer(VARSET_CALLBACK(src, special_process, TRUE), (sleeptime + 2), TIMER_UNIQUE)
 
-/mob/living/simple_animal/slime/handle_environment(datum/gas_mixture/environment)
-	if(!environment)
+/mob/living/simple_animal/slime/handle_envasbestosment(datum/gas_mixture/envasbestosment)
+	if(!envasbestosment)
 		return
 
-	var/loc_temp = get_temperature(environment)
+	var/loc_temp = get_temperature(envasbestosment)
 
 	adjust_bodytemperature(adjust_body_temperature(bodytemperature, loc_temp, 1))
 
@@ -89,13 +89,13 @@
 				adjustBruteLoss(round(sqrt(bodytemperature)) * 2)
 
 	if(stat != DEAD)
-		var/bz_percentage = environment.total_moles() ? (environment.get_moles(GAS_BZ) / environment.total_moles()) : 0
+		var/bz_percentage = envasbestosment.total_moles() ? (envasbestosment.get_moles(GAS_BZ) / envasbestosment.total_moles()) : 0
 		var/stasis = (bz_percentage >= 0.05 && bodytemperature < (T0C + 100)) || force_stasis
 		if(transformeffects & SLIME_EFFECT_DARK_PURPLE)
 			var/amt = is_adult ? 30 : 15
-			var/plas_amt = min(amt,environment.get_moles(GAS_PLASMA))
-			environment.adjust_moles(GAS_PLASMA, -plas_amt)
-			environment.adjust_moles(GAS_O2, plas_amt)
+			var/plas_amt = min(amt,envasbestosment.get_moles(GAS_PLASMA))
+			envasbestosment.adjust_moles(GAS_PLASMA, -plas_amt)
+			envasbestosment.adjust_moles(GAS_O2, plas_amt)
 			adjustBruteLoss(plas_amt ? -2 : 0)
 
 		if(stat == CONSCIOUS && stasis)

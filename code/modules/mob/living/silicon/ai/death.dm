@@ -56,5 +56,5 @@
 
 	if(doomsday_device)
 		doomsday_device.timing = FALSE
-		SSshuttle.clearHostileEnvironment(doomsday_device)
+		SSshuttle.clearHostileEnvasbestosment(doomsday_device)
 		qdel(doomsday_device)

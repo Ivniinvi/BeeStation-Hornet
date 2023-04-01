@@ -21,7 +21,7 @@
 		1.0, // AirAbsorptionFactor
 		0, // Flags (1 = Auto Direct, 2 = Auto Room, 4 = Auto RoomHF)
 	)
-	environment = SOUND_ENVIRONMENT_NONE //Default to none so sounds without overrides dont get reverb
+	environment = SOUND_ENVASBESTOSMENT_NONE //Default to none so sounds without overrides dont get reverb
 
 /*! playsound
 
@@ -167,16 +167,16 @@ distance_multiplier - Can be used to multiply the distance at which the sound is
 		S.y = z_dist
 		S.falloff = max_distance || 1 //use max_distance, else just use 1 as we are a direct sound so falloff isnt relevant.
 
-		// Sounds can't have their own environment. A sound's environment will be:
+		// Sounds can't have their own envasbestosment. A sound's envasbestosment will be:
 		// 1. the mob's
 		// 2. the area's (defaults to SOUND_ENVRIONMENT_NONE)
-		if(sound_environment_override != SOUND_ENVIRONMENT_NONE)
-			S.environment = sound_environment_override
+		if(sound_envasbestosment_override != SOUND_ENVASBESTOSMENT_NONE)
+			S.environment = sound_envasbestosment_override
 		else
 			var/area/A = get_area(src)
-			S.environment = A.sound_environment
+			S.environment = A.sound_envasbestosment
 
-		if(use_reverb && S.environment != SOUND_ENVIRONMENT_NONE) //We have reverb, reset our echo setting
+		if(use_reverb && S.environment != SOUND_ENVASBESTOSMENT_NONE) //We have reverb, reset our echo setting
 			S.echo[3] = 0 //Room setting, 0 means normal reverb
 			S.echo[4] = 0 //RoomHF setting, 0 means normal reverb.
 

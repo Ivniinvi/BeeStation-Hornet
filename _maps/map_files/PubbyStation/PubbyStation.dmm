@@ -342,7 +342,7 @@
 /area/ai_monitored/turret_protected/ai)
 "ade" = (
 /obj/structure/table/glass,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/item/stack/sheet/glass{
 	amount = 20;
 	pixel_x = 3;
@@ -6964,7 +6964,7 @@
 	},
 /obj/item/stack/cable_coil,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
 "aQY" = (
@@ -6979,8 +6979,8 @@
 /area/storage/eva)
 "aQZ" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/crowbar,
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
@@ -7009,7 +7009,7 @@
 /area/storage/eva)
 "aRc" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/rglass{
 	amount = 50
 	},
@@ -10811,12 +10811,12 @@
 	pixel_x = 3;
 	pixel_y = -4
 	},
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 27
 	},
@@ -17088,7 +17088,7 @@
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "cfm" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/chapel/main/monastery)
 "cfp" = (
 /obj/structure/window/reinforced/fulltile,
@@ -17766,7 +17766,7 @@
 /obj/item/stack/sheet/glass/fifty{
 	layer = 4
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 20;
 	layer = 3.1
 	},
@@ -18055,7 +18055,7 @@
 /turf/closed/mineral,
 /area/asteroid/nearstation/bomb_site)
 "clv" = (
-/turf/closed/mineral/iron,
+/turf/closed/mineral/asbestos,
 /area/asteroid/nearstation/bomb_site)
 "clw" = (
 /turf/closed/wall/r_wall,
@@ -19282,10 +19282,10 @@
 /turf/open/floor/plating,
 /area/engine/atmos)
 "cwa" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/maintenance/department/chapel/monastery)
 "cwe" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/library/lounge)
 "cwh" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
@@ -27342,7 +27342,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/wrench,
 /obj/item/crowbar,
 /obj/item/clothing/glasses/welding,
@@ -30878,8 +30878,8 @@
 /area/crew_quarters/dorms)
 "iEQ" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/machinery/light/small{
 	dir = 1
@@ -32581,7 +32581,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "jBz" = (
@@ -33959,7 +33959,7 @@
 /area/maintenance/department/security/brig)
 "kmp" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -35765,7 +35765,7 @@
 /area/storage/tech)
 "lhu" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/electronics/airlock,
@@ -37129,8 +37129,8 @@
 /area/engine/atmos)
 "lWn" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/cable_coil,
 /obj/machinery/power/apc/highcap/ten_k{
@@ -37139,7 +37139,7 @@
 	name = "Engine Room APC";
 	pixel_x = -24
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/cable_coil,
 /obj/structure/cable/yellow,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
@@ -38493,7 +38493,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/clothing/glasses/welding,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
@@ -39679,8 +39679,8 @@
 /area/maintenance/department/engine)
 "nsy" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/plasteel{
 	amount = 10
@@ -44232,7 +44232,7 @@
 /obj/item/reagent_containers/glass/bottle/lithium{
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/iodine{
@@ -44392,7 +44392,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -49367,7 +49367,7 @@
 	amount = 20;
 	layer = 3.2
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 20;
 	layer = 3.1
 	},
@@ -58586,8 +58586,8 @@
 /area/maintenance/department/engine)
 "xML" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},

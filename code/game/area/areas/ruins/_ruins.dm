@@ -7,7 +7,7 @@
 	area_flags = HIDDEN_AREA | BLOBS_ALLOWED
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	ambience_index = AMBIENCE_RUINS
-	sound_environment = SOUND_ENVIRONMENT_STONEROOM
+	sound_envasbestosment = SOUND_ENVASBESTOSMENT_STONEROOM
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
 
 /area/ruin/unpowered

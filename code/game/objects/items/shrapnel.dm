@@ -1,7 +1,7 @@
 /obj/item/shrapnel // frag grenades
 	name = "shrapnel shard"
 	embedding = list(embed_chance=70, ignore_throwspeed_threshold=TRUE, fall_chance=4)
-	custom_materials = list(/datum/material/iron=50)
+	custom_materials = list(/datum/material/asbestos=50)
 	armour_penetration = -20
 	icon = 'icons/obj/shards.dmi'
 	icon_state = "large"

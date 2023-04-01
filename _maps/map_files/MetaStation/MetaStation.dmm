@@ -5026,7 +5026,7 @@
 /obj/machinery/advanced_airlock_controller{
 	pixel_y = 24
 	},
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/asbestos,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "azq" = (
@@ -6742,9 +6742,9 @@
 /area/engine/engineering)
 "aGR" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
@@ -7726,7 +7726,7 @@
 "aKT" = (
 /obj/structure/closet/crate,
 /obj/item/stack/ore/glass,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/asbestos,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -8183,7 +8183,7 @@
 /area/engine/engineering)
 "aNo" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/electronics/airlock,
@@ -14275,7 +14275,7 @@
 /obj/item/stack/sheet/glass{
 	amount = 30
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/stack/cable_coil/random,
@@ -15432,7 +15432,7 @@
 /area/crew_quarters/theatre)
 "byO" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/machinery/power/apc{
 	areastring = "/area/ai_monitored/storage/satellite";
@@ -15945,8 +15945,8 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/grenade/chem_grenade/smart_metal_foam,
 /obj/item/grenade/chem_grenade/smart_metal_foam,
 /obj/effect/turf_decal/tile/yellow{
@@ -17478,7 +17478,7 @@
 /obj/item/stack/sheet/rglass{
 	amount = 50
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/storage/toolbox/emergency,
 /obj/item/flashlight,
@@ -29106,12 +29106,12 @@
 	pixel_x = 3;
 	pixel_y = -4
 	},
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 27
 	},
@@ -29493,7 +29493,7 @@
 "cTi" = (
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/target,
 /obj/item/target/syndicate,
 /obj/item/target/alien,
@@ -38105,7 +38105,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 26
 	},
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/item/radio/intercom{
 	pixel_x = 28;
 	pixel_y = 5
@@ -39044,7 +39044,7 @@
 	amount = 5
 	},
 /obj/item/clothing/glasses/welding,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty{
 	pixel_x = 3;
 	pixel_y = 3
@@ -61243,8 +61243,8 @@
 /area/security/warden)
 "qGF" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/pipe_dispenser,
 /obj/machinery/light{
@@ -62083,7 +62083,7 @@
 /obj/item/reagent_containers/glass/bottle/lithium{
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/iodine{
@@ -70880,7 +70880,7 @@
 /obj/item/stack/sheet/rglass{
 	amount = 50
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/storage/toolbox/emergency,
 /obj/item/flashlight,
 /obj/structure/window/reinforced,
@@ -73152,8 +73152,8 @@
 /area/bridge)
 "wbW" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/storage/box/lights/mixed,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 8
@@ -73882,8 +73882,8 @@
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
 "wsj" = (
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/structure/table,
 /obj/item/stack/sheet/plasteel{
 	amount = 10

@@ -15,7 +15,7 @@
 	move_resist = INFINITY				//Moving a connected machine without actually doing the normal (dis)connection things will probably cause a LOT of issues.
 	idle_power_usage = 0
 	active_power_usage = 0
-	power_channel = AREA_USAGE_ENVIRON
+	power_channel = AREA_USAGE_ENVASBESTOS
 	layer = GAS_PIPE_HIDDEN_LAYER //under wires
 	resistance_flags = FIRE_PROOF
 	max_integrity = 200
@@ -226,7 +226,7 @@
 /obj/machinery/atmospherics/proc/can_unwrench(mob/user)
 	return can_unwrench
 
-// Throws the user when they unwrench a pipe with a major difference between the internal and environmental pressure.
+// Throws the user when they unwrench a pipe with a major difference between the internal and envasbestosmental pressure.
 /obj/machinery/atmospherics/proc/unsafe_pressure_release(mob/living/carbon/user, pressures = null)
 	if(!user)
 		return

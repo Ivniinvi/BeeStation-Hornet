@@ -2,19 +2,19 @@
 // These are indexes in a list, and indexes for "dynamic" and static channels should be kept contiguous
 #define AREA_USAGE_EQUIP			1
 #define AREA_USAGE_LIGHT			2
-#define AREA_USAGE_ENVIRON			3
+#define AREA_USAGE_ENVASBESTOS			3
 #define AREA_USAGE_STATIC_EQUIP 	4
 #define AREA_USAGE_STATIC_LIGHT	5
-#define AREA_USAGE_STATIC_ENVIRON	6
-#define AREA_USAGE_LEN AREA_USAGE_STATIC_ENVIRON // largest idx
+#define AREA_USAGE_STATIC_ENVASBESTOS	6
+#define AREA_USAGE_LEN AREA_USAGE_STATIC_ENVASBESTOS // largest idx
 /// Index of the first dynamic usage channel
 #define AREA_USAGE_DYNAMIC_START AREA_USAGE_EQUIP
 /// Index of the last dynamic usage channel
-#define AREA_USAGE_DYNAMIC_END AREA_USAGE_ENVIRON
+#define AREA_USAGE_DYNAMIC_END AREA_USAGE_ENVASBESTOS
 /// Index of the first static usage channel
 #define AREA_USAGE_STATIC_START AREA_USAGE_STATIC_EQUIP
 /// Index of the last static usage channel
-#define AREA_USAGE_STATIC_END AREA_USAGE_STATIC_ENVIRON
+#define AREA_USAGE_STATIC_END AREA_USAGE_STATIC_ENVASBESTOS
 
 
 //Power use
@@ -35,8 +35,8 @@
 
 //used in design to specify which machine can build it
 #define IMPRINTER		(1<<0)	//For circuits. Uses glass/chemicals.
-#define PROTOLATHE		(1<<1)	//New stuff. Uses glass/iron/chemicals
-#define AUTOLATHE		(1<<2)	//Uses glass/iron only.
+#define PROTOLATHE		(1<<1)	//New stuff. Uses glass/asbestos/chemicals
+#define AUTOLATHE		(1<<2)	//Uses glass/asbestos only.
 #define CRAFTLATHE		(1<<3)	//Uses fuck if I know. For use eventually.
 #define MECHFAB			(1<<4) 	//Remember, objects utilising this flag should have construction_time and construction_cost vars.
 #define BIOGENERATOR	(1<<5) 	//Uses biomass

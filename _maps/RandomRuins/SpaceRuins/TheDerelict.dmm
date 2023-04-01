@@ -292,7 +292,7 @@
 "aT" = (
 /obj/machinery/power/apc/unlocked{
 	dir = 8;
-	environ = 0;
+	envasbestos = 0;
 	equipment = 0;
 	lighting = 0;
 	name = "Starboard Solar APC";
@@ -689,9 +689,9 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/derelict/solar_control)
 "cn" = (
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
 /turf/template_noop,
 /area/template_noop)
 "co" = (
@@ -4151,7 +4151,7 @@
 "nZ" = (
 /obj/machinery/power/apc/unlocked{
 	dir = 8;
-	environ = 0;
+	envasbestos = 0;
 	equipment = 0;
 	lighting = 0;
 	name = "Worn-out APC";

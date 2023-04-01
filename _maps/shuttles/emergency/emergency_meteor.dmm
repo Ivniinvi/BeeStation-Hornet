@@ -27,7 +27,7 @@
 /turf/open/floor/plating/asteroid,
 /area/shuttle/escape/meteor)
 "g" = (
-/obj/structure/mineral_door/iron,
+/obj/structure/mineral_door/asbestos,
 /turf/open/floor/plating/asteroid,
 /area/shuttle/escape/meteor)
 "h" = (

@@ -33,7 +33,7 @@
 			ranged = initial(ranged)
 			melee_damage = initial(melee_damage)
 			obj_damage = initial(obj_damage)
-			environment_smash = initial(environment_smash)
+			envasbestosment_smash = initial(envasbestosment_smash)
 			alpha = 255
 			range = initial(range)
 			to_chat(src, "<span class='danger'><B>You switch to combat mode.</span></B>")
@@ -42,7 +42,7 @@
 			ranged = 0
 			melee_damage = 0
 			obj_damage = 0
-			environment_smash = ENVIRONMENT_SMASH_NONE
+			envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 			alpha = 45
 			range = 255
 			to_chat(src, "<span class='danger'><B>You switch to scout mode.</span></B>")

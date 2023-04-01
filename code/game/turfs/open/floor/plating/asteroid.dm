@@ -13,7 +13,7 @@
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	var/environment_type = "asteroid"
+	var/envasbestosment_type = "asteroid"
 	var/turf_type = /turf/open/floor/plating/asteroid //Because caves do whacky shit to revert to normal
 	var/floor_variance = 20 //probability floor has a different icon state
 	attachment_holes = FALSE
@@ -25,14 +25,14 @@
 	. = ..()
 	name = proper_name
 	if(prob(floor_variance))
-		icon_state = "[environment_type][rand(0,12)]"
+		icon_state = "[envasbestosment_type][rand(0,12)]"
 
 /turf/open/floor/plating/asteroid/proc/getDug()
 	new digResult(src, 5)
 	if(postdig_icon_change)
 		if(!postdig_icon)
-			icon_plating = "[environment_type]_dug"
-			icon_state = "[environment_type]_dug"
+			icon_plating = "[envasbestosment_type]_dug"
+			icon_state = "[envasbestosment_type]_dug"
 	dug = TRUE
 
 /turf/open/floor/plating/asteroid/proc/can_dig(mob/user)
@@ -89,7 +89,7 @@
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "basalt"
 	icon_plating = "basalt"
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	floor_variance = 15
 	digResult = /obj/item/stack/ore/glass/basalt
 
@@ -144,7 +144,7 @@
 	icon_state = "snow"
 	icon_plating = "snow"
 	initial_gas_mix = FROZEN_ATMOS
-	environment_type = "snow"
+	envasbestosment_type = "snow"
 	flags_1 = NONE
 	planetary_atmos = TRUE
 	burnt_states = list("snow_dug")
@@ -169,7 +169,7 @@
 	floor_variance = 0
 	icon_state = "snow-ice"
 	icon_plating = "snow-ice"
-	environment_type = "snow_cavern"
+	envasbestosment_type = "snow_cavern"
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW

@@ -50,9 +50,9 @@
 "g" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass{
 	amount = 40;
 	pixel_x = 3;
@@ -166,7 +166,7 @@
 /area/ruin/unpowered)
 "u" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -174,10 +174,10 @@
 	pixel_x = -25
 	},
 /obj/machinery/cell_charger,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/effect/spawner/lootdrop/ruinloot/science,
 /obj/effect/spawner/lootdrop/ruinloot/science,
 /obj/effect/spawner/lootdrop/ruinloot/science,

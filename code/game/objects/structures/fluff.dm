@@ -1,4 +1,4 @@
-//Fluff structures serve no purpose and exist only for enriching the environment. They can be destroyed with a wrench.
+//Fluff structures serve no purpose and exist only for enriching the envasbestosment. They can be destroyed with a wrench.
 
 /obj/structure/fluff
 	name = "fluff structure"
@@ -17,7 +17,7 @@
 		if(I.use_tool(src, user, 50))
 			user.visible_message("<span class='notice'>[user] disassembles [src]!</span>", "<span class='notice'>You break down [src] into scrap metal.</span>")
 			playsound(user, 'sound/items/deconstruct.ogg', 50, 1)
-			new/obj/item/stack/sheet/iron(drop_location())
+			new/obj/item/stack/sheet/asbestos(drop_location())
 			qdel(src)
 		return
 	..()

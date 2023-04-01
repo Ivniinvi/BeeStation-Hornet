@@ -12,7 +12,7 @@
 	area_flags = NONE
 	lighting_colour_tube = "#fff0dd"
 	lighting_colour_bulb = "#ffe1c1"
-	sound_environment = SOUND_ENVIRONMENT_ROOM
+	sound_envasbestosment = SOUND_ENVASBESTOSMENT_ROOM
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ADVANCED
 	//The mobile port attached to this area
 	var/obj/docking_port/mobile/mobile_port

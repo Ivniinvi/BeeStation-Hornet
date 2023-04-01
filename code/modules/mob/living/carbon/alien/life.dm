@@ -34,18 +34,18 @@
 	handle_breath_temperature(breath)
 
 /mob/living/carbon/alien/breathe()
-//Environment Gas Mix
-	var/datum/gas_mixture/environment
+//Envasbestosment Gas Mix
+	var/datum/gas_mixture/envasbestosment
 	if(loc)
-		environment = loc.return_air()
+		envasbestosment = loc.return_air()
 
-//Breath Gas Mix derived from Environment
+//Breath Gas Mix derived from Envasbestosment
 	var/datum/gas_mixture/breath
 
 	if(isturf(loc)) //Get amount of gas breathed
 		var/breath_ratio = 0
-		if(environment)
-			breath_ratio = BREATH_VOLUME/environment.return_volume()
+		if(envasbestosment)
+			breath_ratio = BREATH_VOLUME/envasbestosment.return_volume()
 		//Remove it from the atmosphere
 		breath = loc.remove_air_ratio(breath_ratio)
 

@@ -35,7 +35,7 @@
 	This can be any list that you can wizard together from global variables and global proc calls.
 	Every variable/proc name in the "IN" block is global.
 	It can also be a single object, in which case the object is wrapped in a list for you.
-	So yeah SDQL is unironically better than VV for complex single-object operations.
+	So yeah SDQL is unasbestosically better than VV for complex single-object operations.
 
 	You can of course combine these.
 	"SELECT * IN SSmachines.machinery WHERE z == 4"

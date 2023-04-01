@@ -92,7 +92,7 @@
 "aw" = (
 /obj/structure/closet/crate,
 /obj/item/storage/toolbox/mechanical,
-/obj/item/stack/sheet/iron/ten,
+/obj/item/stack/sheet/asbestos/ten,
 /turf/open/floor/pod/dark,
 /area/survivalpod)
 "ax" = (

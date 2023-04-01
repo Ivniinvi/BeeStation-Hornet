@@ -174,7 +174,7 @@
 	balance = 15;
 	money = 500
 	},
-/obj/item/coin/iron,
+/obj/item/coin/asbestos,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "abe" = (
@@ -1322,7 +1322,7 @@
 /area/engine/atmos)
 "agf" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/item/storage/box/bodybags,
 /obj/item/pen,
 /obj/machinery/firealarm{
@@ -7951,7 +7951,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/clothing/glasses/welding,
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = -2;
@@ -9133,9 +9133,9 @@
 "bpT" = (
 /obj/structure/table,
 /obj/item/storage/belt/utility,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass{
 	amount = 20;
 	pixel_x = -3;
@@ -12797,7 +12797,7 @@
 /turf/open/floor/engine/vacuum,
 /area/engine/atmos)
 "bRM" = (
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/cable_coil,
 /obj/item/flashlight/lamp,
@@ -16016,7 +16016,7 @@
 /area/engine/engineering)
 "ciX" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/electronics/airlock,
@@ -17009,8 +17009,8 @@
 /area/engine/supermatter)
 "cqN" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/plasteel{
 	amount = 10
 	},
@@ -19662,9 +19662,9 @@
 	},
 /obj/structure/table,
 /obj/item/storage/belt/utility,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass{
 	amount = 20;
 	pixel_x = -3;
@@ -27491,7 +27491,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/mineral/plasma,
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -30518,7 +30518,7 @@
 /area/quartermaster/office)
 "ijc" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
 "ijs" = (
@@ -33573,7 +33573,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 26
 	},
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/item/circuitboard/machine/paystand,
 /obj/item/stack/cable_coil/random/five,
 /obj/effect/turf_decal/tile/brown{
@@ -36825,7 +36825,7 @@
 /obj/item/stack/sheet/rglass{
 	amount = 50
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/plasteel{
 	amount = 10
 	},
@@ -37488,7 +37488,7 @@
 /obj/item/reagent_containers/glass/bottle/lithium{
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/iodine{
@@ -42199,7 +42199,7 @@
 /turf/open/floor/plasteel/dark,
 /area/teleporter)
 "nVG" = (
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/asbestos,
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
@@ -42554,8 +42554,8 @@
 /area/hydroponics)
 "oei" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -42950,8 +42950,8 @@
 /area/maintenance/starboard/fore)
 "onR" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/storage/box/lights/mixed,
 /obj/machinery/camera/autoname{
 	dir = 8
@@ -47515,7 +47515,7 @@
 /area/crew_quarters/dorms)
 "qLr" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/clothing/head/welding,
 /obj/item/stack/sheet/mineral/plasma{
@@ -55840,7 +55840,7 @@
 "uQm" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
@@ -58590,8 +58590,8 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},

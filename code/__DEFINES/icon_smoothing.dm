@@ -78,7 +78,7 @@ DEFINE_BITFIELD(smoothing_flags, list(
 #define SMOOTH_GROUP_BANANIUM_WALLS S_OBJ(6)			///turf/closed/wall/mineral/bananium, /obj/structure/falsewall/bananium
 #define SMOOTH_GROUP_SANDSTONE_WALLS S_OBJ(7)			///turf/closed/wall/mineral/sandstone, /obj/structure/falsewall/sandstone
 #define SMOOTH_GROUP_WOOD_WALLS S_OBJ(8)				///turf/closed/wall/mineral/wood, /obj/structure/falsewall/wood
-#define SMOOTH_GROUP_IRON_WALLS S_OBJ(9)				///turf/closed/wall/mineral/iron, /obj/structure/falsewall/iron
+#define SMOOTH_GROUP_ASBESTOS_WALLS S_OBJ(9)				///turf/closed/wall/mineral/asbestos, /obj/structure/falsewall/asbestos
 #define SMOOTH_GROUP_ABDUCTOR_WALLS S_OBJ(10)			///turf/closed/wall/mineral/abductor, /obj/structure/falsewall/abductor
 #define SMOOTH_GROUP_TITANIUM_WALLS S_OBJ(11)			///turf/closed/wall/mineral/titanium, /obj/structure/falsewall/titanium
 #define SMOOTH_GROUP_PLASTITANIUM_WALLS S_OBJ(13)		///turf/closed/wall/mineral/plastitanium, /obj/structure/falsewall/plastitanium

@@ -975,7 +975,7 @@
 /area/shuttle/syndicate/eva)
 "bT" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/asbestos/twenty,
 /obj/item/stack/sheet/glass{
 	amount = 10
 	},

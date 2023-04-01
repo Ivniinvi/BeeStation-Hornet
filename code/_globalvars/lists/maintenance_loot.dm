@@ -90,7 +90,7 @@ GLOBAL_LIST_INIT(maintenance_loot, list(
 	/obj/item/stack/rods/ten = 9,
 	/obj/item/stack/rods/twenty = 1,
 	/obj/item/stack/sheet/cardboard = 2,
-	/obj/item/stack/sheet/iron/twenty = 1,
+	/obj/item/stack/sheet/asbestos/twenty = 1,
 	/obj/item/stack/sheet/mineral/plasma = 1,
 	/obj/item/stack/sheet/rglass = 1,
 	/obj/item/stack/sticky_tape = 1,

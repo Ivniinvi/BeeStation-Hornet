@@ -22,7 +22,7 @@
 	var/openSound = 'sound/effects/stonedoor_openclose.ogg'
 	var/closeSound = 'sound/effects/stonedoor_openclose.ogg'
 
-	var/sheetType = /obj/item/stack/sheet/iron //what we're made of
+	var/sheetType = /obj/item/stack/sheet/asbestos //what we're made of
 	var/sheetAmount = 7 //how much we drop when deconstructed
 
 /obj/structure/mineral_door/Initialize(mapload)
@@ -192,8 +192,8 @@
 	qdel(src)
 
 
-/obj/structure/mineral_door/iron
-	name = "iron door"
+/obj/structure/mineral_door/asbestos
+	name = "asbestos door"
 	max_integrity = 300
 
 /obj/structure/mineral_door/copper

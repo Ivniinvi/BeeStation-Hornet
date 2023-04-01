@@ -525,7 +525,7 @@
 			playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
 			if(machine_stat & BROKEN)
 				to_chat(user, "<span class='warning'>The broken remains of [src] fall on the ground.</span>")
-				new /obj/item/stack/sheet/iron(loc, 5)
+				new /obj/item/stack/sheet/asbestos(loc, 5)
 				new /obj/item/shard(loc)
 				new /obj/item/shard(loc)
 			else
@@ -572,7 +572,7 @@
 
 /obj/machinery/newscaster/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		new /obj/item/stack/sheet/iron(loc, 2)
+		new /obj/item/stack/sheet/asbestos(loc, 2)
 		new /obj/item/shard(loc)
 		new /obj/item/shard(loc)
 	qdel(src)
@@ -948,7 +948,7 @@
 	name = "newscaster frame"
 	desc = "Used to build newscasters, just secure to the wall."
 	icon_state = "newscaster"
-	custom_materials = list(/datum/material/iron=14000, /datum/material/glass=8000)
+	custom_materials = list(/datum/material/asbestos=14000, /datum/material/glass=8000)
 	result_path = /obj/machinery/newscaster
 	pixel_shift = -32
 

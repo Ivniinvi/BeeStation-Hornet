@@ -55,8 +55,8 @@
 		return
 	chassis.use_internal_tank = !chassis.use_internal_tank
 	button_icon_state = "mech_internals_[chassis.use_internal_tank ? "on" : "off"]"
-	chassis.balloon_alert(owner, "Now taking air from the [chassis.use_internal_tank ? "internal airtank" : "environment"].")
-	chassis.log_message("Now taking air from the [chassis.use_internal_tank ? "internal airtank" : "environment"].", LOG_MECHA)
+	chassis.balloon_alert(owner, "Now taking air from the [chassis.use_internal_tank ? "internal airtank" : "envasbestosment"].")
+	chassis.log_message("Now taking air from the [chassis.use_internal_tank ? "internal airtank" : "envasbestosment"].", LOG_MECHA)
 	UpdateButtonIcon()
 
 /datum/action/innate/mecha/mech_cycle_equip

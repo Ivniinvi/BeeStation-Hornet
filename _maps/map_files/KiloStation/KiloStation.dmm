@@ -7111,7 +7111,7 @@
 /area/crew_quarters/heads/hos)
 "amq" = (
 /mob/living/simple_animal/hostile/asteroid/basilisk{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/space/nearstation)
@@ -14356,9 +14356,9 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
@@ -15505,7 +15505,7 @@
 /area/engine/engineering)
 "azK" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/electronics/airlock,
@@ -30083,7 +30083,7 @@
 /obj/structure/rack,
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/mineral/plasma,
 /obj/item/grenade/chem_grenade,
 /obj/item/grenade/chem_grenade,
@@ -30270,9 +30270,9 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/storage/belt/utility,
 /obj/item/clothing/head/welding,
@@ -31761,7 +31761,7 @@
 /obj/item/storage/toolbox/mechanical,
 /obj/item/hand_labeler,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/mineral/copper{
 	amount = 20
 	},
@@ -45858,7 +45858,7 @@
 	dir = 8
 	},
 /obj/structure/rack,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/wrench,
 /obj/item/crowbar/red,
@@ -57085,8 +57085,8 @@
 	dir = 4
 	},
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/machinery/button/door{
@@ -57256,7 +57256,7 @@
 "bNk" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/table,
-/obj/item/stack/sheet/iron/ten{
+/obj/item/stack/sheet/asbestos/ten{
 	amount = 5
 	},
 /obj/item/assembly/prox_sensor,
@@ -68422,8 +68422,8 @@
 /area/ai_monitored/turret_protected/ai)
 "cee" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/clothing/head/welding{
 	pixel_x = 4;
 	pixel_y = 4
@@ -71248,7 +71248,7 @@
 /area/ai_monitored/storage/satellite)
 "ciD" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/plasma{
 	amount = 5
@@ -83422,7 +83422,7 @@
 "cDj" = (
 /obj/structure/table_frame/wood,
 /mob/living/simple_animal/hostile/asteroid/basilisk{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /turf/open/floor/carpet/green,
 /area/quartermaster/warehouse)
@@ -83659,8 +83659,8 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/pipe_dispenser,
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 28
@@ -85318,9 +85318,9 @@
 "cHi" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/neutral,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/storage/belt/utility,
 /obj/item/clothing/head/welding,
@@ -93090,7 +93090,7 @@
 "grc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
@@ -93308,7 +93308,7 @@
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
 "gHl" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
@@ -93356,7 +93356,7 @@
 /area/quartermaster/warehouse)
 "gJs" = (
 /mob/living/simple_animal/hostile/asteroid/basilisk{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/quartermaster/warehouse)
@@ -93938,7 +93938,7 @@
 /obj/item/reagent_containers/glass/bottle/lithium{
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/iodine{
@@ -94599,7 +94599,7 @@
 "jgX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table_frame,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -94955,7 +94955,7 @@
 /area/hallway/secondary/entry)
 "kdL" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/item/stack/cable_coil/yellow,
 /obj/effect/turf_decal/delivery,
 /obj/effect/turf_decal/tile/yellow,

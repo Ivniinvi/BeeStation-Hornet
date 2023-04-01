@@ -307,7 +307,7 @@
 /turf/open/floor/plating/airless,
 /area/template_noop)
 "QN" = (
-/obj/item/stack/sheet/iron/ten,
+/obj/item/stack/sheet/asbestos/ten,
 /turf/open/floor/plating/airless,
 /area/template_noop)
 "Sk" = (

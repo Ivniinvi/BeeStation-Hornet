@@ -89,7 +89,7 @@
 /turf/open/floor/plasteel/cult,
 /area/shuttle/escape)
 "q" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/cult,
 /area/shuttle/escape)
@@ -234,11 +234,11 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 27
 	},
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plasteel/cult,
 /area/shuttle/escape)
 "R" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plasteel/cult,
 /area/shuttle/escape)
 "S" = (

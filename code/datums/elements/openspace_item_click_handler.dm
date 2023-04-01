@@ -1,5 +1,5 @@
 /**
- * allow players to easily use items such as iron rods, rcds on open space without
+ * allow players to easily use items such as asbestos rods, rcds on open space without
  * having to pixelhunt for portions not occupied by object or mob visuals.
  */
 /datum/element/openspace_item_click_handler

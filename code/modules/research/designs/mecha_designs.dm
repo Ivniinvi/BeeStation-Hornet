@@ -143,7 +143,7 @@
 	id = "mech_scattershot"
 	build_type = PROTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot
-	materials = list(/datum/material/iron=10000)
+	materials = list(/datum/material/asbestos=10000)
 	construction_time = 100
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -155,7 +155,7 @@
 	id = "mech_carbine"
 	build_type = PROTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/carbine
-	materials = list(/datum/material/iron=10000)
+	materials = list(/datum/material/asbestos=10000)
 	construction_time = 100
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -166,7 +166,7 @@
 	id = "mech_ion"
 	build_type = PROTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/ion
-	materials = list(/datum/material/iron=20000,/datum/material/silver=6000,/datum/material/uranium=2000)
+	materials = list(/datum/material/asbestos=20000,/datum/material/silver=6000,/datum/material/uranium=2000)
 	construction_time = 100
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -177,7 +177,7 @@
 	id = "mech_tesla"
 	build_type = PROTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/tesla
-	materials = list(/datum/material/iron=20000,/datum/material/silver=8000)
+	materials = list(/datum/material/asbestos=20000,/datum/material/silver=8000)
 	construction_time = 100
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -188,7 +188,7 @@
 	id = "mech_laser"
 	build_type = PROTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser
-	materials = list(/datum/material/iron=10000)
+	materials = list(/datum/material/asbestos=10000)
 	construction_time = 100
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -199,7 +199,7 @@
 	id = "mech_laser_heavy"
 	build_type = PROTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy
-	materials = list(/datum/material/iron=10000)
+	materials = list(/datum/material/asbestos=10000)
 	construction_time = 100
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -210,7 +210,7 @@
 	id = "mech_disabler"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/disabler
-	materials = list(/datum/material/iron=10000)
+	materials = list(/datum/material/asbestos=10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -220,7 +220,7 @@
 	id = "mech_grenade_launcher"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang
-	materials = list(/datum/material/iron=22000,/datum/material/gold=6000,/datum/material/silver=8000)
+	materials = list(/datum/material/asbestos=22000,/datum/material/gold=6000,/datum/material/silver=8000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -230,7 +230,7 @@
 	id = "clusterbang_launcher"
 	build_type = PROTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/launcher/flashbang/clusterbang
-	materials = list(/datum/material/iron=20000,/datum/material/gold=10000,/datum/material/uranium=10000)
+	materials = list(/datum/material/asbestos=20000,/datum/material/gold=10000,/datum/material/uranium=10000)
 	construction_time = 100
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -241,7 +241,7 @@
 	id = "mech_wormhole_gen"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/wormhole_generator
-	materials = list(/datum/material/iron=10000)
+	materials = list(/datum/material/asbestos=10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -251,7 +251,7 @@
 	id = "mech_teleporter"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/teleporter
-	materials = list(/datum/material/iron=10000,/datum/material/diamond=10000)
+	materials = list(/datum/material/asbestos=10000,/datum/material/diamond=10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -261,7 +261,7 @@
 	id = "mech_rcd"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/rcd
-	materials = list(/datum/material/iron=30000,/datum/material/gold=20000,/datum/material/plasma=25000,/datum/material/silver=20000)
+	materials = list(/datum/material/asbestos=30000,/datum/material/gold=20000,/datum/material/plasma=25000,/datum/material/silver=20000)
 	construction_time = 1200
 	category = list("Exosuit Equipment")
 
@@ -271,7 +271,7 @@
 	id = "mech_thrusters"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/thrusters/gas
-	materials = list(/datum/material/iron=25000,/datum/material/titanium=5000,/datum/material/silver=3000)
+	materials = list(/datum/material/asbestos=25000,/datum/material/titanium=5000,/datum/material/silver=3000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -281,7 +281,7 @@
 	id = "mech_gravcatapult"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/gravcatapult
-	materials = list(/datum/material/iron=10000)
+	materials = list(/datum/material/asbestos=10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -291,7 +291,7 @@
 	id = "mech_repair_droid"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/repair_droid
-	materials = list(/datum/material/iron=10000,/datum/material/glass = 5000,/datum/material/gold=1000,/datum/material/silver=2000)
+	materials = list(/datum/material/asbestos=10000,/datum/material/glass = 5000,/datum/material/gold=1000,/datum/material/silver=2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -301,7 +301,7 @@
 	id = "mech_energy_relay"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/tesla_energy_relay
-	materials = list(/datum/material/iron=10000,/datum/material/glass =  2000,/datum/material/gold=2000,/datum/material/silver=3000)
+	materials = list(/datum/material/asbestos=10000,/datum/material/glass =  2000,/datum/material/gold=2000,/datum/material/silver=3000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -311,7 +311,7 @@
 	id = "mech_ccw_armor"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/anticcw_armor_booster
-	materials = list(/datum/material/iron=20000,/datum/material/silver=5000)
+	materials = list(/datum/material/asbestos=20000,/datum/material/silver=5000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -321,7 +321,7 @@
 	id = "mech_proj_armor"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/antiproj_armor_booster
-	materials = list(/datum/material/iron=20000,/datum/material/gold=5000)
+	materials = list(/datum/material/asbestos=20000,/datum/material/gold=5000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -331,7 +331,7 @@
 	id = "mech_diamond_drill"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/drill/diamonddrill
-	materials = list(/datum/material/iron=10000,/datum/material/diamond=6500)
+	materials = list(/datum/material/asbestos=10000,/datum/material/diamond=6500)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -341,7 +341,7 @@
 	id = "mech_generator_nuclear"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/generator/nuclear
-	materials = list(/datum/material/iron=10000,/datum/material/glass =  1000,/datum/material/silver=500)
+	materials = list(/datum/material/asbestos=10000,/datum/material/glass =  1000,/datum/material/silver=500)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -351,7 +351,7 @@
 	id = "mech_plasma_cutter"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/plasma
-	materials = list(/datum/material/iron = 8000, /datum/material/glass = 1000, /datum/material/plasma = 2000)
+	materials = list(/datum/material/asbestos = 8000, /datum/material/glass = 1000, /datum/material/plasma = 2000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -361,7 +361,7 @@
 	id = "mech_lmg"
 	build_type = PROTOLATHE
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
-	materials = list(/datum/material/iron=10000)
+	materials = list(/datum/material/asbestos=10000)
 	construction_time = 100
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -372,7 +372,7 @@
 	id = "mech_sleeper"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/medical/sleeper
-	materials = list(/datum/material/iron=5000, /datum/material/glass =  10000)
+	materials = list(/datum/material/asbestos=5000, /datum/material/glass =  10000)
 	construction_time = 100
 	category = list("Exosuit Equipment")
 
@@ -382,7 +382,7 @@
 	id = "mech_syringe_gun"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/medical/syringe_gun
-	materials = list(/datum/material/iron=3000, /datum/material/glass = 2000)
+	materials = list(/datum/material/asbestos=3000, /datum/material/glass = 2000)
 	construction_time = 200
 	category = list("Exosuit Equipment")
 
@@ -391,7 +391,7 @@
 	desc = "Equipment for medical exosuits. A mounted medical nanite projector which will treat patients with a focused beam."
 	id = "mech_medi_beam"
 	build_type = MECHFAB
-	materials = list(/datum/material/iron = 15000, /datum/material/glass = 8000, /datum/material/plasma = 3000, /datum/material/gold = 8000, /datum/material/diamond = 2000)
+	materials = list(/datum/material/asbestos = 15000, /datum/material/glass = 8000, /datum/material/plasma = 3000, /datum/material/gold = 8000, /datum/material/diamond = 2000)
 	construction_time = 250
 	build_path = /obj/item/mecha_parts/mecha_equipment/medical/mechmedbeam
 	category = list("Exosuit Equipment")

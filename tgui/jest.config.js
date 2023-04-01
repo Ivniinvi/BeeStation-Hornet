@@ -7,7 +7,7 @@ module.exports = {
   testPathIgnorePatterns: [
     '<rootDir>/packages/tgui-bench',
   ],
-  testEnvironment: 'jsdom',
+  testEnvasbestosment: 'jsdom',
   testRunner: require.resolve('jest-circus/runner'),
   transform: {
     '^.+\\.(js|cjs|ts|tsx)$': require.resolve('babel-jest'),

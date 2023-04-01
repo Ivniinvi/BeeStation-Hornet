@@ -153,7 +153,7 @@
 
 /obj/machinery/food_cart/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		new /obj/item/stack/sheet/iron(loc, 4)
+		new /obj/item/stack/sheet/asbestos(loc, 4)
 	qdel(src)
 
 /obj/machinery/food_cart/coffee

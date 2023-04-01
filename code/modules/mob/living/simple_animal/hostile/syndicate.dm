@@ -264,7 +264,7 @@
 	minimum_distance = 10
 	retreat_distance = 10
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 
 /mob/living/simple_animal/hostile/syndicate/civilian/Aggro()
 	..()
@@ -284,7 +284,7 @@
 	maxHealth = 25
 	melee_damage = 15
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	attacktext = "cuts"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	faction = list(ROLE_SYNDICATE)

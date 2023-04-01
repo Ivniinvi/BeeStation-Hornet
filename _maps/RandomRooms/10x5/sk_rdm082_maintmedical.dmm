@@ -186,7 +186,7 @@
 /obj/item/reagent_containers/glass/bottle/iodine{
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/lithium{

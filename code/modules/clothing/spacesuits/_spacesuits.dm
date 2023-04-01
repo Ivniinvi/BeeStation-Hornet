@@ -24,7 +24,7 @@
 
 /obj/item/clothing/suit/space
 	name = "space suit"
-	desc = "A suit that protects against low pressure environments. Has a big 13 on the back."
+	desc = "A suit that protects against low pressure envasbestosments. Has a big 13 on the back."
 	icon_state = "spaceold"
 	item_state = "s_suit"
 	w_class = WEIGHT_CLASS_BULKY

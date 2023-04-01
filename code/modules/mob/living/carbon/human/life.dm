@@ -116,8 +116,8 @@
 			var/obj/item/organ/lungs/lun = L
 			lun.check_breath(breath,src)
 
-/mob/living/carbon/human/handle_environment(datum/gas_mixture/environment)
-	dna.species.handle_environment(environment, src)
+/mob/living/carbon/human/handle_envasbestosment(datum/gas_mixture/envasbestosment)
+	dna.species.handle_envasbestosment(envasbestosment, src)
 
 ///FIRE CODE
 /mob/living/carbon/human/handle_fire()

@@ -146,23 +146,23 @@
 	icon_state = "sandwater_inner"
 	baseturfs = /turf/open/floor/plating/beach/coastline_t/sandwater_inner
 
-/turf/open/floor/plating/ironsand
+/turf/open/floor/plating/asbestossand
 	gender = PLURAL
-	name = "iron sand"
-	desc = "Like sand, but more <i>iron</i>."
+	name = "asbestos sand"
+	desc = "Like sand, but more <i>asbestos</i>."
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
-/turf/open/floor/plating/ironsand/Initialize(mapload)
+/turf/open/floor/plating/asbestossand/Initialize(mapload)
 	. = ..()
-	icon_state = "ironsand[rand(1,15)]"
+	icon_state = "asbestossand[rand(1,15)]"
 
-/turf/open/floor/plating/ironsand/burn_tile()
+/turf/open/floor/plating/asbestossand/burn_tile()
 	return
 
-/turf/open/floor/plating/ironsand/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
+/turf/open/floor/plating/asbestossand/try_replace_tile(obj/item/stack/tile/T, mob/user, params)
 	return
 
 /turf/open/floor/plating/ice

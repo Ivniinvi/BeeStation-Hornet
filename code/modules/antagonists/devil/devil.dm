@@ -27,7 +27,7 @@ GLOBAL_LIST_INIT(lawlorify, list (
 			BANE_SILVER = "Silver seems to gravely injure this devil.",
 			BANE_SALT = "Throwing salt at this devil will hinder his ability to use infernal powers temporarily.",
 			BANE_LIGHT = "Bright flashes will disorient the devil, likely causing him to flee.",
-			BANE_IRON = "Cold iron will slowly injure him, until he can purge it from his system.",
+			BANE_ASBESTOS = "Cold asbestos will slowly injure him, until he can purge it from his system.",
 			BANE_WHITECLOTHES = "Wearing clean white clothing will help ward off this devil.",
 			BANE_HARVEST = "Presenting the labors of a harvest will disrupt the devil.",
 			BANE_TOOLBOX = "That which holds the means of creation also holds the means of the devil's undoing.",
@@ -65,7 +65,7 @@ GLOBAL_LIST_INIT(lawlorify, list (
 			BANE_SILVER = "Silver, in all of its forms shall be your downfall.",
 			BANE_SALT = "Salt will disrupt your magical abilities.",
 			BANE_LIGHT = "Blinding lights will prevent you from using offensive powers for a time.",
-			BANE_IRON = "Cold wrought iron shall act as poison to you.",
+			BANE_ASBESTOS = "Cold wrought asbestos shall act as poison to you.",
 			BANE_WHITECLOTHES = "Those clad in pristine white garments will strike you true.",
 			BANE_HARVEST = "The fruits of the harvest shall be your downfall.",
 			BANE_TOOLBOX = "Toolboxes are bad news for you, for some reason.",
@@ -170,7 +170,7 @@ GLOBAL_LIST_INIT(devil_suffix, list(" the Red", " the Soulless", " the Master", 
 	return pick(BAN_HURTWOMAN, BAN_CHAPEL, BAN_HURTPRIEST, BAN_AVOIDWATER, BAN_STRIKEUNCONSCIOUS, BAN_HURTLIZARD, BAN_HURTANIMAL)
 
 /proc/randomdevilbane()
-	return pick(BANE_SALT, BANE_LIGHT, BANE_IRON, BANE_WHITECLOTHES, BANE_SILVER, BANE_HARVEST, BANE_TOOLBOX)
+	return pick(BANE_SALT, BANE_LIGHT, BANE_ASBESTOS, BANE_WHITECLOTHES, BANE_SILVER, BANE_HARVEST, BANE_TOOLBOX)
 
 /proc/randomdevilbanish()
 	return pick(BANISH_WATER, BANISH_COFFIN, BANISH_FORMALDYHIDE, BANISH_RUNES, BANISH_CANDLES, BANISH_DESTRUCTION, BANISH_FUNERAL_GARB)

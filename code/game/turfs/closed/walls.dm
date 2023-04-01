@@ -25,7 +25,7 @@
 
 	var/hardness = 40 //lower numbers are harder. Used to determine the probability of a hulk smashing through.
 	var/slicing_duration = 100  //default time taken to slice the wall
-	var/sheet_type = /obj/item/stack/sheet/iron
+	var/sheet_type = /obj/item/stack/sheet/asbestos
 	var/sheet_amount = 2
 	var/girder_type = /obj/structure/girder
 	var/list/dent_decals
@@ -83,7 +83,7 @@
 /turf/closed/wall/proc/devastate_wall()
 	new sheet_type(src, sheet_amount)
 	if(girder_type)
-		new /obj/item/stack/sheet/iron(src)
+		new /obj/item/stack/sheet/asbestos(src)
 
 /turf/closed/wall/ex_act(severity, target)
 	if(target == src)
@@ -139,7 +139,7 @@
 /turf/closed/wall/attack_animal(mob/living/simple_animal/M)
 	M.changeNext_move(CLICK_CD_MELEE)
 	M.do_attack_animation(src)
-	if((M.environment_smash & ENVIRONMENT_SMASH_WALLS) || (M.environment_smash & ENVIRONMENT_SMASH_RWALLS))
+	if((M.envasbestosment_smash & ENVASBESTOSMENT_SMASH_WALLS) || (M.envasbestosment_smash & ENVASBESTOSMENT_SMASH_RWALLS))
 		playsound(src, 'sound/effects/meteorimpact.ogg', 100, 1)
 		dismantle_wall(1)
 		return

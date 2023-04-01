@@ -25,7 +25,7 @@ GLOBAL_VAR_INIT(floor_cluwnes, 0)
 	wander = FALSE
 	minimum_distance = 2
 	move_to_delay = 1
-	environment_smash = FALSE
+	envasbestosment_smash = FALSE
 	lose_patience_timeout = FALSE
 	pixel_y = 8
 	pressure_resistance = 200

@@ -208,7 +208,7 @@
 	},
 /mob/living/simple_animal/hostile/zombie{
 	desc = "This undead fiend looks to be badly decomposed.";
-	environment_smash = 0;
+	envasbestosment_smash = 0;
 	health = 60;
 	melee_damage = 11;
 	name = "Rotting Carcass";
@@ -255,7 +255,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/zombie{
 	desc = "This undead fiend looks to be badly decomposed.";
-	environment_smash = 0;
+	envasbestosment_smash = 0;
 	health = 60;
 	melee_damage = 11;
 	name = "Rotting Carcass"
@@ -707,7 +707,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/zombie{
 	desc = "This undead fiend looks to be badly decomposed.";
-	environment_smash = 0;
+	envasbestosment_smash = 0;
 	health = 60;
 	melee_damage = 11;
 	name = "Rotting Carcass"
@@ -1389,7 +1389,7 @@
 /obj/effect/decal/cleanable/blood/gibs/old,
 /mob/living/simple_animal/hostile/zombie{
 	desc = "This undead fiend looks to be badly decomposed.";
-	environment_smash = 0;
+	envasbestosment_smash = 0;
 	health = 60;
 	melee_damage = 11;
 	name = "Rotting Carcass";

@@ -122,7 +122,7 @@
 				hud_list[hud] = I
 
 /**
-  * Some kind of debug verb that gives atmosphere environment details
+  * Some kind of debug verb that gives atmosphere envasbestosment details
   */
 /mob/proc/Cell()
 	set category = "Admin"
@@ -131,13 +131,13 @@
 	if(!loc)
 		return 0
 
-	var/datum/gas_mixture/environment = loc.return_air()
+	var/datum/gas_mixture/envasbestosment = loc.return_air()
 
 	var/t =	"<span class='notice'>Coordinates: [x],[y] \n</span>"
-	t +=	"<span class='danger'>Temperature: [environment.return_temperature()] \n</span>"
-	for(var/id in environment.get_gases())
-		if(environment.get_moles(id))
-			t+="<span class='notice'>[GLOB.gas_data.names[id]]: [environment.get_moles(id)] \n</span>"
+	t +=	"<span class='danger'>Temperature: [envasbestosment.return_temperature()] \n</span>"
+	for(var/id in envasbestosment.get_gases())
+		if(envasbestosment.get_moles(id))
+			t+="<span class='notice'>[GLOB.gas_data.names[id]]: [envasbestosment.get_moles(id)] \n</span>"
 
 	to_chat(usr, t)
 

@@ -7,7 +7,7 @@
 	anchored = FALSE
 	max_integrity = 100
 	var/oreAmount = 5
-	var/material_drop_type = /obj/item/stack/sheet/iron
+	var/material_drop_type = /obj/item/stack/sheet/asbestos
 	CanAtmosPass = ATMOS_PASS_DENSITY
 
 /obj/structure/statue/attackby(obj/item/W, mob/living/user, params)

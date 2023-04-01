@@ -28,13 +28,13 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	power_light = FALSE
 	power_equip = FALSE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	area_flags = UNIQUE_AREA
 	outdoors = TRUE
 	ambience_index = null
 	ambient_music_index = AMBIENCE_SPACE
 	ambient_buzz = null //Space is deafeningly quiet
-	sound_environment = SOUND_AREA_SPACE
+	sound_envasbestosment = SOUND_AREA_SPACE
 
 /area/space/nearstation
 	icon_state = "space_near"
@@ -62,7 +62,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
 	ambience_index = AMBIENCE_MINING
-	sound_environment = SOUND_AREA_ASTEROID
+	sound_envasbestosment = SOUND_AREA_ASTEROID
 	area_flags = UNIQUE_AREA
 
 /area/asteroid/nearstation
@@ -131,7 +131,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	)
 	min_ambience_cooldown = 20 SECONDS
 	max_ambience_cooldown = 35 SECONDS
-	sound_environment = SOUND_AREA_TUNNEL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_TUNNEL_ENCLOSED
 	area_flags = BLOBS_ALLOWED | UNIQUE_AREA
 	mood_bonus = -1
 	mood_message = "<span class='warning'>It's kind of cramped in here!\n</span>"
@@ -155,7 +155,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/maintenance/department/crew_quarters/bar
 	name = "Bar Maintenance"
 	icon_state = "maint_bar"
-	sound_environment = SOUND_AREA_WOODFLOOR
+	sound_envasbestosment = SOUND_AREA_WOODFLOOR
 
 /area/maintenance/department/crew_quarters/dorms
 	name = "Dormitory Maintenance"
@@ -362,7 +362,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 //Hallway
 /area/hallway
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 
 /area/hallway
 	lighting_colour_tube = "#ffce99"
@@ -478,35 +478,35 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	lighting_colour_tube = "#ffce99"
 	lighting_colour_bulb = "#ffdbb4"
 	lighting_brightness_tube = 8
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
 
 /area/bridge/meeting_room
 	name = "Heads of Staff Meeting Room"
 	icon_state = "meeting"
-	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
 /area/bridge/meeting_room/council
 	name = "Council Chamber"
 	icon_state = "meeting"
-	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
 /area/bridge/showroom/corporate
 	name = "Corporate Showroom"
 	icon_state = "showroom"
-	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
 /area/crew_quarters/heads/captain
 	name = "Captain's Office"
 	icon_state = "captain"
-	sound_environment = SOUND_AREA_WOODFLOOR
+	sound_envasbestosment = SOUND_AREA_WOODFLOOR
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_MAXIMUM
 
 /area/crew_quarters/heads/captain/private
 	name = "Captain's Quarters"
 	icon_state = "captain_private"
-	sound_environment = SOUND_AREA_WOODFLOOR
+	sound_envasbestosment = SOUND_AREA_WOODFLOOR
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_MAXIMUM
 
 /area/crew_quarters/heads/chief
@@ -539,13 +539,13 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "tcom_sat_cham"
 	lighting_colour_tube = "#e2feff"
 	lighting_colour_bulb = "#d5fcff"
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
 
 /area/server
 	name = "Messaging Server Room"
 	icon_state = "server"
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
 
 //Crew
@@ -554,7 +554,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	lighting_colour_tube = "#ffce99"
 	lighting_colour_bulb = "#ffdbb4"
 	lighting_brightness_tube = 8
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 
 /area/crew_quarters/dorms
 	name = "Dormitories"
@@ -592,7 +592,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "toilet"
 	lighting_colour_tube = "#e3ffff"
 	lighting_colour_bulb = "#d5ffff"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/crew_quarters/toilet/auxiliary
 	name = "Auxiliary Restrooms"
@@ -613,7 +613,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters/lounge
 	name = "Lounge"
 	icon_state = "yellow"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/crew_quarters/fitness
 	name = "Fitness Room"
@@ -651,7 +651,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters/kitchen/coldroom
 	name = "Kitchen Cold Room"
 	icon_state = "kitchen_cold"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/crew_quarters/bar
 	name = "Bar"
@@ -660,7 +660,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	mood_message = "<span class='nicegreen'>I love being in the bar!\n</span>"
 	lighting_colour_tube = "#fff4d6"
 	lighting_colour_bulb = "#ffebc1"
-	sound_environment = SOUND_AREA_WOODFLOOR
+	sound_envasbestosment = SOUND_AREA_WOODFLOOR
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_SIMPLE
 
 /area/crew_quarters/bar/mood_check(mob/living/carbon/subject)
@@ -671,7 +671,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters/bar/lounge
 	name = "Bar lounge"
 	icon_state = "lounge"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/crew_quarters/bar/Initialize(mapload)
 	. = ..()
@@ -684,7 +684,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters/bar/atrium
 	name = "Atrium"
 	icon_state = "bar"
-	sound_environment = SOUND_AREA_WOODFLOOR
+	sound_envasbestosment = SOUND_AREA_WOODFLOOR
 
 /area/crew_quarters/electronic_marketing_den
 	name = "Electronic Marketing Den"
@@ -700,12 +700,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/crew_quarters/theatre
 	name = "Theatre"
 	icon_state = "theatre"
-	sound_environment = SOUND_AREA_WOODFLOOR
+	sound_envasbestosment = SOUND_AREA_WOODFLOOR
 
 /area/crew_quarters/theatre/backstage
 	name = "Backstage"
 	icon_state = "theatre_back"
-	sound_environment = SOUND_AREA_WOODFLOOR
+	sound_envasbestosment = SOUND_AREA_WOODFLOOR
 
 /area/crew_quarters/theatre/abandoned
 	name = "Abandoned Theatre"
@@ -723,7 +723,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/library/lounge
 	name = "Library Lounge"
-	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_LARGE_SOFTFLOOR
 	icon_state = "library"
 
 /area/library/abandoned
@@ -737,7 +737,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	flags_1 = NONE
 	clockwork_warp_allowed = FALSE
 	clockwork_warp_fail = "The consecration here prevents you from warping in."
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_LARGE_ENCLOSED
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_PROTECTED
 
 /area/chapel/main
@@ -753,7 +753,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/chapel/asteroid
 	name = "Chapel Asteroid"
 	icon_state = "explored"
-	sound_environment = SOUND_AREA_ASTEROID
+	sound_envasbestosment = SOUND_AREA_ASTEROID
 
 /area/chapel/asteroid/monastery
 	name = "Monastery Asteroid"
@@ -765,7 +765,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/lawoffice
 	name = "Law Office"
 	icon_state = "law"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_SMALL_SOFTFLOOR
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_PROTECTED
 
 
@@ -773,7 +773,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/engine
 	ambience_index = AMBIENCE_ENGI
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_LARGE_ENCLOSED
 	lighting_colour_tube = "#ffce93"
 	lighting_colour_bulb = "#ffbc6f"
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ADVANCED
@@ -799,7 +799,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Atmospherics Engine"
 	icon_state = "atmos_engine"
 	area_flags = BLOBS_ALLOWED | UNIQUE_AREA
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_LARGE_ENCLOSED
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
 
 /area/engine/engine_room //donut station specific
@@ -815,7 +815,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Supermatter Engine"
 	icon_state = "engine_sm_room"
 	area_flags = BLOBS_ALLOWED | UNIQUE_AREA
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
 
 /area/engine/break_room
@@ -823,7 +823,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "engine_foyer"
 	mood_bonus = 2
 	mood_message = "<span class='nicegreen'>Ahhh, time to take a break.\n</span>"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/engine/gravity_generator
 	name = "Gravity Generator Room"
@@ -835,7 +835,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/engine/storage
 	name = "Engineering Storage"
 	icon_state = "engine_storage"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/engine/storage_shared
 	name = "Shared Engineering Storage"
@@ -854,12 +854,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	area_flags = UNIQUE_AREA
 	flags_1 = NONE
 	ambience_index = AMBIENCE_ENGI
-	sound_environment = SOUND_AREA_SPACE
+	sound_envasbestosment = SOUND_AREA_SPACE
 
 /area/solar/fore
 	name = "Fore Solar Array"
 	icon_state = "yellow"
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 
 /area/solar/aft
 	name = "Aft Solar Array"
@@ -941,7 +941,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Gateway"
 	icon_state = "gateway"
 	ambience_index = AMBIENCE_ENGI
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ADVANCED
 
 //MedBay
@@ -950,7 +950,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Medical"
 	icon_state = "medbay"
 	ambience_index = AMBIENCE_MEDICAL
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	mood_bonus = 2
 	mood_message = "<span class='nicegreen'>I feel safe in here!\n</span>"
 	lighting_colour_tube = "#e7f8ff"
@@ -965,7 +965,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Abandoned Medbay"
 	icon_state = "abandoned_medbay"
 	ambientsounds = list('sound/ambience/signal.ogg')
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/medical/medbay/balcony
 	name = "Medbay Balcony"
@@ -1000,7 +1000,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/medical/patients_rooms
 	name = "Patients' Rooms"
 	icon_state = "patients"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/medical/patients_rooms/room_a
 	name = "Patient Room A"
@@ -1025,7 +1025,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Morgue"
 	icon_state = "morgue"
 	ambience_index = AMBIENCE_SPOOKY
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 	mood_bonus = -2
 	mood_message = "<span class='warning'>It smells like death in here!\n</span>"
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_PROTECTED
@@ -1080,7 +1080,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Security"
 	icon_state = "security"
 	ambience_index = AMBIENCE_DANGER
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	lighting_colour_tube = "#ffeee2"
 	lighting_colour_bulb = "#ffdfca"
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
@@ -1101,7 +1101,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/security/courtroom
 	name = "Courtroom"
 	icon_state = "courtroom"
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_LARGE_ENCLOSED
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ADVANCED
 
 /area/security/prison
@@ -1123,12 +1123,12 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/security/processing/cremation
 	name = "Security Crematorium"
 	icon_state = "sec_prison"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/security/warden
 	name = "Brig Control"
 	icon_state = "Warden"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/security/detectives_office
 	name = "Detective's Office"
@@ -1138,7 +1138,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/security/detectives_office/private_investigators_office
 	name = "Private Investigator's Office"
 	icon_state = "detective"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/security/range
 	name = "Firing Range"
@@ -1235,18 +1235,18 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "quart"
 	lighting_colour_tube = "#ffe3cc"
 	lighting_colour_bulb = "#ffdbb8"
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_PROTECTED
 
 /area/quartermaster/sorting
 	name = "Delivery Office"
 	icon_state = "cargo_delivery"
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 
 /area/quartermaster/warehouse
 	name = "Warehouse"
 	icon_state = "cargo_warehouse"
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_LARGE_ENCLOSED
 
 /area/quartermaster/office
 	name = "Cargo Office"
@@ -1255,7 +1255,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/quartermaster/storage
 	name = "Cargo Bay"
 	icon_state = "cargo_bay"
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_LARGE_ENCLOSED
 
 /area/cargo/lobby
 	name = "\improper Cargo Lobby"
@@ -1298,13 +1298,13 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	flags_1 = NONE
 	mood_bonus = -1
 	mood_message = "<span class='warning'>It feels dirty in here!\n</span>"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_SIMPLE
 
 /area/hydroponics
 	name = "Hydroponics"
 	icon_state = "hydro"
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_SIMPLE
 
 /area/hydroponics/garden
@@ -1316,7 +1316,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/hydroponics/garden/abandoned
 	name = "Abandoned Garden"
 	icon_state = "abandoned_garden"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/hydroponics/garden/monastery
 	name = "Monastery Garden"
@@ -1330,7 +1330,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "science"
 	lighting_colour_tube = "#f0fbff"
 	lighting_colour_bulb = "#e4f7ff"
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ADVANCED
 
 /area/science/lobby
@@ -1410,7 +1410,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/science/research/abandoned
 	name = "Abandoned Research Lab"
 	icon_state = "abandoned_sci"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/science/nanite
 	name = "Nanite Lab"
@@ -1422,7 +1422,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 //Storage
 /area/storage
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_PROTECTED
 
 /area/storage/tools
@@ -1465,13 +1465,13 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Construction Area"
 	icon_state = "yellow"
 	ambience_index = AMBIENCE_ENGI
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_SIMPLE
 
 /area/construction/mining/aux_base
 	name = "Auxiliary Base Construction"
 	icon_state = "aux_base_construction"
-	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
 /area/construction/storage_wing
 	name = "Storage Wing"
@@ -1511,7 +1511,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 //AI
 
 /area/ai_monitored
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
 
 /area/ai_monitored/security/armory
@@ -1540,7 +1540,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/ai_monitored/turret_protected/ai_upload
 	name = "AI Upload Chamber"
 	icon_state = "ai_upload"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 	mood_job_allowed = list(JOB_NAME_RESEARCHDIRECTOR, JOB_NAME_CAPTAIN)
 	mood_bonus = 4
 	mood_message = "<span class='nicegreen'>The AI will bend to my will!\n</span>"
@@ -1548,7 +1548,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/ai_monitored/turret_protected/ai_upload_foyer
 	name = "AI Upload Access"
 	icon_state = "ai_upload_foyer"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_SMALL_ENCLOSED
 
 /area/ai_monitored/turret_protected/ai
 	name = "AI Chamber"
@@ -1557,7 +1557,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/ai_monitored/turret_protected/aisat
 	name = "AI Satellite"
 	icon_state = "ai"
-	sound_environment = SOUND_ENVIRONMENT_ROOM
+	sound_envasbestosment = SOUND_ENVASBESTOSMENT_ROOM
 
 /area/ai_monitored/turret_protected/aisat/atmos
 	name = "AI Satellite Atmos"
@@ -1586,7 +1586,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/ai_monitored/turret_protected/aisat_interior
 	name = "AI Satellite Antechamber"
 	icon_state = "ai_interior"
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_LARGE_ENCLOSED
 
 /area/ai_monitored/turret_protected/AIsatextAS
 	name = "AI Sat Ext"
@@ -1610,7 +1610,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/tcommsat/computer
 	name = "Telecomms Control Room"
 	icon_state = "tcom_sat_comp"
-	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_MEDIUM_SOFTFLOOR
 	mood_job_allowed = list(JOB_NAME_CHIEFENGINEER, JOB_NAME_STATIONENGINEER)
 	mood_bonus = 2
 	mood_message = "<span class='nicegreen'>It's good to see these in working order.\n</span>"

@@ -34,7 +34,7 @@
 		/datum/reagent/fluorine,
 		/datum/reagent/hydrogen,
 		/datum/reagent/iodine,
-		/datum/reagent/iron,
+		/datum/reagent/asbestos,
 		/datum/reagent/lithium,
 		/datum/reagent/mercury,
 		/datum/reagent/nitrogen,

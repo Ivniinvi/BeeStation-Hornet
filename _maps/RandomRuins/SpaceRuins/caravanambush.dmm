@@ -34,7 +34,7 @@
 "ah" = (
 /obj/structure/lattice/catwalk,
 /mob/living/simple_animal/hostile/pirate/ranged/space{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /turf/template_noop,
 /area/template_noop)
@@ -160,7 +160,7 @@
 "aP" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /mob/living/simple_animal/hostile/pirate/ranged/space{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/airless,
@@ -267,7 +267,7 @@
 /turf/template_noop,
 /area/template_noop)
 "br" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/template_noop,
 /area/template_noop)
 "bs" = (
@@ -319,7 +319,7 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered)
 "ex" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered)
 "eE" = (
@@ -1053,7 +1053,7 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/pirate/ranged/space{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/airless,
@@ -1066,7 +1066,7 @@
 "jO" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/pirate/ranged/space{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /turf/open/floor/plating/airless,
 /area/shuttle/caravan/freighter2)

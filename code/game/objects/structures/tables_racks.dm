@@ -29,7 +29,7 @@
 	climbable = TRUE
 	var/frame = /obj/structure/table_frame
 	var/framestack = /obj/item/stack/rods
-	var/buildstack = /obj/item/stack/sheet/iron
+	var/buildstack = /obj/item/stack/sheet/asbestos
 	var/busy = FALSE
 	var/buildstackamount = 1
 	var/framestackamount = 2
@@ -689,12 +689,12 @@
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "rack_parts"
 	flags_1 = CONDUCT_1
-	materials = list(/datum/material/iron=2000)
+	materials = list(/datum/material/asbestos=2000)
 	var/building = FALSE
 
 /obj/item/rack_parts/attackby(obj/item/W, mob/user, params)
 	if (W.tool_behaviour == TOOL_WRENCH)
-		new /obj/item/stack/sheet/iron(user.loc)
+		new /obj/item/stack/sheet/asbestos(user.loc)
 		qdel(src)
 	else
 		. = ..()

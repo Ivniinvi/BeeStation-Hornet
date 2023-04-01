@@ -23,7 +23,7 @@ Class Variables:
       Possible Values:
          AREA_USAGE_EQUIP:0 -- Equipment Channel
          AREA_USAGE_LIGHT:2 -- Lighting Channel
-         AREA_USAGE_ENVIRON:3 -- Environment Channel
+         AREA_USAGE_ENVASBESTOS:3 -- Envasbestosment Channel
 
    component_parts (list)
       A list of component parts of machine used by frame based machines.
@@ -104,7 +104,7 @@ Class Procs:
 	var/idle_power_usage = 0
 	var/active_power_usage = 0
 	var/power_channel = AREA_USAGE_EQUIP
-		//AREA_USAGE_EQUIP,AREA_USAGE_ENVIRON or AREA_USAGE_LIGHT
+		//AREA_USAGE_EQUIP,AREA_USAGE_ENVASBESTOS or AREA_USAGE_LIGHT
 		///A combination of factors such as having power, not being broken and so on. Boolean.
 	var/is_operational = TRUE
 	var/wire_compatible = FALSE

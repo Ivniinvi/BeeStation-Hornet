@@ -13,7 +13,7 @@
 
 	w_class = WEIGHT_CLASS_SMALL
 
-	materials = list(/datum/material/iron=50, /datum/material/glass=50)
+	materials = list(/datum/material/asbestos=50, /datum/material/glass=50)
 
 	flags_1 = CONDUCT_1
 	item_flags = NOBLUDGEON
@@ -189,7 +189,7 @@
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "decal_sprayer"
 	item_state = "decal_sprayer"
-	custom_materials = list(/datum/material/iron=50, /datum/material/glass=50)
+	custom_materials = list(/datum/material/asbestos=50, /datum/material/glass=50)
 	initial_ink_type = /obj/item/toner/large
 	/// The current direction of the decal being printed
 	var/stored_dir = SOUTH

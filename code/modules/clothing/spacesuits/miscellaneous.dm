@@ -211,7 +211,7 @@ Contains:
 
 /obj/item/clothing/suit/space/hardsuit/ert
 	name = "emergency response team commander hardsuit"
-	desc = "The standard issue hardsuit of the ERT, this one has blue highlights. Offers superb protection against environmental hazards."
+	desc = "The standard issue hardsuit of the ERT, this one has blue highlights. Offers superb protection against envasbestosmental hazards."
 	icon_state = "ert_command"
 	item_state = "ert_command"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert
@@ -265,7 +265,7 @@ Contains:
 
 /obj/item/clothing/suit/space/hardsuit/ert/sec
 	name = "emergency response team security hardsuit"
-	desc = "The standard issue hardsuit of the ERT, this one has red highlights. Offers superb protection against environmental hazards."
+	desc = "The standard issue hardsuit of the ERT, this one has red highlights. Offers superb protection against envasbestosmental hazards."
 	icon_state = "ert_security"
 	item_state = "ert_security"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/sec
@@ -281,7 +281,7 @@ Contains:
 
 /obj/item/clothing/suit/space/hardsuit/ert/engi
 	name = "emergency response team engineering hardsuit"
-	desc = "The standard issue hardsuit of the ERT, this one has orange highlights. Offers superb protection against environmental hazards."
+	desc = "The standard issue hardsuit of the ERT, this one has orange highlights. Offers superb protection against envasbestosmental hazards."
 	icon_state = "ert_engineer"
 	item_state = "ert_engineer"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/engi
@@ -297,7 +297,7 @@ Contains:
 
 /obj/item/clothing/suit/space/hardsuit/ert/med
 	name = "emergency response team medical hardsuit"
-	desc = "The standard issue hardsuit of the ERT, this one has white highlights. Offers superb protection against environmental hazards."
+	desc = "The standard issue hardsuit of the ERT, this one has white highlights. Offers superb protection against envasbestosmental hazards."
 	icon_state = "ert_medical"
 	item_state = "ert_medical"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/med
@@ -313,7 +313,7 @@ Contains:
 
 /obj/item/clothing/suit/space/hardsuit/ert/jani
 	name = "emergency response team janitorial hardsuit"
-	desc = "The standard issue hardsuit of the ERT, this one has purple highlights. Offers superb protection against environmental hazards. This one has extra clips for holding various janitorial tools."
+	desc = "The standard issue hardsuit of the ERT, this one has purple highlights. Offers superb protection against envasbestosmental hazards. This one has extra clips for holding various janitorial tools."
 	icon_state = "ert_janitor"
 	item_state = "ert_janitor"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/jani

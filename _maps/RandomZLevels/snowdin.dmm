@@ -1908,7 +1908,7 @@
 	},
 /area/awaymission/snowdin/cave/cavern)
 "ge" = (
-/turf/closed/mineral/iron/ice,
+/turf/closed/mineral/asbestos/ice,
 /area/awaymission/snowdin/cave/cavern)
 "gf" = (
 /obj/structure/closet/crate/wooden,
@@ -5051,7 +5051,7 @@
 	pixel_x = 1;
 	pixel_y = -1
 	},
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = -1;
 	pixel_y = 1
 	},
@@ -8475,7 +8475,7 @@
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/post/mining_dock)
 "zK" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/outside)
 "zL" = (
@@ -8545,7 +8545,7 @@
 /area/awaymission/snowdin/cave/cavern)
 "zU" = (
 /obj/structure/girder,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/outside)
 "zW" = (
@@ -8813,7 +8813,7 @@
 /area/awaymission/snowdin/post/minipost)
 "AR" = (
 /obj/structure/girder,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/post/minipost)
 "AS" = (
@@ -9223,7 +9223,7 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/awaymission/snowdin/cave)
 "Ci" = (
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/asbestos,
 /turf/open/floor/plating/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
 "Cj" = (
@@ -9903,8 +9903,8 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/awaymission/snowdin/cave)
 "EU" = (
-/obj/item/stack/ore/iron,
-/turf/closed/mineral/iron/ice,
+/obj/item/stack/ore/asbestos,
+/turf/closed/mineral/asbestos/ice,
 /area/awaymission/snowdin/cave/cavern)
 "EV" = (
 /obj/structure/mecha_wreckage/ripley,
@@ -10446,7 +10446,7 @@
 /area/awaymission/snowdin/post/mining_main/robotics)
 "GA" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main/robotics)
 "GB" = (
@@ -11436,7 +11436,7 @@
 /area/awaymission/snowdin/post/mining_main)
 "KJ" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = -1;
 	pixel_y = 1
 	},

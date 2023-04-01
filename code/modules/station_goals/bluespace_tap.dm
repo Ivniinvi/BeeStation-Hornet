@@ -86,7 +86,7 @@
 		/obj/item/grenade/clusterbuster/cleaner = 10,
 		/obj/item/grenade/clusterbuster/soap = 10,
 		/obj/item/toy/katana = 10,
-		/obj/item/stack/sheet/iron/twenty = 15,
+		/obj/item/stack/sheet/asbestos/twenty = 15,
 		/obj/item/stack/sheet/glass/fifty = 10,
 		/obj/item/stack/sheet/mineral/copper/twenty = 20,
 		/obj/item/sord = 20,

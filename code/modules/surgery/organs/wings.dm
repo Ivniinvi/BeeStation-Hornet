@@ -191,8 +191,8 @@
 	if(recharging_time > world.time)
 		to_chat(L, "<span class='warning'>The wings aren't ready to dash yet!</span>")
 		return
-	var/datum/gas_mixture/environment = L.loc.return_air()
-	if(environment && !(environment.return_pressure() > 30))
+	var/datum/gas_mixture/envasbestosment = L.loc.return_air()
+	if(envasbestosment && !(envasbestosment.return_pressure() > 30))
 		to_chat(L, "<span class='warning'>The atmosphere is too thin for you to dash!</span>")
 		return
 

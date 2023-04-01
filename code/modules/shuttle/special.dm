@@ -313,7 +313,7 @@
 /mob/living/simple_animal/hostile/bear/fightpit
 	name = "fight pit bear"
 	desc = "This bear's trained through ancient Russian secrets to fear the walls of its glass prison."
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	gold_core_spawnable = NO_SPAWN
 
 /mob/living/simple_animal/hostile/bear/fightpit/Initialize(mapload)

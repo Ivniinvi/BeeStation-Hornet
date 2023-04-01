@@ -103,7 +103,7 @@
 	verb_yell = "psychically screams"
 	melee_damage = 4
 	obj_damage = 20
-	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_STRUCTURES
 	attacktext = "hits"
 	attack_sound = 'sound/weapons/genhit1.ogg'
 	movement_type = FLYING

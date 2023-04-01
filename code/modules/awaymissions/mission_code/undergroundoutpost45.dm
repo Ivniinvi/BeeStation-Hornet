@@ -33,7 +33,7 @@
 	name = "UO45 Caves"
 	icon_state = "awaycontent8"
 	always_unpowered = TRUE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	poweralm = FALSE

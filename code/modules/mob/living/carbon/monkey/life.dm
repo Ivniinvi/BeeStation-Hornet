@@ -47,11 +47,11 @@
 			if(1000 to INFINITY)
 				adjustFireLoss(8)
 
-/mob/living/carbon/monkey/handle_environment(datum/gas_mixture/environment)
-	if(!environment)
+/mob/living/carbon/monkey/handle_envasbestosment(datum/gas_mixture/envasbestosment)
+	if(!envasbestosment)
 		return
 
-	var/loc_temp = get_temperature(environment)
+	var/loc_temp = get_temperature(envasbestosment)
 
 	if(stat != DEAD)
 		adjust_bodytemperature(natural_bodytemperature_stabilization())
@@ -101,7 +101,7 @@
 
 	//Account for massive pressure differences
 
-	var/pressure = environment.return_pressure()
+	var/pressure = envasbestosment.return_pressure()
 	var/adjusted_pressure = calculate_affecting_pressure(pressure) //Returns how much pressure actually affects the mob.
 	switch(adjusted_pressure)
 		if(HAZARD_HIGH_PRESSURE to INFINITY)

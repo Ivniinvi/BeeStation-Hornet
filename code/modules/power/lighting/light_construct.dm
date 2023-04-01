@@ -88,7 +88,7 @@
 				else
 					to_chat(user, "<span class='notice'>You begin deconstructing [src]...</span>")
 					if (W.use_tool(src, user, 30, volume=50))
-						new /obj/item/stack/sheet/iron(drop_location(), sheets_refunded)
+						new /obj/item/stack/sheet/asbestos(drop_location(), sheets_refunded)
 						user.visible_message("[user.name] deconstructs [src].", \
 							"<span class='notice'>You deconstruct [src].</span>", "<span class='italics'>You hear a ratchet.</span>")
 						playsound(src, 'sound/items/deconstruct.ogg', 75, 1)
@@ -145,7 +145,7 @@
 
 /obj/structure/light_construct/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		new /obj/item/stack/sheet/iron(loc, sheets_refunded)
+		new /obj/item/stack/sheet/asbestos(loc, sheets_refunded)
 	qdel(src)
 
 /obj/structure/light_construct/proc/store_cell(new_cell)

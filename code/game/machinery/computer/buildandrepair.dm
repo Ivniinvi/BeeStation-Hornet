@@ -21,7 +21,7 @@
 				to_chat(user, "<span class='notice'>You start deconstructing the frame...</span>")
 				if(P.use_tool(src, user, 20, volume=50))
 					to_chat(user, "<span class='notice'>You deconstruct the frame.</span>")
-					new /obj/item/stack/sheet/iron(drop_location(), 5, TRUE, user)
+					new /obj/item/stack/sheet/asbestos(drop_location(), 5, TRUE, user)
 					qdel(src)
 				return
 		if(1)

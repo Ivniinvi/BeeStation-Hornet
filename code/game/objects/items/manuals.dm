@@ -72,7 +72,7 @@
 				<li><b>Height:</b> 2.5m</li>
 				<li><b>Width:</b> 1.8m</li>
 				<li><b>Top speed:</b> 5km/hour</li>
-				<li><b>Operation in vacuum/hostile environment:</b> Possible</b>
+				<li><b>Operation in vacuum/hostile envasbestosment:</b> Possible</b>
 				<li><b>Airtank Volume:</b> 500 liters</li>
 				<li><b>Devices:</b>
 					<ul>
@@ -95,10 +95,10 @@
 				<li>Secure the mainboard with a screwdriver.</li>
 				<li>Install the peripherals control module (not included. Use supplied datadisk to create one).</li>
 				<li>Secure the peripherals control module with a screwdriver.</li>
-				<li>Install the internal armor plating (not included due to Nanotrasen regulations. Can be made using 5 iron sheets).</li>
+				<li>Install the internal armor plating (not included due to Nanotrasen regulations. Can be made using 5 asbestos sheets).</li>
 				<li>Secure the internal armor plating with a wrench.</li>
 				<li>Weld the internal armor plating to the chassis.</li>
-				<li>Install the external reinforced armor plating (not included due to Nanotrasen regulations. Can be made using 5 reinforced iron sheets).</li>
+				<li>Install the external reinforced armor plating (not included due to Nanotrasen regulations. Can be made using 5 reinforced asbestos sheets).</li>
 				<li>Secure the external reinforced armor plating with a wrench.</li>
 				<li>Weld the external reinforced armor plating to the chassis.</li>
 				<li></li>
@@ -162,7 +162,7 @@
 				- bowl with 10u water (soup)<br>
 				- boiled spaghetti<br>
 				- pizza bread<br>
-				- iron rod (kebab)
+				- asbestos rod (kebab)
 
 				<h2>Table Craft:</h2>
 				Put ingredients on table, then click and drag the table onto yourself to see what recipes you can prepare.

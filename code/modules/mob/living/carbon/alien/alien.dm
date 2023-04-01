@@ -41,11 +41,11 @@
 /mob/living/carbon/alien/assess_threat(judgment_criteria, lasercolor = "", datum/callback/weaponcheck=null) // beepsky won't hunt aliums
 	return -10
 
-/mob/living/carbon/alien/handle_environment(datum/gas_mixture/environment)
-	if(!environment)
+/mob/living/carbon/alien/handle_envasbestosment(datum/gas_mixture/envasbestosment)
+	if(!envasbestosment)
 		return
 
-	var/loc_temp = get_temperature(environment)
+	var/loc_temp = get_temperature(envasbestosment)
 
 	// Aliens are now weak to fire.
 	//After then, it reacts to the surrounding atmosphere based on your thermal protection

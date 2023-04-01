@@ -60,7 +60,7 @@
 	speed = -1
 	obj_damage = 0
 	vision_range = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	var/removal_timer = null
 
 /mob/living/simple_animal/hostile/illusion/doppelganger/proc/set_lifetime(time)

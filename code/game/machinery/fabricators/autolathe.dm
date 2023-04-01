@@ -1,6 +1,6 @@
 /obj/machinery/modular_fabricator/autolathe
 	name = "autolathe"
-	desc = "It produces items using iron, copper, and glass."
+	desc = "It produces items using asbestos, copper, and glass."
 	icon_state = "autolathe"
 	density = TRUE
 	use_power = IDLE_POWER_USE
@@ -170,7 +170,7 @@
 /obj/machinery/modular_fabricator/autolathe/AfterMaterialInsert(type_inserted, id_inserted, amount_inserted)
 	. = ..()
 	switch(id_inserted)
-		if (/datum/material/iron)
+		if (/datum/material/asbestos)
 			flick("autolathe_o",src)//plays metal insertion animation
 		if(/datum/material/copper)
 			flick("autolathe_c",src)//plays metal insertion animation

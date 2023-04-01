@@ -31,7 +31,7 @@
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST, MOB_REPTILE)
 	gold_core_spawnable = FRIENDLY_SPAWN
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	chat_color = "#26F55A"
 	poison_per_bite = 3
 	poison_type = /datum/reagent/toxin/venom

@@ -19,7 +19,7 @@
 	max_integrity = 100
 	integrity_failure = 30
 	dir = SOUTH
-	var/buildstacktype = /obj/item/stack/sheet/iron
+	var/buildstacktype = /obj/item/stack/sheet/asbestos
 	var/buildstackamount = 2
 	var/bolts = TRUE
 

@@ -267,14 +267,14 @@
 		if(I.tool_behaviour == TOOL_CROWBAR)
 			//If the turret is destroyed, you can remove it with a crowbar to
 			//try and salvage its components
-			to_chat(user, "<span class='notice'>You begin prying the iron coverings off...</span>")
+			to_chat(user, "<span class='notice'>You begin prying the asbestos coverings off...</span>")
 			if(I.use_tool(src, user, 20))
 				if(prob(70))
 					if(stored_gun)
 						stored_gun.forceMove(loc)
 					to_chat(user, "<span class='notice'>You remove the turret and salvage some components.</span>")
 					if(prob(50))
-						new /obj/item/stack/sheet/iron(loc, rand(1,4))
+						new /obj/item/stack/sheet/asbestos(loc, rand(1,4))
 					if(prob(50))
 						new /obj/item/assembly/prox_sensor(loc)
 				else
@@ -762,7 +762,7 @@
 
 /obj/machinery/porta_turret/aux_base
 	name = "perimeter defense turret"
-	desc = "A plasma beam turret calibrated to defend outposts against non-humanoid fauna. It is more effective when exposed to the environment."
+	desc = "A plasma beam turret calibrated to defend outposts against non-humanoid fauna. It is more effective when exposed to the envasbestosment."
 	installation = null
 	uses_stored = FALSE
 	stun_projectile = /obj/item/projectile/plasma/turret
@@ -1022,7 +1022,7 @@
 	desc = "Used for building turret control panels."
 	icon_state = "apc"
 	result_path = /obj/machinery/turretid
-	materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/asbestos=MINERAL_MATERIAL_AMOUNT)
 
 /obj/item/gun/proc/get_turret_properties()
 	. = list()

@@ -24,7 +24,7 @@
 	ranged_cooldown = 0
 	ranged_cooldown_time = 20
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	retreat_distance = 3
 	minimum_distance = 3
 	pass_flags = PASSTABLE
@@ -77,7 +77,7 @@
 	attack_sound = 'sound/weapons/pierce.ogg'
 	throw_message = "falls right through the strange body of the"
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	pass_flags = PASSTABLE
 	del_on_death = TRUE
 
@@ -237,7 +237,7 @@
 	faction = list("mining")
 	weather_immunities = list("lava","ash")
 	obj_damage = 30
-	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_STRUCTURES
 	see_in_dark = 8
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 

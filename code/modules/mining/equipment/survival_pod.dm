@@ -282,11 +282,11 @@
 /obj/structure/fans
 	icon = 'icons/obj/lavaland/survival_pod.dmi'
 	icon_state = "fans"
-	name = "environmental regulation system"
+	name = "envasbestosmental regulation system"
 	desc = "A large machine releasing a constant gust of air."
 	anchored = TRUE
 	density = TRUE
-	var/buildstacktype = /obj/item/stack/sheet/iron
+	var/buildstacktype = /obj/item/stack/sheet/asbestos
 	var/buildstackamount = 5
 	CanAtmosPass = ATMOS_PASS_NO
 

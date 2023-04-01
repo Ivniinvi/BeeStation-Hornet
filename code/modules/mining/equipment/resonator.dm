@@ -61,7 +61,7 @@
 //resonance field, crushes rock, damages mobs
 /obj/effect/temp_visual/resonance
 	name = "resonance field"
-	desc = "A resonating field that significantly damages anything inside of it when the field eventually ruptures. More damaging in low pressure environments."
+	desc = "A resonating field that significantly damages anything inside of it when the field eventually ruptures. More damaging in low pressure envasbestosments."
 	icon_state = "shield1"
 	layer = ABOVE_ALL_MOB_LAYER
 	duration = 50

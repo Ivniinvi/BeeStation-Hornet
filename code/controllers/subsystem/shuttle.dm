@@ -24,12 +24,12 @@ SUBSYSTEM_DEF(shuttle)
 	var/emergencyEscapeTime = 1200	//time taken for emergency shuttle to reach a safe distance after leaving station (in deciseconds)
 	var/area/emergencyLastCallLoc
 	var/emergencyCallAmount = 0		//how many times the escape shuttle was called
-	var/emergencyNoEscape			//Hostile environment that prevents the shuttle from leaving after it has arrived
+	var/emergencyNoEscape			//Hostile envasbestosment that prevents the shuttle from leaving after it has arrived
 	var/emergencyDelayArrival 		//Infestation that delays the shuttle arrival while contingency plans are put into place
 	var/emergencyNoRecall = FALSE
 	var/adminEmergencyNoRecall = FALSE
-	var/list/hostileEnvironments = list() //Things blocking escape shuttle from leaving
-	var/list/infestedEnvironments = list() //Things that can trigger a delay on escape shuttle arrival
+	var/list/hostileEnvasbestosments = list() //Things blocking escape shuttle from leaving
+	var/list/infestedEnvasbestosments = list() //Things that can trigger a delay on escape shuttle arrival
 	var/infestationActive = FALSE //So unusual circumstances can't trigger a second infestation warning and delay
 	var/hostileEnvTrackPlayed = FALSE
 	var/list/tradeBlockade = list() //Things blocking cargo from leaving.
@@ -319,19 +319,19 @@ SUBSYSTEM_DEF(shuttle)
 			log_game("There is no means of calling the shuttle anymore. Shuttle automatically called.")
 			message_admins("All the communications consoles were destroyed and all AIs are inactive. Shuttle called.")
 
-/datum/controller/subsystem/shuttle/proc/registerHostileEnvironment(datum/bad)
-	hostileEnvironments[bad] = TRUE
-	checkHostileEnvironment()
+/datum/controller/subsystem/shuttle/proc/registerHostileEnvasbestosment(datum/bad)
+	hostileEnvasbestosments[bad] = TRUE
+	checkHostileEnvasbestosment()
 
-/datum/controller/subsystem/shuttle/proc/clearHostileEnvironment(datum/bad)
-	hostileEnvironments -= bad
-	checkHostileEnvironment()
+/datum/controller/subsystem/shuttle/proc/clearHostileEnvasbestosment(datum/bad)
+	hostileEnvasbestosments -= bad
+	checkHostileEnvasbestosment()
 
 /datum/controller/subsystem/shuttle/proc/registerInfestation(datum/bad)
-	infestedEnvironments[bad] = TRUE //This only matters when shuttle is at a specific stage in evacuation, there is no need to update or check the validity of the list every time it is updated
+	infestedEnvasbestosments[bad] = TRUE //This only matters when shuttle is at a specific stage in evacuation, there is no need to update or check the validity of the list every time it is updated
 
 /datum/controller/subsystem/shuttle/proc/clearInfestation(datum/bad)
-	infestedEnvironments -= bad
+	infestedEnvasbestosments -= bad
 
 /datum/controller/subsystem/shuttle/proc/registerTradeBlockade(datum/bad)
 	tradeBlockade[bad] = TRUE
@@ -356,32 +356,32 @@ SUBSYSTEM_DEF(shuttle)
 		supply.mode = SHUTTLE_DOCKED
 		//Make all cargo consoles speak up
 
-/datum/controller/subsystem/shuttle/proc/checkHostileEnvironment()
-	for(var/datum/d in hostileEnvironments)
+/datum/controller/subsystem/shuttle/proc/checkHostileEnvasbestosment()
+	for(var/datum/d in hostileEnvasbestosments)
 		if(!istype(d) || QDELETED(d))
-			hostileEnvironments -= d
-	emergencyNoEscape = hostileEnvironments.len
+			hostileEnvasbestosments -= d
+	emergencyNoEscape = hostileEnvasbestosments.len
 
 	if(emergencyNoEscape && (emergency.mode == SHUTTLE_IGNITING))
 		emergency.mode = SHUTTLE_STRANDED
 		emergency.timer = null
 		emergency.sound_played = FALSE
-		priority_announce("Hostile environment detected. \
+		priority_announce("Hostile envasbestosment detected. \
 			Departure has been postponed indefinitely pending \
 			conflict resolution.", null, 'sound/misc/notice1.ogg', "Priority")
 	if(!emergencyNoEscape && (emergency.mode == SHUTTLE_STRANDED))
 		emergency.mode = SHUTTLE_DOCKED
 		emergency.setTimer(emergencyDockTime)
-		priority_announce("Hostile environment resolved. \
+		priority_announce("Hostile envasbestosment resolved. \
 			You have 3 minutes to board the Emergency Shuttle.",
 			null, ANNOUNCER_SHUTTLEDOCK, "Priority")
 
-/datum/controller/subsystem/shuttle/proc/checkInfestedEnvironment()
-	for(var/mob/d in infestedEnvironments)
+/datum/controller/subsystem/shuttle/proc/checkInfestedEnvasbestosment()
+	for(var/mob/d in infestedEnvasbestosments)
 		var/turf/T = get_turf(d)
 		if(QDELETED(d) || !is_station_level(T.z)) //If they have been destroyed or left the station Z level, the queen will not trigger this check
-			infestedEnvironments -= d
-	emergencyDelayArrival = length(infestedEnvironments)
+			infestedEnvasbestosments -= d
+	emergencyDelayArrival = length(infestedEnvasbestosments)
 	return emergencyDelayArrival
 
 /datum/controller/subsystem/shuttle/proc/delayForInfestedStation()
@@ -527,8 +527,8 @@ SUBSYSTEM_DEF(shuttle)
 	if (istype(SSshuttle.emergencyLastCallLoc))
 		emergencyLastCallLoc = SSshuttle.emergencyLastCallLoc
 
-	if (istype(SSshuttle.hostileEnvironments))
-		hostileEnvironments = SSshuttle.hostileEnvironments
+	if (istype(SSshuttle.hostileEnvasbestosments))
+		hostileEnvasbestosments = SSshuttle.hostileEnvasbestosments
 
 	if (istype(SSshuttle.supply))
 		supply = SSshuttle.supply

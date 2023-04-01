@@ -112,7 +112,7 @@
 							"<span class='italics'>You hear welding.</span>")
 		if(W.use_tool(src, user, 50, volume=50, amount=3))
 			if ((machine_stat & BROKEN) || opened==APC_COVER_REMOVED)
-				new /obj/item/stack/sheet/iron(loc)
+				new /obj/item/stack/sheet/asbestos(loc)
 				user.visible_message(\
 					"[user.name] has cut [src] apart with [W].",\
 					"<span class='notice'>You disassembled the broken APC frame.</span>")
@@ -205,7 +205,7 @@
 		return
 	lighting = 0
 	equipment = 0
-	environ = 0
+	envasbestos = 0
 	update_appearance()
 	update()
 	addtimer(CALLBACK(src, PROC_REF(reset), APC_RESET_EMP), 600)

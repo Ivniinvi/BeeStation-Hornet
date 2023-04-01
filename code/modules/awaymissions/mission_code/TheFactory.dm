@@ -236,7 +236,7 @@
 	speak_chance = 5
 	del_on_death = TRUE
 	do_footstep = TRUE
-	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_STRUCTURES
 	search_objects = 1
 	a_intent = INTENT_HARM
 	attack_sound = 'sound/weapons/cqchit2.ogg'
@@ -412,7 +412,7 @@
 	rapid_melee = 2
 	in_melee = TRUE
 	approaching_target = TRUE
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	obj_damage = 5
 	sidestep_per_cycle = 0
 	stat_attack = UNCONSCIOUS
@@ -704,7 +704,7 @@
 	hud_possible = list(ANTAG_HUD)
 	approaching_target = TRUE
 	ranged_ignores_vision = TRUE
-	environment_smash = ENVIRONMENT_SMASH_RWALLS
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_RWALLS
 	ranged_cooldown_time = 30
 	check_friendly_fire = 1
 	turns_per_move = 2

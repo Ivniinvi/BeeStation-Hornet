@@ -5,7 +5,7 @@
 	always_unpowered = TRUE
 	requires_power = TRUE
 	poweralm = FALSE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	outdoors = TRUE
@@ -14,7 +14,7 @@
 	max_ambience_cooldown = 220 SECONDS
 	has_gravity = STANDARD_GRAVITY
 	ambience_index = AMBIENCE_SPOOKY
-	sound_environment = SOUND_AREA_LARGE_SOFTFLOOR
+	sound_envasbestosment = SOUND_AREA_LARGE_SOFTFLOOR
 	area_flags = UNIQUE_AREA | FLORA_ALLOWED
 	lighting_overlay_colour = "#93c3cf"
 	lighting_overlay_opacity = 60
@@ -31,7 +31,7 @@
 	name = "icecaverns"
 	icon_state = "iceland_underground"
 	ambience_index = AMBIENCE_RUINS
-	sound_environment = SOUND_AREA_TUNNEL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_TUNNEL_ENCLOSED
 	area_flags = UNIQUE_AREA | FLORA_ALLOWED | CAVES_ALLOWED | MOB_SPAWN_ALLOWED
 	lighting_overlay_opacity = 0
 
@@ -39,7 +39,7 @@
 	name = "icecaverns"
 	icon_state = "iceland_cave"
 	ambience_index = AMBIENCE_RUINS
-	sound_environment = SOUND_AREA_TUNNEL_ENCLOSED
+	sound_envasbestosment = SOUND_AREA_TUNNEL_ENCLOSED
 	area_flags = UNIQUE_AREA | FLORA_ALLOWED | CAVES_ALLOWED | MOB_SPAWN_ALLOWED
 	map_generator = /datum/map_generator/cave_generator/iceland
 	lighting_overlay_opacity = 0

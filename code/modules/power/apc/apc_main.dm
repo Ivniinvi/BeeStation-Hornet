@@ -3,7 +3,7 @@
 
 // controls power to devices in that area
 // may be opened to change power cell
-// three different channels (lighting/equipment/environ) - may each be set to on, off, or auto
+// three different channels (lighting/equipment/envasbestos) - may each be set to on, off, or auto
 
 /obj/machinery/power/apc
 	name = "area power controller"
@@ -48,8 +48,8 @@
 	var/lighting = 3
 	///State of the equipment channel (off, auto off, on, auto on)
 	var/equipment = 3
-	///State of the environmental channel (off, auto off, on, auto on)
-	var/environ = 3
+	///State of the envasbestosmental channel (off, auto off, on, auto on)
+	var/envasbestos = 3
 	///Is the apc working
 	var/operating = TRUE
 	///State of the apc charging (not charging, charging, fully charged)
@@ -73,8 +73,8 @@
 	var/lastused_light = 0
 	///Amount of power used by the equipment channel
 	var/lastused_equip = 0
-	///Amount of power used by the environmental channel
-	var/lastused_environ = 0
+	///Amount of power used by the envasbestosmental channel
+	var/lastused_envasbestos = 0
 	///Total amount of power used by the three channels
 	var/lastused_total = 0
 	///State of the apc external power (no power, low power, has power)
@@ -188,7 +188,7 @@
 	if(area)
 		area.power_light = FALSE
 		area.power_equip = FALSE
-		area.power_environ = FALSE
+		area.power_envasbestos = FALSE
 		area.power_change()
 		area.poweralert(FALSE, src)
 	if(occupier)
@@ -334,9 +334,9 @@
 				)
 			),
 			list(
-				"title" = "Environment",
-				"powerLoad" = display_power(lastused_environ),
-				"status" = environ,
+				"title" = "Envasbestosment",
+				"powerLoad" = display_power(lastused_envasbestos),
+				"status" = envasbestos,
 				"topicParams" = list(
 					"auto" = list("env" = 3),
 					"on"   = list("env" = 2),
@@ -348,7 +348,7 @@
 	return data
 
 /obj/machinery/power/apc/proc/report()
-	return "[area.name] : [equipment]/[lighting]/[environ] ([lastused_equip+lastused_light+lastused_environ]) : [cell? cell.percent() : "N/C"] ([charging])"
+	return "[area.name] : [equipment]/[lighting]/[envasbestos] ([lastused_equip+lastused_light+lastused_envasbestos]) : [cell? cell.percent() : "N/C"] ([charging])"
 
 /obj/machinery/power/apc/ui_status(mob/user)
 	. = ..()
@@ -404,7 +404,7 @@
 				update_appearance()
 				update()
 			else if(params["env"])
-				environ = setsubsystem(text2num(params["env"]))
+				envasbestos = setsubsystem(text2num(params["env"]))
 				update_appearance()
 				update()
 			else
@@ -460,15 +460,15 @@
 
 	lastused_light = area.power_usage[AREA_USAGE_LIGHT] + area.power_usage[AREA_USAGE_STATIC_LIGHT]
 	lastused_equip = area.power_usage[AREA_USAGE_EQUIP] + area.power_usage[AREA_USAGE_STATIC_EQUIP]
-	lastused_environ = area.power_usage[AREA_USAGE_ENVIRON] + area.power_usage[AREA_USAGE_STATIC_ENVIRON]
+	lastused_envasbestos = area.power_usage[AREA_USAGE_ENVASBESTOS] + area.power_usage[AREA_USAGE_STATIC_ENVASBESTOS]
 	area.clear_usage()
 
-	lastused_total = lastused_light + lastused_equip + lastused_environ
+	lastused_total = lastused_light + lastused_equip + lastused_envasbestos
 
 	//store states to update icon if any change
 	var/last_lt = lighting
 	var/last_eq = equipment
-	var/last_en = environ
+	var/last_en = envasbestos
 	var/last_ch = charging
 
 	var/excess = surplus()
@@ -503,7 +503,7 @@
 				// This turns everything off in the case that there is still a charge left on the battery, just not enough to run the room.
 				equipment = autoset(equipment, 0)
 				lighting = autoset(lighting, 0)
-				environ = autoset(environ, 0)
+				envasbestos = autoset(envasbestos, 0)
 
 
 		// set channels depending on how much charge we have left
@@ -519,22 +519,22 @@
 		if(cell.charge <= 0)					// zero charge, turn all off
 			equipment = autoset(equipment, 0)
 			lighting = autoset(lighting, 0)
-			environ = autoset(environ, 0)
+			envasbestos = autoset(envasbestos, 0)
 			power_alert_fine = FALSE
 		else if(cell.percent() < 15 && longtermpower < 0)	// <15%, turn off lighting & equipment
 			equipment = autoset(equipment, 2)
 			lighting = autoset(lighting, 2)
-			environ = autoset(environ, 1)
+			envasbestos = autoset(envasbestos, 1)
 			power_alert_fine = FALSE
 		else if(cell.percent() < 30 && longtermpower < 0)			// <30%, turn off equipment
 			equipment = autoset(equipment, 2)
 			lighting = autoset(lighting, 1)
-			environ = autoset(environ, 1)
+			envasbestos = autoset(envasbestos, 1)
 			power_alert_fine = FALSE
 		else									// otherwise all can be on
 			equipment = autoset(equipment, 1)
 			lighting = autoset(lighting, 1)
-			environ = autoset(environ, 1)
+			envasbestos = autoset(envasbestos, 1)
 
 		if(integration_cog)
 			power_alert_fine = TRUE
@@ -585,12 +585,12 @@
 		chargecount = 0
 		equipment = autoset(equipment, 0)
 		lighting = autoset(lighting, 0)
-		environ = autoset(environ, 0)
+		envasbestos = autoset(envasbestos, 0)
 		area.poweralert(FALSE, src)
 
 	// update icon & area power if anything changed
 
-	if(last_lt != lighting || last_eq != equipment || last_en != environ || force_update)
+	if(last_lt != lighting || last_eq != equipment || last_en != envasbestos || force_update)
 		force_update = 0
 		queue_icon_update()
 		update()

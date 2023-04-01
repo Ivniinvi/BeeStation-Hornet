@@ -44,7 +44,7 @@
 
 	var/power_equip = TRUE
 	var/power_light = TRUE
-	var/power_environ = TRUE
+	var/power_envasbestos = TRUE
 
 	var/has_gravity = FALSE
 	///Are you forbidden from teleporting to the area? (centcom, mobs, wizard, hand teleporter)
@@ -71,7 +71,7 @@
 	var/list/ambientmusic
 
 	///Used to decide what kind of reverb the area makes sound have
-	var/sound_environment = SOUND_ENVIRONMENT_NONE
+	var/sound_envasbestosment = SOUND_ENVASBESTOSMENT_NONE
 
 	flags_1 = CAN_BE_DIRTY_1
 
@@ -181,7 +181,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	else
 		power_light = TRUE
 		power_equip = TRUE
-		power_environ = TRUE
+		power_envasbestos = TRUE
 
 		if(dynamic_lighting == DYNAMIC_LIGHTING_FORCED)
 			dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
@@ -575,7 +575,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
   * Returns int 1 or 0 if the area has power for the given channel
   *
   * evalutes a mixture of variables mappers can set, requires_power, always_unpowered and then
-  * per channel power_equip, power_light, power_environ
+  * per channel power_equip, power_light, power_envasbestos
   */
 /area/proc/powered(chan)		// return true if the area has power to given channel
 
@@ -588,8 +588,8 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 			return power_equip
 		if(AREA_USAGE_LIGHT)
 			return power_light
-		if(AREA_USAGE_ENVIRON)
-			return power_environ
+		if(AREA_USAGE_ENVASBESTOS)
+			return power_envasbestos
 
 	return 0
 
@@ -617,7 +617,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
   * Possible channels
   * *AREA_USAGE_STATIC_EQUIP
   * *AREA_USAGE_STATIC_LIGHT
-  * *AREA_USAGE_STATIC_ENVIRON
+  * *AREA_USAGE_STATIC_ENVASBESTOS
   */
 /area/proc/addStaticPower(value, powerchannel)
 	switch(powerchannel)
@@ -627,7 +627,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 /**
   * Clear all power usage in area
   *
-  * Clears all power used for equipment, light and environment channels
+  * Clears all power used for equipment, light and envasbestosment channels
   */
 /area/proc/clear_usage()
 	for(var/i in AREA_USAGE_DYNAMIC_START to AREA_USAGE_DYNAMIC_END)
@@ -716,7 +716,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	name = a_name
 	power_equip = FALSE
 	power_light = FALSE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	always_unpowered = FALSE
 	area_flags &= ~VALID_TERRITORY
 	area_flags &= ~BLOBS_ALLOWED

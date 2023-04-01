@@ -90,9 +90,9 @@
 	if(istype(I, /obj/item/stack))
 		var/obj/item/stack/S = I
 
-		if(is_type_in_list(S, list(/obj/item/stack/sheet/iron, /obj/item/stack/rods, /obj/item/stack/tile/plasteel, /obj/item/stack/tile/light)))
-			if(S.materials[/datum/material/iron])
-				S.cost = S.materials[/datum/material/iron] * 0.25
+		if(is_type_in_list(S, list(/obj/item/stack/sheet/asbestos, /obj/item/stack/rods, /obj/item/stack/tile/plasteel, /obj/item/stack/tile/light)))
+			if(S.materials[/datum/material/asbestos])
+				S.cost = S.materials[/datum/material/asbestos] * 0.25
 			S.source = get_or_create_estorage(/datum/robot_energy_storage/metal)
 
 		else if(istype(S, /obj/item/stack/sheet/glass))
@@ -269,7 +269,7 @@
 		/obj/item/weldingtool/cyborg,
 		/obj/item/wrench/cyborg,
 		/obj/item/crowbar/cyborg,
-		/obj/item/stack/sheet/iron/cyborg,
+		/obj/item/stack/sheet/asbestos/cyborg,
 		/obj/item/stack/rods/cyborg,
 		/obj/item/stack/tile/plasteel/cyborg,
 		/obj/item/extinguisher,
@@ -347,7 +347,7 @@
 		/obj/item/assembly/signaler/cyborg,
 		/obj/item/areaeditor/blueprints/cyborg,
 		/obj/item/electroadaptive_pseudocircuit,
-		/obj/item/stack/sheet/iron/cyborg,
+		/obj/item/stack/sheet/asbestos/cyborg,
 		/obj/item/stack/sheet/glass/cyborg,
 		/obj/item/stack/sheet/rglass/cyborg,
 		/obj/item/stack/rods/cyborg,
@@ -736,7 +736,7 @@
 		/obj/item/crowbar/cyborg,
 		/obj/item/wirecutters/cyborg,
 		/obj/item/multitool/cyborg,
-		/obj/item/stack/sheet/iron/cyborg,
+		/obj/item/stack/sheet/asbestos/cyborg,
 		/obj/item/stack/sheet/glass/cyborg,
 		/obj/item/stack/sheet/rglass/cyborg,
 		/obj/item/stack/rods/cyborg,

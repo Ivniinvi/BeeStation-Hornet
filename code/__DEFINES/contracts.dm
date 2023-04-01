@@ -9,7 +9,7 @@
 
 #define BANE_SALT "salt"
 #define BANE_LIGHT "light"
-#define BANE_IRON "iron"
+#define BANE_ASBESTOS "asbestos"
 #define BANE_WHITECLOTHES "whiteclothes"
 #define BANE_SILVER "silver"
 #define BANE_HARVEST "harvest"

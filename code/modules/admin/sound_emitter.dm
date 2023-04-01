@@ -100,7 +100,7 @@
 		to_chat(user, "<span class='notice'>Volume set to [sound_volume]%.</span>")
 	if(href_list["edit_mode"])
 		var/new_mode
-		var/mode_list = list("Local (normal sound)" = SOUND_EMITTER_LOCAL, "Direct (not affected by environment/location)" = SOUND_EMITTER_DIRECT)
+		var/mode_list = list("Local (normal sound)" = SOUND_EMITTER_LOCAL, "Direct (not affected by envasbestosment/location)" = SOUND_EMITTER_DIRECT)
 		new_mode = input(user, "Choose a new mode.", "Sound Emitter") as null|anything in mode_list
 		if(!new_mode)
 			return

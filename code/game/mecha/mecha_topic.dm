@@ -68,7 +68,7 @@
 		[integrity<30?"<span class='userdanger'>DAMAGE LEVEL CRITICAL!</span><br>":null]
 		<b>Integrity: </b> [integrity]%<br>
 		<b>Power cell charge: </b>[isnull(cell_charge)?"No power cell installed.":"[cell.percent()]%"]<br>
-		<b>Air source: </b>[internal_tank?"[use_internal_tank?"Internal Airtank":"Environment"]":"Environment"]<br>
+		<b>Air source: </b>[internal_tank?"[use_internal_tank?"Internal Airtank":"Envasbestosment"]":"Envasbestosment"]<br>
 		<b>Air tank pressure: </b>[internal_tank?"[tank_pressure]kPa":"N/A"]<br>
 		<b>Air tank temperature: </b>[internal_tank?"[tank_temperature]&deg;K|[tank_temperature - T0C]&deg;C":"N/A"]<br>
 		<b>Cabin pressure: </b>[internal_tank?"[cabin_pressure>WARNING_HIGH_PRESSURE ? "<span class='danger'>[cabin_pressure]</span>": cabin_pressure]kPa":"N/A"]<br>

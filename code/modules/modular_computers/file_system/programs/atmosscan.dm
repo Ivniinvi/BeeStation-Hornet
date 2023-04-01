@@ -23,15 +23,15 @@
 	var/turf/T = get_turf(computer.ui_host())
 	var/obj/item/computer_hardware/sensorpackage/sensors = computer?.get_modular_computer_part(MC_SENSORS)
 	if(T && sensors?.check_functionality())
-		var/datum/gas_mixture/environment = T.return_air()
-		var/pressure = environment.return_pressure()
-		var/total_moles = environment.total_moles()
+		var/datum/gas_mixture/envasbestosment = T.return_air()
+		var/pressure = envasbestosment.return_pressure()
+		var/total_moles = envasbestosment.total_moles()
 		data["AirPressure"] = round(pressure,0.1)
-		data["AirTempC"] = round(environment.return_temperature() - T0C)
-		data["AirTempK"] = round(environment.return_temperature())
+		data["AirTempC"] = round(envasbestosment.return_temperature() - T0C)
+		data["AirTempK"] = round(envasbestosment.return_temperature())
 		if (total_moles)
-			for(var/id in environment.get_gases())
-				var/gas_level = environment.get_moles(id)/total_moles
+			for(var/id in envasbestosment.get_gases())
+				var/gas_level = envasbestosment.get_moles(id)/total_moles
 				if(gas_level > 0)
 					airlist += list(list("name" = "[GLOB.gas_data.names[id]]", "percentage" = round(gas_level*100, 0.01)))
 		data["AirData"] = airlist

@@ -332,11 +332,11 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/clothing/mask/cigarette/fire_act(exposed_temperature, exposed_volume)
 	if(src.reagents.get_reagent_amount(/datum/reagent/toxin/plasma))
-		message_admins("[src] that contains plasma was lit by the environment - Last touched by [src.fingerprintslast]!")
-		log_game("[src] that contains plasma was lit by the environment - Last touched by [src.fingerprintslast]!")
+		message_admins("[src] that contains plasma was lit by the envasbestosment - Last touched by [src.fingerprintslast]!")
+		log_game("[src] that contains plasma was lit by the envasbestosment - Last touched by [src.fingerprintslast]!")
 	if(src.reagents.get_reagent_amount(/datum/reagent/fuel))
-		message_admins("[src] that contains fuel was lit by the environment - Last touched by [src.fingerprintslast]!")
-		log_game("[src] that contains fuel was lit by the environment - Last touched by [src.fingerprintslast]!")
+		message_admins("[src] that contains fuel was lit by the envasbestosment - Last touched by [src.fingerprintslast]!")
+		log_game("[src] that contains fuel was lit by the envasbestosment - Last touched by [src.fingerprintslast]!")
 	light()
 
 /obj/item/clothing/mask/cigarette/is_hot()
@@ -604,7 +604,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	heat = 1500
 	resistance_flags = FIRE_PROOF
 	light_color = LIGHT_COLOR_FIRE
-	grind_results = list(/datum/reagent/iron = 1, /datum/reagent/fuel = 5, /datum/reagent/oil = 5)
+	grind_results = list(/datum/reagent/asbestos = 1, /datum/reagent/fuel = 5, /datum/reagent/oil = 5)
 
 /obj/item/lighter/Initialize(mapload)
 	. = ..()
@@ -788,7 +788,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	heat = 3000 //Blue flame!
 	light_color = LIGHT_COLOR_CYAN
 	overlay_state = "slime"
-	grind_results = list(/datum/reagent/iron = 1, /datum/reagent/fuel = 5, /datum/reagent/medicine/pyroxadone = 5)
+	grind_results = list(/datum/reagent/asbestos = 1, /datum/reagent/fuel = 5, /datum/reagent/medicine/pyroxadone = 5)
 
 
 ///////////

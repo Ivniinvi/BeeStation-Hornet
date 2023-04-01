@@ -187,17 +187,17 @@
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_BAMBOO_WALLS)
 	canSmoothWith = list(SMOOTH_GROUP_BAMBOO_WALLS)
 
-/turf/closed/wall/mineral/iron
-	name = "rough iron wall"
-	desc = "A wall with rough iron plating."
+/turf/closed/wall/mineral/asbestos
+	name = "rough asbestos wall"
+	desc = "A wall with rough asbestos plating."
 	icon = 'icons/turf/walls/iron_wall.dmi'
-	icon_state = "iron_wall-0"
-	base_icon_state = "iron_wall"
+	icon_state = "asbestos_wall-0"
+	base_icon_state = "asbestos_wall"
 	sheet_type = /obj/item/stack/rods
 	sheet_amount = 5
 	smoothing_flags = SMOOTH_BITMASK
-	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_IRON_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_IRON_WALLS)
+	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_ASBESTOS_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_ASBESTOS_WALLS)
 
 /turf/closed/wall/mineral/snow
 	name = "packed snow wall"

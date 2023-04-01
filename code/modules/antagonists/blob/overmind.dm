@@ -62,7 +62,7 @@ GLOBAL_LIST_EMPTY(blob_nodes)
 	color = blobstrain.complementary_color
 	if(blob_core)
 		blob_core.update_icon()
-	SSshuttle.registerHostileEnvironment(src)
+	SSshuttle.registerHostileEnvasbestosment(src)
 	announcement_time = world.time + 6000
 	. = ..()
 	START_PROCESSING(SSobj, src)
@@ -189,7 +189,7 @@ GLOBAL_LIST_EMPTY(blob_nodes)
 	GLOB.overminds -= src
 	QDEL_LIST_ASSOC_VAL(strain_choices)
 
-	SSshuttle.clearHostileEnvironment(src)
+	SSshuttle.clearHostileEnvasbestosment(src)
 	STOP_PROCESSING(SSobj, src)
 
 	return ..()

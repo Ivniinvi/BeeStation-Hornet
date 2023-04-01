@@ -17,7 +17,7 @@
 
 		A.power_light = FALSE
 		A.power_equip = FALSE
-		A.power_environ = FALSE
+		A.power_envasbestos = FALSE
 		A.power_change()
 
 	for(var/obj/machinery/power/apc/C in GLOB.apcs_list)
@@ -49,7 +49,7 @@
 		if(!istype(A, /area/shuttle))
 			A.power_light = TRUE
 			A.power_equip = TRUE
-			A.power_environ = TRUE
+			A.power_envasbestos = TRUE
 			A.power_change()
 
 /proc/power_restore_quick()

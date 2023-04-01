@@ -4,7 +4,7 @@
 	color = "#C80000" // rgb: 200, 0, 0
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_BOTANY | CHEMICAL_GOAL_BOTANIST_HARVEST
 	metabolization_rate = 5 //fast rate so it disappears fast.
-	taste_description = "iron"
+	taste_description = "asbestos"
 	taste_mult = 1.3
 	glass_icon_state = "glass_red"
 	glass_name = "glass of tomato juice"
@@ -93,7 +93,7 @@
 	color = "#FF9966"
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_BOTANY
 	description = "You don't even want to think about what's in here."
-	taste_description = "gross iron"
+	taste_description = "gross asbestos"
 	shot_glass_icon_state = "shotglassred"
 
 /datum/reagent/vaccine
@@ -794,8 +794,8 @@
 
 
 /datum/reagent/copper/reaction_obj(obj/O, reac_volume)
-	if(istype(O, /obj/item/stack/sheet/iron))
-		var/obj/item/stack/sheet/iron/M = O
+	if(istype(O, /obj/item/stack/sheet/asbestos))
+		var/obj/item/stack/sheet/asbestos/M = O
 		reac_volume = min(reac_volume, M.amount)
 		new/obj/item/stack/sheet/bronze(get_turf(M), reac_volume)
 		M.use(reac_volume)
@@ -956,23 +956,23 @@
 			// +20% surgery speed on each step, useful while operating in less-than-perfect conditions
 	..()
 
-/datum/reagent/iron
-	name = "Iron"
-	description = "Pure iron is a metal."
+/datum/reagent/asbestos
+	name = "Asbestos"
+	description = "Pure asbestos is a metal."
 	color = "#C8A5DC" // rgb: 200, 165, 220
 	chem_flags = CHEMICAL_BASIC_ELEMENT
 	reagent_state = SOLID
-	taste_description = "iron"
+	taste_description = "asbestos"
 
 
-/datum/reagent/iron/on_mob_life(mob/living/carbon/C)
+/datum/reagent/asbestos/on_mob_life(mob/living/carbon/C)
 	if(C.blood_volume < BLOOD_VOLUME_NORMAL)
 		C.blood_volume += 0.5
 	..()
 
-/datum/reagent/iron/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
-	if(M.has_bane(BANE_IRON)) //If the target is weak to cold iron, then poison them.
-		if(holder && holder.chem_temp < 100) // COLD iron.
+/datum/reagent/asbestos/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
+	if(M.has_bane(BANE_ASBESTOS)) //If the target is weak to cold asbestos, then poison them.
+		if(holder && holder.chem_temp < 100) // COLD asbestos.
 			M.reagents.add_reagent(/datum/reagent/toxin, reac_volume)
 	..()
 
@@ -1295,7 +1295,7 @@
 	description = "A secondary amine, mildly corrosive."
 	color = "#604030" // rgb: 96, 64, 48
 	chem_flags = NONE
-	taste_description = "iron"
+	taste_description = "asbestos"
 
 /datum/reagent/carbondioxide
 	name = "Carbon Dioxide"

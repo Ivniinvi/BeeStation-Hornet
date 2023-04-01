@@ -133,7 +133,7 @@
 	},
 /obj/machinery/power/apc/unlocked{
 	dir = 1;
-	environ = 0;
+	envasbestos = 0;
 	equipment = 3;
 	pixel_y = 23;
 	req_access = null
@@ -378,7 +378,7 @@
 	},
 /obj/machinery/power/apc/unlocked{
 	dir = 1;
-	environ = 0;
+	envasbestos = 0;
 	equipment = 3;
 	pixel_y = 23;
 	req_access = null

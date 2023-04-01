@@ -15,7 +15,7 @@
 	density = TRUE
 	layer = EDGED_TURF_LAYER
 	initial_temperature = 293.15
-	var/environment_type = "asteroid"
+	var/envasbestosment_type = "asteroid"
 	var/turf/open/floor/plating/turf_type = /turf/open/floor/plating/asteroid/airless
 	var/obj/item/stack/ore/mineralType = null
 	var/mineralAmt = 3
@@ -93,7 +93,7 @@
 	playsound(src, 'sound/effects/break_stone.ogg', 50, 1) //beautiful destruction
 
 /turf/closed/mineral/attack_animal(mob/living/simple_animal/user)
-	if((user.environment_smash & ENVIRONMENT_SMASH_WALLS) || (user.environment_smash & ENVIRONMENT_SMASH_RWALLS))
+	if((user.envasbestosment_smash & ENVASBESTOSMENT_SMASH_WALLS) || (user.envasbestosment_smash & ENVASBESTOSMENT_SMASH_RWALLS))
 		gets_drilled()
 	..()
 
@@ -138,7 +138,7 @@
 
 /turf/closed/mineral/random
 	var/list/mineralSpawnChanceList = list(/obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10,
-		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40, /obj/item/stack/ore/titanium = 11,
+		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/asbestos = 40, /obj/item/stack/ore/titanium = 11,
 		/turf/closed/mineral/gibtonite = 4, /obj/item/stack/ore/bluespace_crystal = 1,
 		/obj/item/stack/ore/copper = 15)
 		//Currently, Adamantine won't spawn as it has no uses. -Durandan
@@ -159,7 +159,7 @@
 				var/turf/closed/mineral/M = T
 				M.turf_type = src.turf_type
 				M.mineralAmt = rand(1, 5)
-				M.environment_type = src.environment_type
+				M.envasbestosment_type = src.envasbestosment_type
 				src = M
 				M.levelupdate()
 			else
@@ -178,7 +178,7 @@
 		/obj/item/stack/ore/silver = 50, /obj/item/stack/ore/copper = 50, /obj/item/stack/ore/plasma = 50, /obj/item/stack/ore/bluespace_crystal = 20)
 
 /turf/closed/mineral/random/high_chance/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -193,7 +193,7 @@
 	mineralChance = 6
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 2, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 4, /obj/item/stack/ore/titanium = 4,
-		/obj/item/stack/ore/silver = 6, /obj/item/stack/ore/copper = 6, /obj/item/stack/ore/plasma = 15, /obj/item/stack/ore/iron = 40,
+		/obj/item/stack/ore/silver = 6, /obj/item/stack/ore/copper = 6, /obj/item/stack/ore/plasma = 15, /obj/item/stack/ore/asbestos = 40,
 		/turf/closed/mineral/gibtonite = 2, /obj/item/stack/ore/bluespace_crystal = 1)
 
 
@@ -205,19 +205,19 @@
 	base_icon_state = "icerock_wall"
 	smoothing_flags = SMOOTH_BITMASK | SMOOTH_BORDER
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/iceland_surface
-	environment_type = "snow_cavern"
+	envasbestosment_type = "snow_cavern"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/iceland_surface
 	initial_gas_mix = FROZEN_ATMOS
 	defer_change = TRUE
 	mineralChance = 6
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 2, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 4, /obj/item/stack/ore/titanium = 4,
-		/obj/item/stack/ore/silver = 6, /obj/item/stack/ore/copper = 6, /obj/item/stack/ore/plasma = 15, /obj/item/stack/ore/iron = 40,
+		/obj/item/stack/ore/silver = 6, /obj/item/stack/ore/copper = 6, /obj/item/stack/ore/plasma = 15, /obj/item/stack/ore/asbestos = 40,
 		/turf/closed/mineral/gibtonite = 2, /obj/item/stack/ore/bluespace_crystal = 1)
 
 
 /turf/closed/mineral/random/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -226,20 +226,20 @@
 	mineralChance = 10
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 5, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 10, /obj/item/stack/ore/titanium = 11,
-		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/copper = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/iron = 40,
+		/obj/item/stack/ore/silver = 12, /obj/item/stack/ore/copper = 12, /obj/item/stack/ore/plasma = 20, /obj/item/stack/ore/asbestos = 40,
 		/turf/closed/mineral/gibtonite/volcanic = 4, /obj/item/stack/ore/bluespace_crystal = 1)
 
 
 /turf/closed/mineral/random/labormineral
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 3, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 8, /obj/item/stack/ore/titanium = 8,
-		/obj/item/stack/ore/silver = 20, /obj/item/stack/ore/copper = 20, /obj/item/stack/ore/plasma = 30, /obj/item/stack/ore/iron = 95,
+		/obj/item/stack/ore/silver = 20, /obj/item/stack/ore/copper = 20, /obj/item/stack/ore/plasma = 30, /obj/item/stack/ore/asbestos = 95,
 		/turf/closed/mineral/gibtonite = 2)
 	icon_state = "rock_labor"
 
 
 /turf/closed/mineral/random/labormineral/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -247,17 +247,17 @@
 	mineralSpawnChanceList = list(
 		/obj/item/stack/ore/uranium = 3, /obj/item/stack/ore/diamond = 1, /obj/item/stack/ore/gold = 8, /obj/item/stack/ore/titanium = 8,
 		/obj/item/stack/ore/silver = 20, /obj/item/stack/ore/copper = 20, /obj/item/stack/ore/plasma = 30, /obj/item/stack/ore/bluespace_crystal = 1, /turf/closed/mineral/gibtonite/volcanic = 2,
-		/obj/item/stack/ore/iron = 95)
+		/obj/item/stack/ore/asbestos = 95)
 
 // Subtypes for mappers placing ores manually.
 
-/turf/closed/mineral/iron
-	mineralType = /obj/item/stack/ore/iron
-	scan_state = "rock_Iron"
+/turf/closed/mineral/asbestos
+	mineralType = /obj/item/stack/ore/asbestos
+	scan_state = "rock_Asbestos"
 
-/turf/closed/mineral/iron/ice
-	environment_type = "snow_cavern"
-	icon_state = "icerock_iron"
+/turf/closed/mineral/asbestos/ice
+	envasbestosment_type = "snow_cavern"
+	icon_state = "icerock_asbestos"
 	base_icon_state = "icerock_wall"
 	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
 	turf_type = /turf/open/floor/plating/asteroid/snow/ice
@@ -270,7 +270,7 @@
 	scan_state = "rock_Uranium"
 
 /turf/closed/mineral/uranium/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -282,15 +282,15 @@
 	scan_state = "rock_Diamond"
 
 /turf/closed/mineral/diamond/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	defer_change = 1
 
 /turf/closed/mineral/diamond/ice
-	environment_type = "snow_cavern"
-	icon_state = "icerock_iron"
+	envasbestosment_type = "snow_cavern"
+	icon_state = "icerock_asbestos"
 	base_icon_state = "icerock_wall"
 	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
 	turf_type = /turf/open/floor/plating/asteroid/snow/ice
@@ -303,7 +303,7 @@
 	scan_state = "rock_Gold"
 
 /turf/closed/mineral/gold/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -315,7 +315,7 @@
 	scan_state = "rock_Silver"
 
 /turf/closed/mineral/silver/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -326,7 +326,7 @@
 	scan_state = "rock_Copper"
 
 /turf/closed/mineral/copper/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -337,7 +337,7 @@
 	scan_state = "rock_Titanium"
 
 /turf/closed/mineral/titanium/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -349,14 +349,14 @@
 	scan_state = "rock_Plasma"
 
 /turf/closed/mineral/plasma/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	defer_change = 1
 
 /turf/closed/mineral/plasma/ice
-	environment_type = "snow_cavern"
+	envasbestosment_type = "snow_cavern"
 	icon_state = "icerock_plasma"
 	base_icon_state = "icerock_wall"
 	smooth_icon = 'icons/turf/walls/icerock_wall.dmi'
@@ -376,7 +376,7 @@
 	scan_state = "rock_BScrystal"
 
 /turf/closed/mineral/bscrystal/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
@@ -384,13 +384,13 @@
 
 
 /turf/closed/mineral/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt
 	baseturfs = /turf/open/floor/plating/asteroid/basalt
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 
 /turf/closed/mineral/volcanic/lava_land_surface
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	defer_change = 1
@@ -405,7 +405,7 @@
 	canSmoothWith = list(SMOOTH_GROUP_CLOSED_TURFS)
 	baseturfs = /turf/open/floor/plating/ashplanet/wateryrock
 	initial_gas_mix = OPENTURF_LOW_PRESSURE
-	environment_type = "waste"
+	envasbestosment_type = "waste"
 	turf_type = /turf/open/floor/plating/ashplanet/rocky
 	defer_change = 1
 
@@ -419,7 +419,7 @@
 	canSmoothWith = list(SMOOTH_GROUP_CLOSED_TURFS)
 	baseturfs = /turf/open/floor/plating/asteroid/snow
 	initial_gas_mix = FROZEN_ATMOS
-	environment_type = "snow"
+	envasbestosment_type = "snow"
 	turf_type = /turf/open/floor/plating/asteroid/snow
 	defer_change = TRUE
 
@@ -431,7 +431,7 @@
 	base_icon_state = "icerock_wall"
 	smoothing_flags = SMOOTH_BITMASK | SMOOTH_BORDER
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/iceland_surface
-	environment_type = "snow_cavern"
+	envasbestosment_type = "snow_cavern"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/iceland_surface
 
 
@@ -526,7 +526,7 @@
 
 
 /turf/closed/mineral/gibtonite/volcanic
-	environment_type = "basalt"
+	envasbestosment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS

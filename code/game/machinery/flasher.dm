@@ -158,7 +158,7 @@
 			F.id = id
 			playsound(loc, 'sound/items/deconstruct.ogg', 50, 1)
 		else
-			new /obj/item/stack/sheet/iron (loc, 2)
+			new /obj/item/stack/sheet/asbestos (loc, 2)
 	qdel(src)
 
 /obj/machinery/flasher/portable/Initialize(mapload)

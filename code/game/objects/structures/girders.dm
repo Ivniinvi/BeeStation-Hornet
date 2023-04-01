@@ -1,7 +1,7 @@
 /obj/structure/girder
 	name = "girder"
 	icon_state = "girder"
-	desc = "A large structural assembly made out of iron; It requires a layer of iron before it can be considered a wall."
+	desc = "A large structural assembly made out of asbestos; It requires a layer of asbestos before it can be considered a wall."
 	anchored = TRUE
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
@@ -34,13 +34,13 @@
 		balloon_alert(user, "You start slicing apart [src]...")
 		if(W.use_tool(src, user, 40, volume=100))
 			balloon_alert(user, "You slice apart [src].")
-			new /obj/item/stack/sheet/iron(loc, 2, TRUE, user)
+			new /obj/item/stack/sheet/asbestos(loc, 2, TRUE, user)
 			qdel(src)
 			return
 
 	else if(istype(W, /obj/item/pickaxe/drill/jackhammer))
 		to_chat(user, "<span class='notice'>You smash through [src]!</span>")
-		new /obj/item/stack/sheet/iron(get_turf(src))
+		new /obj/item/stack/sheet/asbestos(get_turf(src))
 		W.play_tool_sound(src)
 		qdel(src)
 
@@ -68,7 +68,7 @@
 						return
 					S.use(2)
 					balloon_alert(user, "You create a false wall.")
-					var/obj/structure/falsewall/iron/FW = new (loc)
+					var/obj/structure/falsewall/asbestos/FW = new (loc)
 					transfer_fingerprints_to(FW)
 					qdel(src)
 					return
@@ -83,7 +83,7 @@
 					S.use(5)
 					balloon_alert(user, "You add plating.")
 					var/turf/T = get_turf(src)
-					T.PlaceOnTop(/turf/closed/wall/mineral/iron)
+					T.PlaceOnTop(/turf/closed/wall/mineral/asbestos)
 					transfer_fingerprints_to(T)
 					qdel(src)
 				return
@@ -92,10 +92,10 @@
 			return
 
 		var/obj/item/stack/sheet/S = W
-		if(istype(S, /obj/item/stack/sheet/iron))
+		if(istype(S, /obj/item/stack/sheet/asbestos))
 			if(state == GIRDER_DISPLACED)
 				if(S.get_amount() < 2)
-					to_chat(user, "<span class='warning'>You need two sheets of iron to create a false wall!</span>")
+					to_chat(user, "<span class='warning'>You need two sheets of asbestos to create a false wall!</span>")
 					return
 				balloon_alert(user, "You start building false wall...")
 				if(do_after(user, 20, target = src))
@@ -109,7 +109,7 @@
 					return
 			else
 				if(S.get_amount() < 2)
-					to_chat(user, "<span class='warning'>You need two sheets of iron to finish a wall!</span>")
+					to_chat(user, "<span class='warning'>You need two sheets of asbestos to finish a wall!</span>")
 					return
 				balloon_alert(user, "You start adding plating...")
 				if (do_after(user, 40, target = src))
@@ -225,7 +225,7 @@
 				return
 			state = GIRDER_DISASSEMBLED
 			balloon_alert(user, "You disassemble [src].")
-			new /obj/item/stack/sheet/iron(loc, 2, TRUE, user)
+			new /obj/item/stack/sheet/asbestos(loc, 2, TRUE, user)
 			qdel(src)
 		return TRUE
 
@@ -294,7 +294,7 @@
 
 /obj/structure/girder/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		var/remains = pick(/obj/item/stack/rods, /obj/item/stack/sheet/iron)
+		var/remains = pick(/obj/item/stack/rods, /obj/item/stack/sheet/asbestos)
 		new remains(loc)
 	qdel(src)
 

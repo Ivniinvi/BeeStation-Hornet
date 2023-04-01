@@ -178,35 +178,35 @@
 
 /mob/living/simple_animal/bot/atmosbot/proc/change_temperature()
 	var/turf/T = get_turf(src)
-	var/datum/gas_mixture/environment = T.return_air()
-	environment.set_temperature(ideal_temperature)
+	var/datum/gas_mixture/envasbestosment = T.return_air()
+	envasbestosment.set_temperature(ideal_temperature)
 
 /mob/living/simple_animal/bot/atmosbot/proc/vent_air()
 	//Just start pumping out air
 	var/turf/T = get_turf(src)
 
-	var/datum/gas_mixture/environment = T.return_air()
-	var/environment_pressure = environment.return_pressure()
+	var/datum/gas_mixture/envasbestosment = T.return_air()
+	var/envasbestosment_pressure = envasbestosment.return_pressure()
 
-	var/pressure_delta = min(ATMOSBOT_MAX_PRESSURE_CHANGE, (ONE_ATMOSPHERE - environment_pressure))
+	var/pressure_delta = min(ATMOSBOT_MAX_PRESSURE_CHANGE, (ONE_ATMOSPHERE - envasbestosment_pressure))
 
 	if(pressure_delta > 0)
-		var/transfer_moles = pressure_delta*environment.return_volume()/(T20C * R_IDEAL_GAS_EQUATION)
+		var/transfer_moles = pressure_delta*envasbestosment.return_volume()/(T20C * R_IDEAL_GAS_EQUATION)
 		if(emagged == 2)
-			environment.adjust_moles(GAS_CO2, transfer_moles)
+			envasbestosment.adjust_moles(GAS_CO2, transfer_moles)
 		else
-			environment.adjust_moles(GAS_N2, transfer_moles * 0.7885)
-			environment.adjust_moles(GAS_O2, transfer_moles * 0.2115)
+			envasbestosment.adjust_moles(GAS_N2, transfer_moles * 0.7885)
+			envasbestosment.adjust_moles(GAS_O2, transfer_moles * 0.2115)
 		air_update_turf()
 		new /obj/effect/temp_visual/vent_wind(get_turf(src))
 
 /mob/living/simple_animal/bot/atmosbot/proc/scrub_toxins()
 	var/turf/T = get_turf(src)
-	var/datum/gas_mixture/environment = T.return_air()
+	var/datum/gas_mixture/envasbestosment = T.return_air()
 	for(var/G in gasses)
 		if(gasses[G])
-			var/moles_in_atmos = environment.get_moles(G)
-			environment.adjust_moles(G, -min(moles_in_atmos, ATMOSBOT_MAX_SCRUB_CHANGE))
+			var/moles_in_atmos = envasbestosment.get_moles(G)
+			envasbestosment.adjust_moles(G, -min(moles_in_atmos, ATMOSBOT_MAX_SCRUB_CHANGE))
 
 /mob/living/simple_animal/bot/atmosbot/proc/deploy_holobarrier()
 	if(deployed_holobarrier)

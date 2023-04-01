@@ -17,7 +17,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav)
 "f" = (
-/obj/item/stack/ore/iron{
+/obj/item/stack/ore/asbestos{
 	amount = 15;
 	pixel_x = 15;
 	pixel_y = 5
@@ -58,7 +58,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav)
 "j" = (
-/obj/item/stack/ore/iron{
+/obj/item/stack/ore/asbestos{
 	amount = 20;
 	pixel_x = -15;
 	pixel_y = 10
@@ -80,7 +80,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav)
 "k" = (
-/obj/item/stack/ore/iron{
+/obj/item/stack/ore/asbestos{
 	amount = 15;
 	pixel_x = -10;
 	pixel_y = -4
@@ -113,7 +113,7 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/space/has_grav)
 "n" = (
-/obj/item/stack/ore/iron{
+/obj/item/stack/ore/asbestos{
 	amount = 5;
 	pixel_x = -10;
 	pixel_y = 3

@@ -1,7 +1,7 @@
 /obj/item/stack/rods
-	name = "iron rod"
+	name = "asbestos rod"
 	desc = "Some rods. Can be used for building or something."
-	singular_name = "iron rod"
+	singular_name = "asbestos rod"
 	icon_state = "rods"
 	item_state = "rods"
 	flags_1 = CONDUCT_1
@@ -10,7 +10,7 @@
 	throwforce = 10
 	throw_speed = 3
 	throw_range = 7
-	materials = list(/datum/material/iron=1000)
+	materials = list(/datum/material/asbestos=1000)
 	max_amount = 50
 	merge_type = /obj/item/stack/rods
 	attack_verb = list("hit", "bludgeoned", "whacked")
@@ -49,9 +49,9 @@
 			return
 
 		if(W.use_tool(src, user, 0, volume=40))
-			var/obj/item/stack/sheet/iron/new_item = new(usr.loc)
-			user.visible_message("[user.name] shaped [src] into iron with [W].", \
-						 "<span class='notice'>You shape [src] into iron with [W].</span>", \
+			var/obj/item/stack/sheet/asbestos/new_item = new(usr.loc)
+			user.visible_message("[user.name] shaped [src] into asbestos with [W].", \
+						 "<span class='notice'>You shape [src] into asbestos with [W].</span>", \
 						 "<span class='italics'>You hear welding.</span>")
 			var/obj/item/stack/rods/R = src
 			src = null

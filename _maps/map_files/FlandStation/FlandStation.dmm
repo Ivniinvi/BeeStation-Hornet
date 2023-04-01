@@ -7148,7 +7148,7 @@
 /obj/item/stack/sheet/glass{
 	amount = 30
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/crowbar,
@@ -9332,7 +9332,7 @@
 /obj/item/stack/sheet/rglass{
 	amount = 50
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/storage/toolbox/emergency,
 /obj/item/flashlight,
@@ -17473,7 +17473,7 @@
 "exI" = (
 /obj/structure/table,
 /obj/item/circuitboard/machine/paystand,
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/machinery/button/door{
 	id = "commissaryshutters1";
 	name = "Commissary Shutters Control #1";
@@ -22807,7 +22807,7 @@
 "fLu" = (
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/target,
 /obj/item/target/syndicate,
 /obj/item/target/alien,
@@ -25921,7 +25921,7 @@
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/storage/box/lights/mixed,
 /obj/item/stack/rods/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/effect/turf_decal/tile/yellow/fourcorners/contrasted,
 /turf/open/floor/plasteel,
 /area/storage/tools)
@@ -26615,7 +26615,7 @@
 /area/crew_quarters/heads/chief)
 "gIH" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/stack/sheet/glass{
@@ -29761,7 +29761,7 @@
 /area/space/nearstation)
 "hAc" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/plasma{
 	amount = 20
@@ -34234,7 +34234,7 @@
 /obj/item/stack/sheet/rglass{
 	amount = 50
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/screwdriver{
 	pixel_y = 5
 	},
@@ -35419,7 +35419,7 @@
 /area/crew_quarters/heads/cmo)
 "iYB" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/machinery/light,
@@ -39707,7 +39707,7 @@
 /area/security/courtroom)
 "kfE" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/item/circuitboard/machine/paystand,
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/dark,
@@ -41347,8 +41347,8 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "kDP" = (
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/clothing/head/welding{
 	pixel_x = 4;
 	pixel_y = 4
@@ -49232,7 +49232,7 @@
 /area/engine/gravity_generator)
 "mCw" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/electronics/airlock,
@@ -54898,7 +54898,7 @@
 "oax" = (
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/target,
 /obj/item/target/syndicate,
 /obj/item/target/alien,
@@ -56845,7 +56845,7 @@
 /area/medical/medbay/central)
 "oBk" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass{
 	amount = 30
 	},
@@ -57373,8 +57373,8 @@
 	pixel_x = -2;
 	pixel_y = -2
 	},
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
@@ -57884,7 +57884,7 @@
 /obj/item/reagent_containers/glass/bottle/lithium{
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/iodine{
@@ -60117,8 +60117,8 @@
 /turf/open/floor/plasteel/dark/side,
 /area/medical/genetics/cloning)
 "puI" = (
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
@@ -74345,8 +74345,8 @@
 /turf/open/floor/plasteel/techmaint,
 /area/science/shuttle)
 "sRB" = (
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
@@ -75337,7 +75337,7 @@
 /area/quartermaster/qm)
 "tcQ" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/stack/sheet/glass{
@@ -78073,7 +78073,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/mineral/copper{
 	amount = 5
 	},
@@ -83878,7 +83878,7 @@
 "vix" = (
 /obj/structure/closet/crate,
 /obj/item/stack/ore/glass,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/asbestos,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -84470,8 +84470,8 @@
 /area/security/prison/shielded)
 "vpm" = (
 /obj/item/stack/rods/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
 /obj/structure/table/reinforced,
@@ -84506,9 +84506,9 @@
 "vpI" = (
 /obj/structure/table,
 /obj/effect/turf_decal/bot,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/plasteel{
 	amount = 15
@@ -87423,7 +87423,7 @@
 	},
 /obj/structure/table,
 /obj/item/circuitboard/machine/paystand,
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/item/radio/intercom{
 	pixel_y = 24
 	},
@@ -96483,7 +96483,7 @@
 	},
 /obj/structure/table,
 /obj/item/stack/sheet/glass,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/paicard{
 	pixel_x = 4
 	},

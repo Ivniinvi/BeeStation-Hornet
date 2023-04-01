@@ -254,7 +254,7 @@
 /area/ruin/unpowered)
 "aC" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/effect/turf_decal/stripes/end,
 /obj/item/clothing/glasses/welding,
 /turf/open/floor/plasteel,

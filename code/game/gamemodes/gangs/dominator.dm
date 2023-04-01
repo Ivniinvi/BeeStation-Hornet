@@ -181,7 +181,7 @@
 		gang.dom_attempts --
 		priority_announce("Network breach detected in [locname]. The [gang.name] Gang is attempting to seize control of the station!", "Network Alert", SSstation.announcer.get_rand_alert_sound())
 		gang.domination()
-		SSshuttle.registerHostileEnvironment(src)
+		SSshuttle.registerHostileEnvasbestosment(src)
 		name = "[gang.name] Gang [name]"
 		operating = TRUE
 		update_icon()
@@ -227,7 +227,7 @@
 			if(get_security_level() == "delta")
 				set_security_level("red")
 
-		SSshuttle.clearHostileEnvironment(src)
+		SSshuttle.clearHostileEnvasbestosment(src)
 		gang.message_gangtools("Hostile takeover cancelled: Dominator is no longer operational.[gang.dom_attempts ? " You have [gang.dom_attempts] attempt remaining." : " The station network will have likely blocked any more attempts by us."]",1,1)
 
 	set_light(0)

@@ -312,16 +312,16 @@
 /obj/machinery/microwave/proc/loop_finish()
 	operating = FALSE
 
-	var/iron = 0
+	var/asbestos = 0
 	for(var/obj/item/O in ingredients)
 		O.microwave_act(src)
-		if(O.materials[/datum/material/iron])
-			iron += O.materials[/datum/material/iron]
+		if(O.materials[/datum/material/asbestos])
+			asbestos += O.materials[/datum/material/asbestos]
 
-	if(iron)
+	if(asbestos)
 		spark()
 		broken = 2
-		if(prob(max(iron / 2, 33)))
+		if(prob(max(asbestos / 2, 33)))
 			explosion(loc, 0, 1, 2)
 	else
 		dropContents(ingredients)

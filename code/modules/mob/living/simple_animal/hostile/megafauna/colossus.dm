@@ -726,7 +726,7 @@ GLOBAL_DATUM(blackbox, /obj/machinery/smartfridge/black_box)
 	minbodytemp = 0
 	maxbodytemp = 1500
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	AIStatus = AI_OFF
 	stop_automated_movement = TRUE
 	var/heal_power = 5

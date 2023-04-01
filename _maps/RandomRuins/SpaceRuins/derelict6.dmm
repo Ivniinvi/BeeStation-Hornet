@@ -21,7 +21,7 @@
 	},
 /area/ruin/unpowered)
 "ae" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/structure/lattice,
 /turf/template_noop,
 /area/space/nearstation)
@@ -96,7 +96,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/unpowered)
 "as" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg2"
 	},
@@ -106,7 +106,7 @@
 /turf/open/floor/plasteel/airless,
 /area/ruin/unpowered)
 "au" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg3"
 	},
@@ -116,7 +116,7 @@
 /turf/open/floor/plasteel/airless,
 /area/ruin/unpowered)
 "aw" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plasteel/airless,
 /area/ruin/unpowered)
 "ax" = (
@@ -224,7 +224,7 @@
 /area/ruin/unpowered)
 "aY" = (
 /obj/structure/lattice,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/template_noop,
 /area/space/nearstation)
 "aZ" = (
@@ -251,7 +251,7 @@
 	},
 /area/ruin/unpowered)
 "bg" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg1"
 	},
@@ -264,7 +264,7 @@
 /turf/open/floor/plasteel/airless/cafeteria,
 /area/ruin/unpowered)
 "bi" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/item/clothing/head/chefhat,
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg3"
@@ -298,7 +298,7 @@
 /turf/template_noop,
 /area/template_noop)
 "bp" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/structure/girder,
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg1"
@@ -312,7 +312,7 @@
 /area/ruin/unpowered)
 "br" = (
 /obj/structure/girder,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg1"
 	},
@@ -449,7 +449,7 @@
 /turf/open/floor/plasteel/airless,
 /area/ruin/unpowered)
 "vS" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/plating/airless{
 	icon_state = "platingdmg2"

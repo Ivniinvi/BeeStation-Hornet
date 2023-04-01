@@ -156,7 +156,7 @@
 
 /obj/item/storage/backpack/medic
 	name = "medical backpack"
-	desc = "It's a backpack especially designed for use in a sterile environment."
+	desc = "It's a backpack especially designed for use in a sterile envasbestosment."
 	icon_state = "medicalpack"
 	item_state = "medicalpack"
 

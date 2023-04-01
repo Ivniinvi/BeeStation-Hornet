@@ -11,7 +11,7 @@ RLD
 
 /obj/item/construction
 	name = "not for ingame use"
-	desc = "A device used to rapidly build and deconstruct. Reload with iron, plasteel, glass or compressed matter cartridges."
+	desc = "A device used to rapidly build and deconstruct. Reload with asbestos, plasteel, glass or compressed matter cartridges."
 	opacity = 0
 	density = FALSE
 	anchored = FALSE
@@ -22,17 +22,17 @@ RLD
 	throw_speed = 3
 	throw_range = 5
 	w_class = WEIGHT_CLASS_NORMAL
-	materials = list(/datum/material/iron=100000)
+	materials = list(/datum/material/asbestos=100000)
 	req_access_txt = "11"
 	armor = list(MELEE = 0,  BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 50, STAMINA = 0)
 	resistance_flags = FIRE_PROOF
 	var/datum/effect_system/spark_spread/spark_system
 	var/matter = 0
 	var/max_matter = 100
-	var/sheetmultiplier	= 4 //Controls the amount of matter added for each glass/iron sheet, triple for plasteel
-	var/plasteelmultiplier = 3 //Plasteel is worth 3 times more than glass or iron
+	var/sheetmultiplier	= 4 //Controls the amount of matter added for each glass/asbestos sheet, triple for plasteel
+	var/plasteelmultiplier = 3 //Plasteel is worth 3 times more than glass or asbestos
 	var/plasmarglassmultiplier = 2 //50% less plasma than in plasteel
-	var/rglassmultiplier = 1.5 //One iron sheet, half a glass sheet
+	var/rglassmultiplier = 1.5 //One asbestos sheet, half a glass sheet
 	var/no_ammo_message = "<span class='warning'>The \'Low Ammo\' light on the device blinks yellow.</span>"
 	var/has_ammobar = FALSE	//controls whether or not does update_icon apply ammo indicator overlays
 	var/ammo_sections = 10	//amount of divisions in the ammo indicator overlay/number of ammo indicator states
@@ -54,7 +54,7 @@ RLD
 	if(upgrade & RCD_UPGRADE_SILO_LINK)
 		. += "\A [src]. Remote storage link state: [silo_link ? "[silo_mats.on_hold() ? "ON HOLD" : "ON"]" : "OFF"]."
 		if(silo_link && !silo_mats.on_hold() && silo_mats.mat_container)
-			. += "\A [src]. Remote connection have iron in equivalent to [silo_mats.mat_container.get_material_amount(/datum/material/iron)/500] rcd units." // 1 matter for 1 floortile, as 4 tiles are produced from 1 iron
+			. += "\A [src]. Remote connection have asbestos in equivalent to [silo_mats.mat_container.get_material_amount(/datum/material/asbestos)/500] rcd units." // 1 matter for 1 floortile, as 4 tiles are produced from 1 asbestos
 
 /obj/item/construction/Destroy()
 	QDEL_NULL(spark_system)
@@ -77,7 +77,7 @@ RLD
 		matter += load
 		playsound(src.loc, 'sound/machines/click.ogg', 50, 1)
 		loaded = 1
-	else if(istype(W, /obj/item/stack/sheet/iron) || istype(W, /obj/item/stack/sheet/glass))
+	else if(istype(W, /obj/item/stack/sheet/asbestos) || istype(W, /obj/item/stack/sheet/glass))
 		loaded = loadwithsheets(W, sheetmultiplier, user)
 	else if(istype(W, /obj/item/stack/sheet/plasteel))
 		loaded = loadwithsheets(W, plasteelmultiplier*sheetmultiplier, user) //12 matter for 1 plasteel sheet
@@ -86,9 +86,9 @@ RLD
 	else if(istype(W, /obj/item/stack/sheet/rglass))
 		loaded = loadwithsheets(W, rglassmultiplier*sheetmultiplier, user) //6 matter for one rglass sheet
 	else if(istype(W, /obj/item/stack/rods))
-		loaded = loadwithsheets(W, sheetmultiplier * 0.5, user) // 2 matter for 1 rod, as 2 rods are produced from 1 iron
+		loaded = loadwithsheets(W, sheetmultiplier * 0.5, user) // 2 matter for 1 rod, as 2 rods are produced from 1 asbestos
 	else if(istype(W, /obj/item/stack/tile/plasteel))
-		loaded = loadwithsheets(W, sheetmultiplier * 0.25, user) // 1 matter for 1 floortile, as 4 tiles are produced from 1 iron
+		loaded = loadwithsheets(W, sheetmultiplier * 0.25, user) // 1 matter for 1 floortile, as 4 tiles are produced from 1 asbestos
 	if(loaded)
 		to_chat(user, "<span class='notice'>[src] now holds [matter]/[max_matter] matter-units.</span>")
 	else if(istype(W, /obj/item/rcd_upgrade))
@@ -133,7 +133,7 @@ RLD
 		update_icon()
 		return TRUE
 	else
-		var/list/matlist = list(getmaterialref(/datum/material/iron) = 500)
+		var/list/matlist = list(getmaterialref(/datum/material/asbestos) = 500)
 		if(silo_mats.on_hold())
 			if(user)
 				to_chat(user, "Mineral access is on hold, please contact the quartermaster.")
@@ -155,7 +155,7 @@ RLD
 			if(user)
 				to_chat(user, "Mineral access is on hold, please contact the quartermaster.")
 			return FALSE
-		. = silo_mats.mat_container?.has_materials(list(getmaterialref(/datum/material/iron) = 500), amount)
+		. = silo_mats.mat_container?.has_materials(list(getmaterialref(/datum/material/asbestos) = 500), amount)
 	if(!. && user)
 		to_chat(user, no_ammo_message)
 		if(has_ammobar)
@@ -598,18 +598,18 @@ RLD
 	w_class = WEIGHT_CLASS_TINY
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	materials = list(/datum/material/iron=12000, /datum/material/glass=8000)
+	materials = list(/datum/material/asbestos=12000, /datum/material/glass=8000)
 	var/ammoamt = 40
 
 /obj/item/rcd_ammo/large
-	materials = list(/datum/material/iron=48000, /datum/material/glass=32000)
+	materials = list(/datum/material/asbestos=48000, /datum/material/glass=32000)
 	ammoamt = 160
 
 
 // Ranged RCD
 /obj/item/construction/rcd/arcd
 	name = "advanced rapid-construction-device (ARCD)"
-	desc = "A prototype RCD with ranged capability and extended capacity. Reload with iron, plasteel, glass or compressed matter cartridges."
+	desc = "A prototype RCD with ranged capability and extended capacity. Reload with asbestos, plasteel, glass or compressed matter cartridges."
 	max_matter = 300
 	matter = 300
 	delay_mod = 0.6
@@ -634,7 +634,7 @@ RLD
 // RAPID LIGHTING DEVICE
 /obj/item/construction/rld
 	name = "Rapid Lighting Device (RLD)"
-	desc = "A device used to rapidly provide lighting sources to an area. Reload with iron, plasteel, glass or compressed matter cartridges."
+	desc = "A device used to rapidly provide lighting sources to an area. Reload with asbestos, plasteel, glass or compressed matter cartridges."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "rld-5"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'

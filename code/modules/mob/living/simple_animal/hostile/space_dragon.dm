@@ -38,7 +38,7 @@
 	icon_dead = "spacedragon_dead"
 	bubble_icon = "spacedragon"
 	obj_damage = 50
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
 	melee_damage = 35
 	mob_size = MOB_SIZE_LARGE

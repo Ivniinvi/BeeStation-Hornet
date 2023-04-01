@@ -539,7 +539,7 @@
 	lootcount = 50
 	lootdoubles = TRUE
 	loot = list(
-		/obj/item/stack/ore/iron = 5,
+		/obj/item/stack/ore/asbestos = 5,
 		/obj/item/stack/ore/glass/basalt = 5,
 		/obj/item/stack/ore/plasma = 3,
 		/obj/item/stack/ore/silver = 3,

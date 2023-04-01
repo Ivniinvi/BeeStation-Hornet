@@ -78,7 +78,7 @@
 			else
 				to_chat(user, "<span class='warning'>You need one floor tile to build a floor!</span>")
 		else
-			to_chat(user, "<span class='warning'>The plating is going to need some support! Place iron rods first.</span>")
+			to_chat(user, "<span class='warning'>The plating is going to need some support! Place asbestos rods first.</span>")
 
 /turf/open/floor/dock/drydock/rcd_vals(mob/user, obj/item/construction/rcd/the_rcd)
 	if(the_rcd.mode == RCD_DECONSTRUCT)

@@ -1035,7 +1035,7 @@
 /obj/item/reagent_containers/glass/bottle/lithium{
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/iodine{
@@ -7054,7 +7054,7 @@
 /obj/item/stack/sheet/glass{
 	amount = 30
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/stack/cable_coil/random,
@@ -10173,7 +10173,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
 "bci" = (
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/wrench,
 /obj/structure/extinguisher_cabinet{
@@ -12196,8 +12196,8 @@
 /area/engine/atmos)
 "bmY" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/grenade/chem_grenade/smart_metal_foam,
 /obj/item/grenade/chem_grenade/smart_metal_foam,
 /obj/machinery/newscaster{
@@ -16755,7 +16755,7 @@
 /area/security/checkpoint/engineering)
 "bOp" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/stack/sheet/glass{
@@ -17186,7 +17186,7 @@
 /area/engine/atmos)
 "bQZ" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
@@ -18843,7 +18843,7 @@
 /area/ai_monitored/security/armory)
 "bZZ" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/plasma{
 	amount = 20
@@ -21184,7 +21184,7 @@
 "clB" = (
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/target,
 /obj/item/target/syndicate,
 /obj/item/target/alien,
@@ -23482,7 +23482,7 @@
 /area/maintenance/port)
 "cve" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/stack/sheet/glass{
@@ -23951,7 +23951,7 @@
 /area/gateway)
 "cwW" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods{
 	amount = 25
 	},
@@ -24107,8 +24107,8 @@
 /area/engine/storage)
 "cxM" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/crowbar,
@@ -25289,7 +25289,7 @@
 /obj/item/radio/intercom{
 	pixel_y = 26
 	},
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/item/circuitboard/machine/paystand,
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -29633,7 +29633,7 @@
 /area/science/research)
 "cXC" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/package_wrap,
 /obj/machinery/light,
@@ -34517,9 +34517,9 @@
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/hor)
 "dzF" = (
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/structure/table/reinforced,
 /obj/machinery/requests_console{
@@ -36488,7 +36488,7 @@
 "dJL" = (
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/target,
 /obj/item/target/syndicate,
 /obj/item/target/alien,
@@ -48576,7 +48576,7 @@
 /area/engine/transit_tube)
 "hbR" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass{
 	amount = 30
 	},
@@ -50683,7 +50683,7 @@
 "hOP" = (
 /obj/item/stack/sheet/glass/fifty,
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/wrench,
 /obj/item/clothing/glasses/welding,
 /obj/machinery/newscaster{
@@ -76627,7 +76627,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/stack/sheet/glass{
@@ -90945,7 +90945,7 @@
 "wgk" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/stack/sheet/glass{

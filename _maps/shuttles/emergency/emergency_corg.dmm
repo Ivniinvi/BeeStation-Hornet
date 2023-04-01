@@ -1382,8 +1382,8 @@
 /area/shuttle/escape)
 "St" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/mineral/copper{
 	amount = 5
 	},

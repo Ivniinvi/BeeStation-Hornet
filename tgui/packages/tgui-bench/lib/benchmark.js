@@ -10,7 +10,7 @@
 module.exports = (function() {
   'use strict';
 
-  /** Used as a safe reference for `undefined` in pre ES5 environments. */
+  /** Used as a safe reference for `undefined` in pre ES5 envasbestosments. */
   var undefined;
 
   /** Used to determine if values are of the language type Object. */
@@ -113,7 +113,7 @@ module.exports = (function() {
       Benchmark.runInContext = runInContext;
       return Benchmark;
     }
-    // Avoid issues with some ES3 environments that attempt to use values, named
+    // Avoid issues with some ES3 envasbestosments that attempt to use values, named
     // after built-in constructors like `Object`, for the creation of literals.
     // ES5 clears this up by stating that literals must use built-in constructors.
     // See http://es5.github.io/#x11.1.5.
@@ -164,7 +164,7 @@ module.exports = (function() {
     var calledBy = {};
 
     /**
-     * An object used to flag environments/features.
+     * An object used to flag envasbestosments/features.
      *
      * @static
      * @memberOf Benchmark
@@ -175,7 +175,7 @@ module.exports = (function() {
     (function() {
 
       /**
-       * Detect if running in a browser environment.
+       * Detect if running in a browser envasbestosment.
        *
        * @memberOf Benchmark.support
        * @type boolean
@@ -1433,7 +1433,7 @@ module.exports = (function() {
               currValue = destination[key];
 
           // Skip pseudo private properties like `_timerId` which could be a
-          // Java object in environments like RingoJS.
+          // Java object in envasbestosments like RingoJS.
           if (key.charAt(0) == '_') {
             return;
           }

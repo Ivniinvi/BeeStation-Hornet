@@ -1,7 +1,7 @@
 // Foam
 // Similar to smoke, but slower and mobs absorb its reagent through their exposed skin.
 #define ALUMINUM_FOAM 1
-#define IRON_FOAM 2
+#define ASBESTOS_FOAM 2
 #define RESIN_FOAM 3
 
 
@@ -76,9 +76,9 @@
 /obj/effect/particle_effect/foam/metal/smart
 	name = "smart foam"
 
-/obj/effect/particle_effect/foam/metal/iron
-	name = "iron foam"
-	metal = IRON_FOAM
+/obj/effect/particle_effect/foam/metal/asbestos
+	name = "asbestos foam"
+	metal = ASBESTOS_FOAM
 
 /obj/effect/particle_effect/foam/metal/resin
 	name = "resin foam"
@@ -108,8 +108,8 @@
 	switch(metal)
 		if(ALUMINUM_FOAM)
 			new /obj/structure/foamedmetal(get_turf(src))
-		if(IRON_FOAM)
-			new /obj/structure/foamedmetal/iron(get_turf(src))
+		if(ASBESTOS_FOAM)
+			new /obj/structure/foamedmetal/asbestos(get_turf(src))
 		if(RESIN_FOAM)
 			new /obj/structure/foamedmetal/resin(get_turf(src))
 	flick("[icon_state]-disolve", src)
@@ -287,9 +287,9 @@
 	to_chat(user, "<span class='warning'>You hit [src] but bounce off it!</span>")
 	playsound(src.loc, 'sound/weapons/tap.ogg', 100, 1)
 
-/obj/structure/foamedmetal/iron
+/obj/structure/foamedmetal/asbestos
 	max_integrity = 50
-	icon_state = "ironfoam"
+	icon_state = "asbestosfoam"
 
 //Atmos Backpack Resin, transparent, prevents atmos and filters the air
 /obj/structure/foamedmetal/resin
@@ -326,5 +326,5 @@
 			Item.extinguish()
 
 #undef ALUMINUM_FOAM
-#undef IRON_FOAM
+#undef ASBESTOS_FOAM
 #undef RESIN_FOAM

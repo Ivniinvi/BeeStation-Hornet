@@ -16,11 +16,11 @@
 	grind_results = list(/datum/reagent/silicon = 20, /datum/reagent/copper = 5)
 
 /obj/item/stack/light_w/attackby(obj/item/O, mob/user, params)
-	if(!istype(O, /obj/item/stack/sheet/iron))
+	if(!istype(O, /obj/item/stack/sheet/asbestos))
 		return ..()
-	var/obj/item/stack/sheet/iron/M = O
+	var/obj/item/stack/sheet/asbestos/M = O
 	if(!M.use(1))
-		to_chat(user, "<span class='warning'>You need one iron sheet to finish the light tile!</span>")
+		to_chat(user, "<span class='warning'>You need one asbestos sheet to finish the light tile!</span>")
 		return
 	new /obj/item/stack/tile/light(user.drop_location(), null, TRUE, user)
 	to_chat(user, "<span class='notice'>You make a light tile.</span>")
@@ -57,7 +57,7 @@
 
 /obj/item/stack/tile/light/attackby(obj/item/O, mob/user, params)
 	if(O.tool_behaviour == TOOL_CROWBAR)
-		new/obj/item/stack/sheet/iron(user.loc)
+		new/obj/item/stack/sheet/asbestos(user.loc)
 		amount--
 		new/obj/item/stack/light_w(user.loc)
 		if(amount <= 0)

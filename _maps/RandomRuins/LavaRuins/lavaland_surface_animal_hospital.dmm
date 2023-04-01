@@ -1089,7 +1089,7 @@
 /obj/item/stack/sheet/mineral/plasma,
 /obj/item/stack/sheet/mineral/plasma,
 /obj/item/stack/sheet/mineral/plasma,
-/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/asbestos/twenty,
 /turf/open/floor/plating,
 /area/ruin/powered/animal_hospital)
 "Rp" = (

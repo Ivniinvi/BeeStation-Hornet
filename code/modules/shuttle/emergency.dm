@@ -349,11 +349,11 @@
 
 	priority_announce("The emergency shuttle has been called. [redAlert ? "Red Alert state confirmed: Dispatching priority shuttle. " : "" ]It will arrive in [timeLeft(600)] minutes.[reason][SSshuttle.emergencyLastCallLoc ? "\n\nCall signal traced. Results can be viewed on any communications console." : "" ][SSshuttle.adminEmergencyNoRecall ? "\n\nWarning: Shuttle recall subroutines disabled; Recall not possible." : ""]", null, ANNOUNCER_SHUTTLECALLED, "Priority", null, TRUE)
 
-	if(SSshuttle.checkInfestedEnvironment()) //If an Alien Queen exists, set a delayed alert
+	if(SSshuttle.checkInfestedEnvasbestosment()) //If an Alien Queen exists, set a delayed alert
 		infestation_alert_timer = addtimer(CALLBACK(src, PROC_REF(infested_shuttle)), rand(150 SECONDS, call_time), TIMER_STOPPABLE) //Delay timer is random from 2:30 to the full duration of the shuttle call
 
 /obj/docking_port/mobile/emergency/proc/infested_shuttle()
-	if(SSshuttle.checkInfestedEnvironment()) //Check again to ensure the queen is still present
+	if(SSshuttle.checkInfestedEnvasbestosment()) //Check again to ensure the queen is still present
 		SSshuttle.delayForInfestedStation() //And delay the shuttle if they are
 
 /obj/docking_port/mobile/emergency/cancel(area/signalOrigin)
@@ -472,7 +472,7 @@
 		if(SHUTTLE_DOCKED)
 			if(time_left <= ENGINES_START_TIME)
 				mode = SHUTTLE_IGNITING
-				SSshuttle.checkHostileEnvironment()
+				SSshuttle.checkHostileEnvasbestosment()
 				if(mode == SHUTTLE_STRANDED)
 					return
 				for(var/A in SSshuttle.mobile)
@@ -484,10 +484,10 @@
 			var/success = TRUE
 			//Check if the gamemode is clockcult and the clockies are utter failures
 			if(GLOB.celestial_gateway && !GLOB.gateway_opening)
-				SSshuttle.registerHostileEnvironment(GLOB.celestial_gateway)
+				SSshuttle.registerHostileEnvasbestosment(GLOB.celestial_gateway)
 				var/obj/structure/destructible/clockwork/massive/celestial_gateway/gateway = GLOB.celestial_gateway
 				gateway.open_gateway()
-			SSshuttle.checkHostileEnvironment()
+			SSshuttle.checkHostileEnvasbestosment()
 			if(mode == SHUTTLE_STRANDED)
 				return
 
@@ -524,7 +524,7 @@
 				priority_announce("The Emergency Shuttle has left the station. Estimate: [timeLeft(600)] minutes until the shuttle docks at Central Command.", null, null, "Priority")
 
 		if(SHUTTLE_STRANDED)
-			SSshuttle.checkHostileEnvironment()
+			SSshuttle.checkHostileEnvasbestosment()
 
 		if(SHUTTLE_ESCAPE)
 			if(sound_played && time_left <= HYPERSPACE_END_TIME)

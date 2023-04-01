@@ -122,12 +122,12 @@
 	name = "Thermite"
 	id = /datum/reagent/thermite
 	results = list(/datum/reagent/thermite = 3)
-	required_reagents = list(/datum/reagent/aluminium = 1, /datum/reagent/iron = 1, /datum/reagent/oxygen = 1)
+	required_reagents = list(/datum/reagent/aluminium = 1, /datum/reagent/asbestos = 1, /datum/reagent/oxygen = 1)
 
 /datum/chemical_reaction/emp_pulse
 	name = "EMP Pulse"
 	id = "emp_pulse"
-	required_reagents = list(/datum/reagent/uranium = 1, /datum/reagent/iron = 1) // Yes, laugh, it's the best recipe I could think of that makes a little bit of sense
+	required_reagents = list(/datum/reagent/uranium = 1, /datum/reagent/asbestos = 1) // Yes, laugh, it's the best recipe I could think of that makes a little bit of sense
 
 /datum/chemical_reaction/emp_pulse/on_reaction(datum/reagents/holder, created_volume)
 	var/location = get_turf(holder.my_atom)
@@ -164,7 +164,7 @@
 	name = /datum/reagent/stabilizing_agent
 	id = /datum/reagent/stabilizing_agent
 	results = list(/datum/reagent/stabilizing_agent = 3)
-	required_reagents = list(/datum/reagent/iron = 1, /datum/reagent/oxygen = 1, /datum/reagent/hydrogen = 1)
+	required_reagents = list(/datum/reagent/asbestos = 1, /datum/reagent/oxygen = 1, /datum/reagent/hydrogen = 1)
 
 /datum/chemical_reaction/clf3
 	name = "Chlorine Trifluoride"

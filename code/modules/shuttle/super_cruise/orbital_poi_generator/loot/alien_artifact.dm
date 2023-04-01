@@ -59,7 +59,7 @@
 	mood_bonus = -999
 	has_gravity = STANDARD_GRAVITY
 	ambience_index = AMBIENCE_NONE
-	sound_environment = SOUND_ENVIRONMENT_DRUGGED
+	sound_envasbestosment = SOUND_ENVASBESTOSMENT_DRUGGED
 	teleport_restriction = TELEPORT_ALLOW_NONE
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 

@@ -201,7 +201,7 @@
 	density = FALSE
 
 	frequency = FREQ_AIRLOCK_CONTROL
-	power_channel = AREA_USAGE_ENVIRON
+	power_channel = AREA_USAGE_ENVASBESTOS
 
 	// Setup parameters only
 	var/exterior_door_tag

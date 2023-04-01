@@ -1,10 +1,10 @@
 ///////SMELTABLE ALLOYS///////
 
 /datum/design/plasteel_alloy
-	name = "Plasteel (Plasma + Iron alloy)"
+	name = "Plasteel (Plasma + Asbestos alloy)"
 	id = "plasteel"
 	build_type = SMELTER | PROTOLATHE
-	materials = list(/datum/material/iron = MINERAL_MATERIAL_AMOUNT, /datum/material/plasma = MINERAL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/asbestos = MINERAL_MATERIAL_AMOUNT, /datum/material/plasma = MINERAL_MATERIAL_AMOUNT)
 	build_path = /obj/item/stack/sheet/plasteel
 	category = list("initial", "Stock Parts")
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING
@@ -32,10 +32,10 @@
 	maxstack = 50
 
 /datum/design/plasmarglass_alloy
-	name = "Plasma Reinforced Glass (Plasma + Iron + Glass alloy)"
+	name = "Plasma Reinforced Glass (Plasma + Asbestos + Glass alloy)"
 	id = "plasmareinforcedglass"
 	build_type = SMELTER | PROTOLATHE
-	materials = list(/datum/material/plasma = MINERAL_MATERIAL_AMOUNT * 0.5, /datum/material/iron = MINERAL_MATERIAL_AMOUNT * 0.5,  /datum/material/glass = MINERAL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/plasma = MINERAL_MATERIAL_AMOUNT * 0.5, /datum/material/asbestos = MINERAL_MATERIAL_AMOUNT * 0.5,  /datum/material/glass = MINERAL_MATERIAL_AMOUNT)
 	build_path = /obj/item/stack/sheet/plasmarglass
 	category = list("initial", "Stock Parts")
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING
@@ -66,7 +66,7 @@
 	desc = "A sheet of reverse-engineered alien alloy."
 	id = "alienalloy"
 	build_type = PROTOLATHE | SMELTER
-	materials = list(/datum/material/iron = 4000, /datum/material/plasma = 4000)
+	materials = list(/datum/material/asbestos = 4000, /datum/material/plasma = 4000)
 	build_path = /obj/item/stack/sheet/mineral/abductor
 	category = list("Stock Parts")
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO | DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING

@@ -676,7 +676,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = "JUSTICE"
 	glass_icon_state = "beepskysmashglass"
 	glass_name = "Beepsky Smash"
-	glass_desc = "Heavy, hot and strong. Just like the iron fist of the LAW."
+	glass_desc = "Heavy, hot and strong. Just like the asbestos fist of the LAW."
 	overdose_threshold = 40
 
 	var/datum/brain_trauma/special/beepsky/B
@@ -925,7 +925,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_BOTANY | CHEMICAL_GOAL_BARTENDER_SERVING
 	boozepwr = 75
 	quality = DRINK_VERYGOOD
-	taste_description = "sweet tasting iron"
+	taste_description = "sweet tasting asbestos"
 	glass_icon_state = "demonsblood"
 	glass_name = "Demons Blood"
 	glass_desc = "Just looking at this thing makes the hair at the back of your neck stand up."
@@ -938,7 +938,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_BOTANY | CHEMICAL_GOAL_BARTENDER_SERVING
 	boozepwr = 70
 	quality = DRINK_VERYGOOD
-	taste_description = "bitter iron"
+	taste_description = "bitter asbestos"
 	glass_icon_state = "devilskiss"
 	glass_name = "Devils Kiss"
 	glass_desc = "A creepy time!"
@@ -1275,7 +1275,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 /datum/reagent/consumable/ethanol/fetching_fizz //A reference to one of my favorite games of all time. Pulls nearby ores to the imbiber!
 	name = "Fetching Fizz"
-	description = "Whiskey sour/iron/uranium mixture resulting in a highly magnetic slurry. Mild alcohol content." //Requires no alcohol to make but has alcohol anyway because ~magic~
+	description = "Whiskey sour/asbestos/uranium mixture resulting in a highly magnetic slurry. Mild alcohol content." //Requires no alcohol to make but has alcohol anyway because ~magic~
 	color = rgb(255, 91, 15)
 	chem_flags = CHEMICAL_RNG_GENERAL | CHEMICAL_RNG_BOTANY | CHEMICAL_GOAL_BARTENDER_SERVING
 	boozepwr = 10
@@ -2326,7 +2326,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = "a plasma fire in your mouth"
 	glass_icon_state = "plasmaflood"
 	glass_name = "Plasma Flood"
-	glass_desc = "A favorite of the grey tide. Ironically, not recommended to stand in plasma while drinking this."
+	glass_desc = "A favorite of the grey tide. Asbestosically, not recommended to stand in plasma while drinking this."
 
 /datum/reagent/consumable/ethanol/plasmaflood/on_mob_metabolize(mob/living/L)
 	to_chat(L, "<span class='notice'>You feel immune to the fire!</span>")

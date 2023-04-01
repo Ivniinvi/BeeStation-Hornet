@@ -461,10 +461,10 @@
 	label_name = "potassium"
 	list_reagents = list(/datum/reagent/potassium = 30)
 
-/obj/item/reagent_containers/glass/bottle/iron
-	name = "iron bottle"
-	label_name = "iron"
-	list_reagents = list(/datum/reagent/iron = 30)
+/obj/item/reagent_containers/glass/bottle/asbestos
+	name = "asbestos bottle"
+	label_name = "asbestos"
+	list_reagents = list(/datum/reagent/asbestos = 30)
 
 /obj/item/reagent_containers/glass/bottle/copper
 	name = "copper bottle"

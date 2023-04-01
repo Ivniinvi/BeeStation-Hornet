@@ -329,7 +329,7 @@
 	name = "toner cartridge"
 	icon = 'icons/obj/device.dmi'
 	icon_state = "tonercartridge"
-	grind_results = list(/datum/reagent/iodine = 40, /datum/reagent/iron = 10)
+	grind_results = list(/datum/reagent/iodine = 40, /datum/reagent/asbestos = 10)
 	var/charges = 5
 	var/max_charges = 5
 
@@ -340,7 +340,7 @@
 /obj/item/toner/large
 	name = "large toner cartridge"
 	desc = "A hefty cartridge of NanoTrasen ValueBrand toner. Fits photocopiers and autopainters alike."
-	grind_results = list(/datum/reagent/iodine = 90, /datum/reagent/iron = 10)
+	grind_results = list(/datum/reagent/iodine = 90, /datum/reagent/asbestos = 10)
 	charges = 25
 	max_charges = 25
 

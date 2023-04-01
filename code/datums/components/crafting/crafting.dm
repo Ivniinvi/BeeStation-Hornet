@@ -49,12 +49,12 @@
 	var/display_compact = TRUE
 
 /*	This is what procs do:
-	get_environment - gets a list of things accessable for crafting by user
+	get_envasbestosment - gets a list of things accessable for crafting by user
 	get_surroundings - takes a list of things and makes a list of key-types to values-amounts of said type in the list
 	check_contents - takes a recipe and a key-type list and checks if said recipe can be done with available stuff
 	check_tools - takes recipe, a key-type list, and a user and checks if there are enough tools to do the stuff, checks bugs one level deep
 	construct_item - takes a recipe and a user, call all the checking procs, calls do_after, checks all the things again, calls del_reqs, creates result, calls CheckParts of said result with argument being list returned by deel_reqs
-	del_reqs - takes recipe and a user, loops over the recipes reqs var and tries to find everything in the list make by get_environment and delete it/add to parts list, then returns the said list
+	del_reqs - takes recipe and a user, loops over the recipes reqs var and tries to find everything in the list make by get_envasbestosment and delete it/add to parts list, then returns the said list
 */
 
 /**
@@ -100,7 +100,7 @@
 
 	return R.check_requirements(a, requirements_list)
 
-/datum/component/personal_crafting/proc/get_environment(atom/a, list/blacklist = null, radius_range = 1)
+/datum/component/personal_crafting/proc/get_envasbestosment(atom/a, list/blacklist = null, radius_range = 1)
 	. = list()
 
 	if(!isturf(a.loc))
@@ -117,7 +117,7 @@
 	.["tool_behaviour"] = list()
 	.["other"] = list()
 	.["instances"] = list()
-	for(var/obj/item/I in get_environment(a,blacklist))
+	for(var/obj/item/I in get_envasbestosment(a,blacklist))
 		if(.["instances"][I.type])
 			.["instances"][I.type] += I
 		else
@@ -208,7 +208,7 @@
 
 	Loop over reqs var of the recipe
 	Set var amt to the value current cycle req is pointing to, its amount of type we need to delete
-	Get var/surroundings list of things accessable to crafting by get_environment()
+	Get var/surroundings list of things accessable to crafting by get_envasbestosment()
 	Check the type of the current cycle req
 		If its reagent then do a while loop, inside it try to locate() reagent containers, inside such containers try to locate needed reagent, if there isn't remove thing from surroundings
 			If there is enough reagent in the search result then delete the needed amount, create the same type of reagent with the same data var and put it into deletion list
@@ -237,7 +237,7 @@
 	main_loop:
 		for(var/A in R.reqs)
 			amt = R.reqs[A]
-			surroundings = get_environment(a, R.blacklist)
+			surroundings = get_envasbestosment(a, R.blacklist)
 			surroundings -= Deletion
 			if(ispath(A, /datum/reagent))
 				var/datum/reagent/RG = new A

@@ -15,7 +15,7 @@
 	block_power = 20
 	throw_range = 3
 	hitsound = 'sound/items/trayhit1.ogg'
-	materials = list(/datum/material/iron = 2000)
+	materials = list(/datum/material/asbestos = 2000)
 	var/break_chance = 5 //Likely hood of smashing the chair.
 	var/obj/structure/chair/origin_type = /obj/structure/chair
 
@@ -56,7 +56,7 @@
 	if(remaining_mats)
 		for(var/M=1 to remaining_mats)
 			new stack_type(get_turf(loc))
-	else if(materials[/datum/material/iron])
+	else if(materials[/datum/material/asbestos])
 		new /obj/item/stack/rods(get_turf(loc), 2)
 	qdel(src)
 
@@ -78,7 +78,7 @@
 	icon_state = "chair_fancy_toppled"
 	item_state = "chair_fancy"
 	hitsound = 'sound/items/trayhit2.ogg'
-	materials = list(/datum/material/iron = 3000)
+	materials = list(/datum/material/asbestos = 3000)
 	origin_type = /obj/structure/chair/fancy
 
 /obj/item/chair/stool
@@ -104,7 +104,7 @@
 	hitsound = 'sound/weapons/genhit1.ogg'
 	origin_type = /obj/structure/chair/stool/bamboo
 	materials = null
-	break_chance = 50	//Submissive and breakable unlike the chad iron stool
+	break_chance = 50	//Submissive and breakable unlike the chad asbestos stool
 
 /obj/item/chair/stool/narsie_act()
 	return //sturdy enough to ignore a god

@@ -83,7 +83,7 @@
 /area/ruin/unpowered/xenonest
 	name = "The Hive"
 	always_unpowered = TRUE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	poweralm = FALSE

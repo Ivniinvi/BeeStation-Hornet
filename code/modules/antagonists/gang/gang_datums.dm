@@ -110,8 +110,8 @@
 	suit = /obj/item/clothing/suit/poncho/ponchoshame
 	outfit = /obj/item/clothing/under/color/rainbow
 
-/datum/team/gang/osiron
-	name = "Osiron"
+/datum/team/gang/osasbestos
+	name = "Osasbestos"
 	color = "#FFFFFF"
 	outfit = /obj/item/clothing/under/costume/roman
 	hat = /obj/item/clothing/head/helmet/roman/legionnaire/fake

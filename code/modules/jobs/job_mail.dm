@@ -355,8 +355,8 @@
 //ROBOTICIST
 /datum/job/roboticist
 	mail_goodies = list(
-		//you'll always run out of iron regardless...
-		/obj/item/stack/sheet/iron/twenty = 15,
+		//you'll always run out of asbestos regardless...
+		/obj/item/stack/sheet/asbestos/twenty = 15,
 		/obj/item/storage/box/flashes = 10,
 		//eh.
 		/obj/item/clothing/glasses/hud/diagnostic/sunglasses = 7,

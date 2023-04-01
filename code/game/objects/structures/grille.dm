@@ -1,5 +1,5 @@
 /obj/structure/grille
-	desc = "A flimsy framework of iron rods."
+	desc = "A flimsy framework of asbestos rods."
 	name = "grille"
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "grille"

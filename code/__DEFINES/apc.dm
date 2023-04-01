@@ -21,5 +21,5 @@
 #define UPOVERLAY_EQUIPMENT_SHIFT (4)
 /// Bit shift for the lighting channel status of the APC.
 #define UPOVERLAY_LIGHTING_SHIFT (6)
-/// Bit shift for the environment channel status of the APC.
-#define UPOVERLAY_ENVIRON_SHIFT (8)
+/// Bit shift for the envasbestosment channel status of the APC.
+#define UPOVERLAY_ENVASBESTOS_SHIFT (8)

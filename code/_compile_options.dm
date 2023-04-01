@@ -36,7 +36,7 @@
 
 //#define UNIT_TESTS			//If this is uncommented, we do a single run though of the game setup and tear down process with unit tests in between
 
-/// If this is uncommented, we set up the ref tracker to be used in a live environment
+/// If this is uncommented, we set up the ref tracker to be used in a live envasbestosment
 /// And to log events to [log_dir]/harddels.log
 //#define REFERENCE_DOING_IT_LIVE
 #ifdef REFERENCE_DOING_IT_LIVE

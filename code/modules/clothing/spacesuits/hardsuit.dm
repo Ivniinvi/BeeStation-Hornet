@@ -1,7 +1,7 @@
 	//Baseline hardsuits
 /obj/item/clothing/head/helmet/space/hardsuit
 	name = "hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has radiation shielding."
+	desc = "A special helmet designed for work in a hazardous, low-pressure envasbestosment. Has radiation shielding."
 	icon_state = "hardsuit0-engineering"
 	item_state = "eng_helm"
 	max_integrity = 300
@@ -108,7 +108,7 @@
 
 /obj/item/clothing/suit/space/hardsuit
 	name = "hardsuit"
-	desc = "A special suit that protects against hazardous, low pressure environments. Has radiation shielding."
+	desc = "A special suit that protects against hazardous, low pressure envasbestosments. Has radiation shielding."
 	icon_state = "hardsuit-engineering"
 	item_state = "eng_hardsuit"
 	max_integrity = 300
@@ -182,7 +182,7 @@
 	//Engineering
 /obj/item/clothing/head/helmet/space/hardsuit/engine
 	name = "engineering hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has radiation shielding."
+	desc = "A special helmet designed for work in a hazardous, low-pressure envasbestosment. Has radiation shielding."
 	icon_state = "hardsuit0-engineering"
 	item_state = "eng_helm"
 	armor = list(MELEE = 30,  BULLET = 5, LASER = 10, ENERGY = 12, BOMB = 10, BIO = 100, RAD = 75, FIRE = 100, ACID = 75, STAMINA = 20)
@@ -191,7 +191,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/engine
 	name = "engineering hardsuit"
-	desc = "A special suit that protects against hazardous, low pressure environments. Has radiation shielding."
+	desc = "A special suit that protects against hazardous, low pressure envasbestosments. Has radiation shielding."
 	icon_state = "hardsuit-engineering"
 	item_state = "eng_hardsuit"
 	armor = list(MELEE = 30,  BULLET = 5, LASER = 10, ENERGY = 15, BOMB = 10, BIO = 100, RAD = 75, FIRE = 100, ACID = 75, STAMINA = 20)
@@ -201,7 +201,7 @@
 	//Atmospherics
 /obj/item/clothing/head/helmet/space/hardsuit/engine/atmos
 	name = "atmospherics hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has thermal shielding."
+	desc = "A special helmet designed for work in a hazardous, low-pressure envasbestosment. Has thermal shielding."
 	icon_state = "hardsuit0-atmospherics"
 	item_state = "atmo_helm"
 	hardsuit_type = "atmospherics"
@@ -211,7 +211,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/engine/atmos
 	name = "atmospherics hardsuit"
-	desc = "A special suit that protects against hazardous, low pressure environments. Has thermal shielding."
+	desc = "A special suit that protects against hazardous, low pressure envasbestosments. Has thermal shielding."
 	icon_state = "hardsuit-atmospherics"
 	item_state = "atmo_hardsuit"
 	armor = list(MELEE = 30,  BULLET = 5, LASER = 10, ENERGY = 15, BOMB = 10, BIO = 100, RAD = 25, FIRE = 100, ACID = 75, STAMINA = 20)
@@ -223,7 +223,7 @@
 	//Chief Engineer's hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/engine/elite
 	name = "advanced hardsuit helmet"
-	desc = "An advanced helmet designed for work in a hazardous, low pressure environment. Shines with a high polish."
+	desc = "An advanced helmet designed for work in a hazardous, low pressure envasbestosment. Shines with a high polish."
 	icon_state = "hardsuit0-white"
 	item_state = "ce_helm"
 	hardsuit_type = "white"
@@ -234,7 +234,7 @@
 /obj/item/clothing/suit/space/hardsuit/engine/elite
 	icon_state = "hardsuit-white"
 	name = "advanced hardsuit"
-	desc = "An advanced suit that protects against hazardous, low pressure environments. Shines with a high polish."
+	desc = "An advanced suit that protects against hazardous, low pressure envasbestosments. Shines with a high polish."
 	item_state = "ce_hardsuit"
 	armor = list(MELEE = 40,  BULLET = 5, LASER = 10, ENERGY = 20, BOMB = 50, BIO = 100, RAD = 100, FIRE = 100, ACID = 90, STAMINA = 30)
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -245,7 +245,7 @@
 	//Mining hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/mining
 	name = "mining hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating for wildlife encounters and dual floodlights."
+	desc = "A special helmet designed for work in a hazardous, low pressure envasbestosment. Has reinforced plating for wildlife encounters and dual floodlights."
 	icon_state = "hardsuit0-mining"
 	item_state = "mining_helm"
 	hardsuit_type = "mining"
@@ -264,7 +264,7 @@
 /obj/item/clothing/suit/space/hardsuit/mining
 	icon_state = "hardsuit-mining"
 	name = "mining hardsuit"
-	desc = "A special suit that protects against hazardous, low pressure environments. Has reinforced plating for wildlife encounters."
+	desc = "A special suit that protects against hazardous, low pressure envasbestosments. Has reinforced plating for wildlife encounters."
 	item_state = "mining_hardsuit"
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF
@@ -307,7 +307,7 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/cybersun
 	name = "Cybersun hardsuit helmet"
-	desc = "A bulbous red helmet designed for scavenging in hazardous, low pressure environments. Has dual floodlights, and a 360 Degree view."
+	desc = "A bulbous red helmet designed for scavenging in hazardous, low pressure envasbestosments. Has dual floodlights, and a 360 Degree view."
 	icon_state = "hardsuit0-cybersun"
 	item_state = "death_commando_mask"
 	hardsuit_type = "cybersun"
@@ -600,7 +600,7 @@
 	//Medical hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/medical
 	name = "medical hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low pressure environment. Built with lightweight materials for extra comfort, but does not protect the eyes from intense light."
+	desc = "A special helmet designed for work in a hazardous, low pressure envasbestosment. Built with lightweight materials for extra comfort, but does not protect the eyes from intense light."
 	icon_state = "hardsuit0-medical"
 	item_state = "medical_helm"
 	hardsuit_type = "medical"
@@ -611,7 +611,7 @@
 /obj/item/clothing/suit/space/hardsuit/medical
 	icon_state = "hardsuit-medical"
 	name = "medical hardsuit"
-	desc = "A special suit that protects against hazardous, low pressure environments. Built with lightweight materials for easier movement."
+	desc = "A special suit that protects against hazardous, low pressure envasbestosments. Built with lightweight materials for easier movement."
 	item_state = "medical_hardsuit"
 	supports_variations = DIGITIGRADE_VARIATION
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/storage/firstaid, /obj/item/healthanalyzer, /obj/item/stack/medical)
@@ -621,7 +621,7 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/medical/cmo
 	name = "chief medical officer's hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low pressure environment. Built with lightweight materials for extra comfort and protects the eyes from intense light."
+	desc = "A special helmet designed for work in a hazardous, low pressure envasbestosment. Built with lightweight materials for extra comfort and protects the eyes from intense light."
 	flash_protect = 2
 
 /obj/item/clothing/suit/space/hardsuit/medical/cmo
@@ -631,7 +631,7 @@
 	//Research Director hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/rd
 	name = "prototype hardsuit helmet"
-	desc = "A prototype helmet designed for research in a hazardous, low pressure environment. Scientific data flashes across the visor."
+	desc = "A prototype helmet designed for research in a hazardous, low pressure envasbestosment. Scientific data flashes across the visor."
 	icon_state = "hardsuit0-rd"
 	hardsuit_type = "rd"
 	resistance_flags = ACID_PROOF | FIRE_PROOF
@@ -660,7 +660,7 @@
 /obj/item/clothing/suit/space/hardsuit/research_director
 	icon_state = "hardsuit-rd"
 	name = "prototype hardsuit"
-	desc = "A prototype suit that protects against hazardous, low pressure environments. Fitted with extensive plating for handling explosives and dangerous research materials."
+	desc = "A prototype suit that protects against hazardous, low pressure envasbestosments. Fitted with extensive plating for handling explosives and dangerous research materials."
 	item_state = "hardsuit-rd"
 	supports_variations = DIGITIGRADE_VARIATION
 	resistance_flags = ACID_PROOF | FIRE_PROOF
@@ -677,7 +677,7 @@
 	//Security hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/security
 	name = "security hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
+	desc = "A special helmet designed for work in a hazardous, low pressure envasbestosment. Has an additional layer of armor."
 	icon_state = "hardsuit0-sec"
 	item_state = "sec_helm"
 	hardsuit_type = "sec"
@@ -687,7 +687,7 @@
 /obj/item/clothing/suit/space/hardsuit/security
 	icon_state = "hardsuit-sec"
 	name = "security hardsuit"
-	desc = "A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
+	desc = "A special suit that protects against hazardous, low pressure envasbestosments. Has an additional layer of armor."
 	item_state = "sec_hardsuit"
 	supports_variations = DIGITIGRADE_VARIATION
 	armor = list(MELEE = 35,  BULLET = 15, LASER = 30, ENERGY = 40, BOMB = 10, BIO = 100, RAD = 50, FIRE = 75, ACID = 75, STAMINA = 50)
@@ -700,7 +700,7 @@
 	//Head of Security hardsuit
 /obj/item/clothing/head/helmet/space/hardsuit/security/hos
 	name = "head of security's hardsuit helmet"
-	desc = "A special bulky helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
+	desc = "A special bulky helmet designed for work in a hazardous, low pressure envasbestosment. Has an additional layer of armor."
 	icon_state = "hardsuit0-hos"
 	hardsuit_type = "hos"
 	armor = list(MELEE = 45,  BULLET = 25, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 100, RAD = 50, FIRE = 95, ACID = 95, STAMINA = 60)
@@ -710,7 +710,7 @@
 	icon_state = "hardsuit-hos"
 	name = "head of security's hardsuit"
 	supports_variations = DIGITIGRADE_VARIATION
-	desc = "A special bulky suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
+	desc = "A special bulky suit that protects against hazardous, low pressure envasbestosments. Has an additional layer of armor."
 	armor = list(MELEE = 45,  BULLET = 25, LASER = 30, ENERGY = 40, BOMB = 25, BIO = 100, RAD = 50, FIRE = 95, ACID = 95, STAMINA = 60)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security/hos
 	jetpack = /obj/item/tank/jetpack/suit
@@ -762,7 +762,7 @@
 	//Clown
 /obj/item/clothing/head/helmet/space/hardsuit/clown
 	name = "cosmohonk hardsuit helmet"
-	desc = "A special helmet designed for work in a hazardous, low-humor environment. Has radiation shielding."
+	desc = "A special helmet designed for work in a hazardous, low-humor envasbestosment. Has radiation shielding."
 	icon_state = "hardsuit0-clown"
 	item_state = "hardsuit0-clown"
 	armor = list(MELEE = 30,  BULLET = 5, LASER = 10, ENERGY = 20, BOMB = 10, BIO = 100, RAD = 75, FIRE = 60, ACID = 30, STAMINA = 20)
@@ -770,7 +770,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/clown
 	name = "cosmohonk hardsuit"
-	desc = "A special suit that protects against hazardous, low humor environments. Has radiation shielding. Only a true clown can wear it."
+	desc = "A special suit that protects against hazardous, low humor envasbestosments. Has radiation shielding. Only a true clown can wear it."
 	icon_state = "hardsuit-clown"
 	item_state = "clown_hardsuit"
 	armor = list(MELEE = 30,  BULLET = 5, LASER = 10, ENERGY = 20, BOMB = 10, BIO = 100, RAD = 75, FIRE = 60, ACID = 30, STAMINA = 20)

@@ -1015,7 +1015,7 @@ world
 	return flat_icon
 
 //What the mob looks like as animated static
-//By vg's ComicIronic
+//By vg's ComicAsbestosic
 /proc/getStaticIcon(icon/A, safety = TRUE)
 	var/icon/flat_icon = safety ? A : new(A)
 	flat_icon.Blend(rgb(255,255,255))
@@ -1025,7 +1025,7 @@ world
 	return static_icon
 
 //What the mob looks like as a pitch black outline
-//By vg's ComicIronic
+//By vg's ComicAsbestosic
 /proc/getBlankIcon(icon/A, safety=1)
 	var/icon/flat_icon = safety ? A : new(A)
 	flat_icon.Blend(rgb(255,255,255))
@@ -1036,7 +1036,7 @@ world
 
 
 //Dwarf fortress style icons based on letters (defaults to the first letter of the Atom's name)
-//By vg's ComicIronic
+//By vg's ComicAsbestosic
 /proc/getLetterImage(atom/A, letter= "", uppercase = 0)
 	if(!A)
 		return

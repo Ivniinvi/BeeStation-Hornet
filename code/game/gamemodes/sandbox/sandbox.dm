@@ -19,7 +19,7 @@
 
 /datum/game_mode/sandbox/post_setup()
 	..()
-	SSshuttle.registerHostileEnvironment(src)
+	SSshuttle.registerHostileEnvasbestosment(src)
 
 /datum/game_mode/sandbox/generate_report()
 	return "Sensors indicate that crewmembers have been all given psychic powers from which they can manifest various objects.<br><br>This can only end poorly."

@@ -11,10 +11,10 @@
 	throw_speed = 2
 	throw_range = 7
 	w_class = WEIGHT_CLASS_BULKY
-	materials = list(/datum/material/iron = 500)
+	materials = list(/datum/material/asbestos = 500)
 	attack_verb = list("robusted")
 	hitsound = 'sound/weapons/smash.ogg'
-	custom_materials = list(/datum/material/iron = 500) //Toolboxes by default use iron as their core, custom material.
+	custom_materials = list(/datum/material/asbestos = 500) //Toolboxes by default use asbestos as their core, custom material.
 	var/latches = "single_latch"
 	var/has_latches = TRUE
 	drop_sound = 'sound/items/handling/toolbox_drop.ogg'

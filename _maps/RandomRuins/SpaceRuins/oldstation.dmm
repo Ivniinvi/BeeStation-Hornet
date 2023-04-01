@@ -101,10 +101,10 @@
 /area/ruin/space/has_grav/ancientstation/hivebot)
 "as" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 20
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 20
 	},
 /obj/item/stack/sheet/mineral/copper{
@@ -156,7 +156,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/ancientstation/comm)
 "az" = (
-/turf/closed/mineral/iron,
+/turf/closed/mineral/asbestos,
 /area/ruin/unpowered)
 "aA" = (
 /obj/structure/lattice,
@@ -1366,7 +1366,7 @@
 "eE" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty{
 	pixel_x = 3;
 	pixel_y = 3
@@ -2253,7 +2253,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
@@ -4318,7 +4318,7 @@
 /obj/item/reagent_containers/glass/bottle/iodine{
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/lithium{

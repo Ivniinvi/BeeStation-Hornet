@@ -2,13 +2,13 @@
 	name = "Magnitis"
 	max_stages = 4
 	spread_text = "Airborne"
-	cure_text = "Iron"
-	cures = list(/datum/reagent/iron)
+	cure_text = "Asbestos"
+	cures = list(/datum/reagent/asbestos)
 	agent = "Fukkos Miracos"
 	viable_mobtypes = list(/mob/living/carbon/human)
 	disease_flags = CAN_CARRY|CAN_RESIST|CURABLE
 	permeability_mod = 0.75
-	desc = "This disease disrupts the magnetic field of your body, making it act as if a powerful magnet. Injections of iron help stabilize the field."
+	desc = "This disease disrupts the magnetic field of your body, making it act as if a powerful magnet. Injections of asbestos help stabilize the field."
 	danger = DISEASE_MEDIUM
 	infectable_biotypes = list(MOB_ORGANIC, MOB_ROBOTIC)
 	process_dead = TRUE

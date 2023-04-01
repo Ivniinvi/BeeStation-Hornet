@@ -45,7 +45,7 @@
 		/datum/reagent/fluorine,
 		/datum/reagent/hydrogen,
 		/datum/reagent/iodine,
-		/datum/reagent/iron,
+		/datum/reagent/asbestos,
 		/datum/reagent/lithium,
 		/datum/reagent/mercury,
 		/datum/reagent/nitrogen,
@@ -523,7 +523,7 @@
 	upgrade_reagents = null
 	emagged_reagents = list(
 		/datum/reagent/consumable/ethanol,
-		/datum/reagent/iron,
+		/datum/reagent/asbestos,
 		/datum/reagent/toxin/minttoxin,
 		/datum/reagent/consumable/ethanol/atomicbomb,
 		/datum/reagent/consumable/ethanol/fernet
@@ -622,7 +622,7 @@
 		/datum/reagent/fluorine,
 		/datum/reagent/hydrogen,
 		/datum/reagent/iodine,
-		/datum/reagent/iron,
+		/datum/reagent/asbestos,
 		/datum/reagent/lithium,
 		/datum/reagent/mercury,
 		/datum/reagent/nitrogen,

@@ -2,7 +2,7 @@
 	faction = list("hostile")
 	stop_automated_movement_when_pulled = 0
 	obj_damage = 40
-	environment_smash = ENVIRONMENT_SMASH_STRUCTURES //Bitflags. Set to ENVIRONMENT_SMASH_STRUCTURES to break closets,tables,racks, etc; ENVIRONMENT_SMASH_WALLS for walls; ENVIRONMENT_SMASH_RWALLS for rwalls
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_STRUCTURES //Bitflags. Set to ENVASBESTOSMENT_SMASH_STRUCTURES to break closets,tables,racks, etc; ENVASBESTOSMENT_SMASH_WALLS for walls; ENVASBESTOSMENT_SMASH_RWALLS for rwalls
 	///The current target of our attacks, use GiveTarget and LoseTarget to set this var
 	var/atom/target
 	var/ranged = FALSE
@@ -29,7 +29,7 @@
 	var/ranged_message = "fires" //Fluff text for ranged mobs
 	var/ranged_cooldown = 0 //What the current cooldown on ranged attacks is, generally world.time + ranged_cooldown_time
 	var/ranged_cooldown_time = 30 //How long, in deciseconds, the cooldown of ranged attacks is
-	var/ranged_ignores_vision = FALSE //if it'll fire ranged attacks even if it lacks vision on its target, only works with environment smash
+	var/ranged_ignores_vision = FALSE //if it'll fire ranged attacks even if it lacks vision on its target, only works with envasbestosment smash
 	var/check_friendly_fire = 0 // Should the ranged mob check for friendlies when shooting
 	var/retreat_distance = null //If our mob runs from players when they're too close, set in tile distance. By default, mobs do not retreat.
 	var/minimum_distance = 1 //Minimum approach distance, so ranged mobs chase targets down, but still keep their distance set in tiles to the target, set higher to make mobs keep distance
@@ -74,7 +74,7 @@
 		return 0
 	var/list/possible_targets = ListTargets() //we look around for potential targets and make it a list for later use.
 
-	if(environment_smash)
+	if(envasbestosment_smash)
 		EscapeConfinement()
 
 	if(AICanContinue(possible_targets))
@@ -298,11 +298,11 @@
 				in_melee = FALSE //If we're just preparing to strike do not enter sidestep mode
 			return 1
 		return 0
-	if(environment_smash)
+	if(envasbestosment_smash)
 		if(target.loc != null && get_dist(target_from, target.loc) <= vision_range) //We can't see our target, but he's in our vision range still
 			if(ranged_ignores_vision && ranged_cooldown <= world.time) //we can't see our target... but we can fire at them!
 				OpenFire(target)
-			if((environment_smash & ENVIRONMENT_SMASH_WALLS) || (environment_smash & ENVIRONMENT_SMASH_RWALLS)) //If we're capable of smashing through walls, forget about vision completely after finding our target
+			if((envasbestosment_smash & ENVASBESTOSMENT_SMASH_WALLS) || (envasbestosment_smash & ENVASBESTOSMENT_SMASH_RWALLS)) //If we're capable of smashing through walls, forget about vision completely after finding our target
 				Goto(target,move_to_delay,minimum_distance)
 				FindHidden()
 				return 1
@@ -456,12 +456,12 @@
 	for(var/obj/O in T.contents)
 		if(!O.Adjacent(target_from))
 			continue
-		if((ismachinery(O) || isstructure(O)) && O.density && environment_smash >= ENVIRONMENT_SMASH_STRUCTURES && !O.IsObscured())
+		if((ismachinery(O) || isstructure(O)) && O.density && envasbestosment_smash >= ENVASBESTOSMENT_SMASH_STRUCTURES && !O.IsObscured())
 			O.attack_animal(src)
 			return
 
 /mob/living/simple_animal/hostile/proc/DestroyPathToTarget()
-	if(environment_smash)
+	if(envasbestosment_smash)
 		EscapeConfinement()
 		var/atom/target_from = GET_TARGETS_FROM(src)
 		var/dir_to_target = get_dir(target_from, target)
@@ -477,7 +477,7 @@
 
 
 /mob/living/simple_animal/hostile/proc/DestroySurroundings() // for use with megafauna destroying everything around them
-	if(environment_smash)
+	if(envasbestosment_smash)
 		EscapeConfinement()
 		for(var/dir in GLOB.cardinals)
 			DestroyObjectsInDirection(dir)

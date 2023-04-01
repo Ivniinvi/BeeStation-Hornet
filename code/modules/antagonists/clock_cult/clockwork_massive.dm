@@ -83,7 +83,7 @@ GLOBAL_LIST_INIT(clockwork_portals, list())
 			sound_to_playing_players('sound/effects/explosion_distant.ogg', volume = 50)
 			for(var/obj/effect/portal/wormhole/clockcult/CC in GLOB.all_wormholes)
 				qdel(CC)
-			SSshuttle.clearHostileEnvironment(src)
+			SSshuttle.clearHostileEnvasbestosment(src)
 			set_security_level(SEC_LEVEL_RED)
 			sleep(300)
 			SSticker.force_ending = TRUE
@@ -99,7 +99,7 @@ GLOBAL_LIST_INIT(clockwork_portals, list())
 
 //==========Battle Phase===========
 /obj/structure/destructible/clockwork/massive/celestial_gateway/proc/open_gateway()
-	SSshuttle.registerHostileEnvironment(src)
+	SSshuttle.registerHostileEnvasbestosment(src)
 	if(GLOB.gateway_opening)
 		return
 	GLOB.gateway_opening = TRUE

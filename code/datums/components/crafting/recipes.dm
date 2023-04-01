@@ -101,7 +101,7 @@
 	name = "Bola"
 	result = /obj/item/restraints/legcuffs/bola
 	reqs = list(/obj/item/restraints/handcuffs/cable = 1,
-				/obj/item/stack/sheet/iron = 6)
+				/obj/item/stack/sheet/asbestos = 6)
 	time = 20//15 faster than crafting them by hand!
 	category= CAT_WEAPONRY
 	subcategory = CAT_WEAPON
@@ -110,7 +110,7 @@
 	name = "Gonbola"
 	result = /obj/item/restraints/legcuffs/bola/gonbola
 	reqs = list(/obj/item/restraints/handcuffs/cable = 1,
-				/obj/item/stack/sheet/iron = 6,
+				/obj/item/stack/sheet/asbestos = 6,
 				/obj/item/stack/sheet/animalhide/gondola = 1)
 	time = 40
 	category= CAT_WEAPONRY
@@ -121,7 +121,7 @@
 	name = "Tail Club"
 	result = /obj/item/club/tailclub
 	reqs = list(/obj/item/organ/tail/lizard = 1,
-	            /obj/item/stack/sheet/iron = 1)
+	            /obj/item/stack/sheet/asbestos = 1)
 	time = 40
 	category = CAT_WEAPONRY
 	subcategory = CAT_WEAPON
@@ -129,7 +129,7 @@
 /datum/crafting_recipe/club
 	name = "improvised maul"
 	result = /obj/item/club/ghettoclub
-	reqs = list(/obj/item/stack/sheet/iron = 1,
+	reqs = list(/obj/item/stack/sheet/asbestos = 1,
 				/obj/item/stack/rods = 1,
 				/obj/item/restraints/handcuffs/cable = 2,
 				/obj/item/stack/sheet/cotton/cloth = 3)
@@ -164,7 +164,7 @@
 				/obj/item/clothing/suit/armor/vest = 1,
 				/obj/item/bodypart/l_leg/robot = 1,
 				/obj/item/bodypart/r_leg/robot = 1,
-				/obj/item/stack/sheet/iron = 1,
+				/obj/item/stack/sheet/asbestos = 1,
 				/obj/item/stack/cable_coil = 1,
 				/obj/item/gun/energy/e_gun/dragnet = 1,
 				/obj/item/stock_parts/cell = 1,
@@ -256,7 +256,7 @@
 	name = "Pneumatic Cannon"
 	result = /obj/item/pneumatic_cannon/ghetto
 	tools = list(TOOL_WELDER, TOOL_WRENCH)
-	reqs = list(/obj/item/stack/sheet/iron = 4,
+	reqs = list(/obj/item/stack/sheet/asbestos = 4,
 				/obj/item/stack/package_wrap = 8,
 				/obj/item/pipe = 2)
 	time = 50
@@ -293,7 +293,7 @@
 	name = "Wooden Bow"
 	result = /obj/item/gun/ballistic/bow
 	reqs = list(/obj/item/stack/sheet/wood = 8,
-				/obj/item/stack/sheet/iron = 2,
+				/obj/item/stack/sheet/asbestos = 2,
 				/obj/item/weaponcrafting/silkstring = 4)
 	time = 120
 	category = CAT_WEAPONRY
@@ -362,7 +362,7 @@
 	name = "Improvised Shotgun Shell"
 	result = /obj/item/ammo_casing/shotgun/improvised
 	reqs = list(/obj/item/grenade/chem_grenade = 1,
-				/obj/item/stack/sheet/iron = 1,
+				/obj/item/stack/sheet/asbestos = 1,
 				/obj/item/stack/cable_coil = 1,
 				/datum/reagent/fuel = 10)
 	tools = list(TOOL_SCREWDRIVER)
@@ -460,9 +460,9 @@
 	dangerous_craft = TRUE
 
 /datum/crafting_recipe/switchblade_kitchen
-	name = "Iron Switchblade"
+	name = "Asbestos Switchblade"
 	result = /obj/item/switchblade/kitchen
-	reqs = list(/obj/item/stack/sheet/iron = 2,
+	reqs = list(/obj/item/stack/sheet/asbestos = 2,
 				/obj/item/weaponcrafting/receiver = 1,
 				/obj/item/kitchen/knife = 1,
 				/obj/item/stack/cable_coil = 2)
@@ -532,7 +532,7 @@
 	name = "Skateboard"
 	result = /obj/item/melee/skateboard
 	time = 60
-	reqs = list(/obj/item/stack/sheet/iron = 5,
+	reqs = list(/obj/item/stack/sheet/asbestos = 5,
 				/obj/item/stack/rods = 10)
 	category = CAT_MISC
 
@@ -540,14 +540,14 @@
 	name = "Scooter"
 	result = /obj/vehicle/ridden/scooter
 	time = 65
-	reqs = list(/obj/item/stack/sheet/iron = 5,
+	reqs = list(/obj/item/stack/sheet/asbestos = 5,
 				/obj/item/stack/rods = 12)
 	category = CAT_MISC
 
 /datum/crafting_recipe/wheelchair
 	name = "Wheelchair"
 	result = /obj/vehicle/ridden/wheelchair
-	reqs = list(/obj/item/stack/sheet/iron = 4,
+	reqs = list(/obj/item/stack/sheet/asbestos = 4,
 				/obj/item/stack/rods = 6)
 	time = 100
 	category = CAT_MISC
@@ -555,7 +555,7 @@
 /datum/crafting_recipe/motorized_wheelchair
 	name = "Motorized Wheelchair"
 	result = /obj/vehicle/ridden/wheelchair/motorized
-	reqs = list(/obj/item/stack/sheet/iron = 10,
+	reqs = list(/obj/item/stack/sheet/asbestos = 10,
 		/obj/item/stack/rods = 8,
 		/obj/item/stock_parts/manipulator = 2,
 		/obj/item/stock_parts/capacitor = 1)
@@ -866,7 +866,7 @@
 	name = "Pressure Plate"
 	result = /obj/item/pressure_plate
 	time = 5
-	reqs = list(/obj/item/stack/sheet/iron = 1,
+	reqs = list(/obj/item/stack/sheet/asbestos = 1,
 				  /obj/item/stack/tile/plasteel = 1,
 				  /obj/item/stack/cable_coil = 2,
 				  /obj/item/assembly/igniter = 1)
@@ -878,7 +878,7 @@
 	result = /obj/item/rcl/ghetto
 	time = 40
 	tools = list(TOOL_WELDER, TOOL_SCREWDRIVER, TOOL_WRENCH)
-	reqs = list(/obj/item/stack/sheet/iron = 15)
+	reqs = list(/obj/item/stack/sheet/asbestos = 15)
 	category = CAT_MISC
 
 /datum/crafting_recipe/mummy
@@ -1135,7 +1135,7 @@
 	name = "Aquarium"
 	result = /obj/structure/aquarium
 	time = 10 SECONDS
-	reqs = list(/obj/item/stack/sheet/iron = 15,
+	reqs = list(/obj/item/stack/sheet/asbestos = 15,
 				/obj/item/stack/sheet/glass = 10,
 				/obj/item/aquarium_kit = 1
 				)

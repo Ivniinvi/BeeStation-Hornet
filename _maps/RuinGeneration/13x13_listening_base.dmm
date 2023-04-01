@@ -496,7 +496,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/asbestos/twenty,
 /obj/item/stack/sheet/glass{
 	amount = 10
 	},

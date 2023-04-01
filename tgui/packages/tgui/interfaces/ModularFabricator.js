@@ -43,12 +43,12 @@ const MAX_SEARCH_RESULTS = 25;
  *  - [R] materials - List of all inserted materials (or linked
 ====silo materials if you want that)
  *        list(list(
- *          name = "Iron",
+ *          name = "Asbestos",
 ====Name of the material in the UI
  *          amount = 50000,
 ====Amount of the material in the UI
 ====(Divided by 2000 to calculate sheet amount)
- *          design_id = "iron",
+ *          design_id = "asbestos",
 ====The design ID required for ui_act
  *        ))
  *  - [R] queue - List of all items in the processing queue
@@ -69,7 +69,7 @@ const MAX_SEARCH_RESULTS = 25;
  *              name = "Battery"                //Display name of the item
  *              design_id = "battery"           //Design ID of the object
  *              material_cost = list(
- *               list("name" = "iron", "amount" = "2000"),
+ *               list("name" = "asbestos", "amount" = "2000"),
  *               list("name" = "copper", "amount" = "5000"),
  *              )
  *            ),
@@ -77,7 +77,7 @@ const MAX_SEARCH_RESULTS = 25;
  *              name = "Battery2"               //Display name of the item
  *              design_id = "battery2"          //Design ID of the object
  *              material_cost = list(
- *               list("name" = "iron", "amount" = "2000"),
+ *               list("name" = "asbestos", "amount" = "2000"),
  *               list("name" = "copper", "amount" = "5000"),
  *              )
  *            ),

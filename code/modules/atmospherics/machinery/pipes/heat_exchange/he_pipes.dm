@@ -20,21 +20,21 @@
 	. = ..()
 
 /obj/machinery/atmospherics/pipe/heat_exchanging/process_atmos()
-	var/environment_temperature = 0
+	var/envasbestosment_temperature = 0
 	var/datum/gas_mixture/pipe_air = return_air()
 
 	var/turf/T = loc
 	if(istype(T))
 		if(isclosedturf(T))
-			environment_temperature = T.return_temperature()
+			envasbestosment_temperature = T.return_temperature()
 		else
 			var/turf/open/OT = T
-			environment_temperature = OT.GetTemperature()
+			envasbestosment_temperature = OT.GetTemperature()
 	else if(T != null)
-		environment_temperature = T.return_temperature()
+		envasbestosment_temperature = T.return_temperature()
 
 	if(pipe_air != null)
-		if(abs(environment_temperature-pipe_air.return_temperature()) > minimum_temperature_difference)
+		if(abs(envasbestosment_temperature-pipe_air.return_temperature()) > minimum_temperature_difference)
 			parent.temperature_interact(T, volume, thermal_conductivity)
 
 
@@ -42,7 +42,7 @@
 	if(has_buckled_mobs())
 		var/hc = pipe_air.heat_capacity()
 		var/mob/living/heat_source = buckled_mobs[1]
-		//Best guess-estimate of the total bodytemperature of all the mobs, since they share the same environment it's ~ok~ to guess like this
+		//Best guess-estimate of the total bodytemperature of all the mobs, since they share the same envasbestosment it's ~ok~ to guess like this
 		var/avg_temp = (pipe_air.return_temperature() * hc + (heat_source.bodytemperature * buckled_mobs.len) * 3500) / (hc + (buckled_mobs ? buckled_mobs.len * 3500 : 0))
 		for(var/m in buckled_mobs)
 			var/mob/living/L = m

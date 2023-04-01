@@ -293,7 +293,7 @@
 	result = /obj/item/clothing/head/foilhat
 	time = 5
 	tools = list(TOOL_CROWBAR)
-	reqs = list(/obj/item/stack/sheet/iron = 3)
+	reqs = list(/obj/item/stack/sheet/asbestos = 3)
 	category = CAT_CLOTHING
 
 /datum/crafting_recipe/foilenvirohelm

@@ -100,7 +100,7 @@
 	mob_size = MOB_SIZE_SMALL
 	mob_biotypes = list(MOB_ORGANIC, MOB_BEAST)
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	chat_color = "#26F55A"
 	mobchatspan = "chaplain"
 	faction = list("hostile","creature")

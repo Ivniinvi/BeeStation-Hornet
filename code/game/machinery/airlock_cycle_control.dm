@@ -49,7 +49,7 @@
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 4
 	active_power_usage = 8
-	power_channel = AREA_USAGE_ENVIRON
+	power_channel = AREA_USAGE_ENVASBESTOS
 	req_access = list(ACCESS_ATMOSPHERICS)
 	max_integrity = 250
 	integrity_failure = 80
@@ -144,9 +144,9 @@
 		return
 	var/pressure = 0
 	if(location)
-		var/datum/gas_mixture/environment = location.return_air()
-		if(environment)
-			pressure = environment.return_pressure()
+		var/datum/gas_mixture/envasbestosment = location.return_air()
+		if(envasbestosment)
+			pressure = envasbestosment.return_pressure()
 	var/maxpressure = (exterior_pressure && (cyclestate == AIRLOCK_CYCLESTATE_OUTCLOSING || cyclestate == AIRLOCK_CYCLESTATE_OUTOPENING || cyclestate == AIRLOCK_CYCLESTATE_OUTOPEN)) ? exterior_pressure : interior_pressure
 	var/pressure_bars = round(pressure / maxpressure * 5 + 0.01)
 
@@ -305,9 +305,9 @@
 		return
 	var/pressure = 0
 	if(location)
-		var/datum/gas_mixture/environment = location.return_air()
-		if(environment)
-			pressure = environment.return_pressure()
+		var/datum/gas_mixture/envasbestosment = location.return_air()
+		if(envasbestosment)
+			pressure = envasbestosment.return_pressure()
 
 	update_error_status()
 	var/doors_valid = TRUE
@@ -608,9 +608,9 @@
 	var/turf/T = get_turf(src)
 	var/pressure = 0
 	if(T)
-		var/datum/gas_mixture/environment = T.return_air()
-		if(environment)
-			pressure = environment.return_pressure()
+		var/datum/gas_mixture/envasbestosment = T.return_air()
+		if(envasbestosment)
+			pressure = envasbestosment.return_pressure()
 
 	var/data = list(
 		"locked" = locked,
@@ -813,7 +813,7 @@
 
 /obj/machinery/advanced_airlock_controller/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		new /obj/item/stack/sheet/iron(loc, 2)
+		new /obj/item/stack/sheet/asbestos(loc, 2)
 		var/obj/item/I = new /obj/item/electronics/advanced_airlock_controller(loc)
 		if(!disassembled)
 			I.obj_integrity = I.max_integrity * 0.5

@@ -1021,8 +1021,8 @@
 
 /obj/structure/closet/crate/necropolis/bubblegum/try_spawn_loot(datum/source, obj/item/item, mob/user, params) ///proc that handles key checking and generating loot
 	if(..())
-		new /obj/item/clothing/suit/space/hostile_environment(src)
-		new /obj/item/clothing/head/helmet/space/hostile_environment(src)
+		new /obj/item/clothing/suit/space/hostile_envasbestosment(src)
+		new /obj/item/clothing/head/helmet/space/hostile_envasbestosment(src)
 		new /obj/item/crusher_trophy/demon_claws(src)
 
 /obj/item/mayhem

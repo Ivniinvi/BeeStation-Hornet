@@ -133,7 +133,7 @@ GLOBAL_LIST_INIT(meteorsC, list(/obj/effect/meteor/dust)) //for space dust event
 	var/meteorsound = 'sound/effects/meteorimpact.ogg'
 	var/z_original
 	var/threat = 0 // used for determining which meteors are most interesting
-	var/list/meteordrop = list(/obj/item/stack/ore/iron)
+	var/list/meteordrop = list(/obj/item/stack/ore/asbestos)
 	var/dropamt = 2
 	///The thing we're moving towards, usually a turf
 	var/atom/dest

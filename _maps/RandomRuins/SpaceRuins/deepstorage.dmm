@@ -9,10 +9,10 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered/no_grav)
 "af" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "ag" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/crusher)
 "ah" = (
 /obj/structure/kitchenspike,
@@ -101,7 +101,7 @@
 /area/ruin/space/has_grav/deepstorage/crusher)
 "aw" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/storage)
 "ax" = (
 /obj/machinery/processor{
@@ -204,19 +204,19 @@
 /area/ruin/space/has_grav/deepstorage/storage)
 "aK" = (
 /obj/structure/closet/cardboard,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
@@ -257,7 +257,7 @@
 /area/ruin/space/has_grav/deepstorage/storage)
 "aM" = (
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "aN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -286,7 +286,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/deepstorage/crusher)
 "aQ" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/hydroponics)
 "aR" = (
 /obj/structure/closet/cardboard,
@@ -801,7 +801,7 @@
 /area/ruin/space/has_grav/deepstorage/storage)
 "bW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/storage)
 "bX" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -911,7 +911,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/deepstorage)
 "cp" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage)
 "cq" = (
 /obj/machinery/shower{
@@ -1184,7 +1184,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/deepstorage/armory)
 "de" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/armory)
 "df" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -1197,7 +1197,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/storage)
 "dh" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
@@ -1273,7 +1273,7 @@
 /area/ruin/space/has_grav/deepstorage)
 "dp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage)
 "dq" = (
 /obj/machinery/door/airlock{
@@ -1313,7 +1313,7 @@
 /area/ruin/space/has_grav/deepstorage/armory)
 "dv" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
@@ -1418,16 +1418,16 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/storage)
 "dA" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 9
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/dorm)
 "dB" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/dorm)
 "dC" = (
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden,
@@ -1550,7 +1550,7 @@
 /area/ruin/space/has_grav/deepstorage/armory)
 "dQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/dorm)
 "dR" = (
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
@@ -1759,7 +1759,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/dorm)
 "em" = (
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden,
@@ -1794,7 +1794,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/deepstorage/airlock)
 "eq" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/airlock)
 "er" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -1810,7 +1810,7 @@
 /area/ruin/space/has_grav/deepstorage/airlock)
 "es" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/airlock)
 "et" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -1935,7 +1935,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 4
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/airlock)
 "eI" = (
 /obj/structure/table,
@@ -2156,19 +2156,19 @@
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 6
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/armory)
 "fb" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/armory)
 "fc" = (
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 4
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/power)
 "fd" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
@@ -2258,7 +2258,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/deepstorage/power)
 "fp" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/power)
 "fq" = (
 /obj/machinery/portable_atmospherics/canister/nitrous_oxide,
@@ -2283,7 +2283,7 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
 	dir = 4
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/airlock)
 "ft" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
@@ -2447,7 +2447,7 @@
 /area/ruin/space/has_grav/deepstorage/power)
 "fN" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/dorm)
 "fO" = (
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden,
@@ -3074,7 +3074,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 4
 	},
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/power)
 "hp" = (
 /obj/machinery/power/smes/engineering,
@@ -3108,34 +3108,34 @@
 /area/ruin/space/has_grav/deepstorage)
 "hA" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "hB" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/hydroponics)
 "hT" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage)
 "hU" = (
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/storage)
 "hV" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/dorm)
 "hW" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/armory)
 "hX" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/airlock)
 "hY" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/mineral/iron,
+/turf/closed/wall/mineral/asbestos,
 /area/ruin/space/has_grav/deepstorage/power)
 "iL" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,

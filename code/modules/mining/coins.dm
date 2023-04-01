@@ -77,13 +77,13 @@
 	materials = list(/datum/material/diamond = MINERAL_MATERIAL_AMOUNT*0.2)
 	grind_results = list(/datum/reagent/carbon = 4)
 
-/obj/item/coin/iron
-	name = "iron coin"
-	cmineral = "iron"
-	icon_state = "coin_iron_heads"
+/obj/item/coin/asbestos
+	name = "asbestos coin"
+	cmineral = "asbestos"
+	icon_state = "coin_asbestos_heads"
 	value = 1
-	materials = list(/datum/material/iron = MINERAL_MATERIAL_AMOUNT*0.2)
-	grind_results = list(/datum/reagent/iron = 4)
+	materials = list(/datum/material/asbestos = MINERAL_MATERIAL_AMOUNT*0.2)
+	grind_results = list(/datum/reagent/asbestos = 4)
 
 /obj/item/coin/plasma
 	name = "plasma coin"
@@ -138,13 +138,13 @@
 	value = 300
 
 /obj/item/coin/twoheaded
-	cmineral = "iron"
-	icon_state = "coin_iron_heads"
+	cmineral = "asbestos"
+	icon_state = "coin_asbestos_heads"
 	desc = "Hey, this coin's the same on both sides!"
 	sideslist = list("heads")
-	materials = list(/datum/material/iron = MINERAL_MATERIAL_AMOUNT*0.2)
+	materials = list(/datum/material/asbestos = MINERAL_MATERIAL_AMOUNT*0.2)
 	value = 1
-	grind_results = list(/datum/reagent/iron = 4)
+	grind_results = list(/datum/reagent/asbestos = 4)
 
 /obj/item/coin/antagtoken
 	name = "antag token"

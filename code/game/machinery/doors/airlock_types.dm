@@ -444,7 +444,7 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_highsecurity
 	explosion_block = 2
 	normal_integrity = 500
-	security_level = AIRLOCK_SECURITY_IRON
+	security_level = AIRLOCK_SECURITY_ASBESTOS
 	damage_deflection = 30
 
 //////////////////////////////////
@@ -476,7 +476,7 @@
 	hackProof = TRUE
 	aiControlDisabled = 1
 	normal_integrity = 700
-	security_level = AIRLOCK_SECURITY_IRON
+	security_level = AIRLOCK_SECURITY_ASBESTOS
 	allow_repaint = FALSE
 
 //////////////////////////////////

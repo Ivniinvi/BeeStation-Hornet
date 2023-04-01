@@ -184,7 +184,7 @@
 
 /obj/machinery/magnetic_controller
 	name = "magnetic control console"
-	icon = 'icons/obj/airlock_machines.dmi' // uses an airlock machine icon, THINK GREEN HELP THE ENVIRONMENT - RECYCLING!
+	icon = 'icons/obj/airlock_machines.dmi' // uses an airlock machine icon, THINK GREEN HELP THE ENVASBESTOSMENT - RECYCLING!
 	icon_state = "airlock_control_standby"
 	density = FALSE
 	use_power = IDLE_POWER_USE

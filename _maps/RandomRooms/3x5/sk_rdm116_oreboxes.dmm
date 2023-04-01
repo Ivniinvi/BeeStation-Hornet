@@ -72,11 +72,11 @@
 "i" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
 /turf/open/floor/plating,
 /area/template_noop)
 "j" = (

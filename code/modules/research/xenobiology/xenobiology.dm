@@ -174,7 +174,7 @@
 			return 15 SECONDS
 
 		if(SLIME_ACTIVATE_MAJOR)
-			var/obj/item/stack/sheet/iron/O = new(user.drop_location(), 5)
+			var/obj/item/stack/sheet/asbestos/O = new(user.drop_location(), 5)
 			user.put_in_active_hand(O)
 			playsound(user, 'sound/effects/splat.ogg', 50, 1)
 			user.visible_message("<span class='warning'>[user] spits out [O]!</span>", "<span class='notice'>You spit out [O]!</span>")
@@ -1060,7 +1060,7 @@
 	item_state = "tile-bluespace"
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 6
-	materials = list(/datum/material/iron=500)
+	materials = list(/datum/material/asbestos=500)
 	throwforce = 10
 	throw_speed = 3
 	throw_range = 7
@@ -1077,7 +1077,7 @@
 	item_state = "tile-sepia"
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 6
-	materials = list(/datum/material/iron=500)
+	materials = list(/datum/material/asbestos=500)
 	throwforce = 10
 	throw_speed = 0.1
 	throw_range = 28

@@ -34,7 +34,7 @@
 /area/template_noop)
 "f" = (
 /obj/structure/rack,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /turf/open/floor/plating,
 /area/template_noop)
 "g" = (

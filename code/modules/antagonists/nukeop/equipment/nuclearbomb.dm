@@ -143,7 +143,7 @@
 					else
 						to_chat(user, "<span class='warning'>You fail to load the plutonium core into [core_box]. [core_box] has already been used!</span>")
 				return
-			if(istype(I, /obj/item/stack/sheet/iron))
+			if(istype(I, /obj/item/stack/sheet/asbestos))
 				if(!I.tool_start_check(user, amount=20))
 					return
 
@@ -521,7 +521,7 @@
 		off_station = NUKE_MISS_STATION
 
 	if(off_station < 2)
-		SSshuttle.registerHostileEnvironment(src)
+		SSshuttle.registerHostileEnvasbestosment(src)
 		SSshuttle.lockdown = TRUE
 
 	//Cinematic

@@ -124,13 +124,13 @@
 		addtimer(CALLBACK(PROC_REF(update_other_id)), 5)
 	if(glass)
 		airlock_material = "glass"
-	if(security_level > AIRLOCK_SECURITY_IRON)
+	if(security_level > AIRLOCK_SECURITY_ASBESTOS)
 		obj_integrity = normal_integrity * AIRLOCK_INTEGRITY_MULTIPLIER
 		max_integrity = normal_integrity * AIRLOCK_INTEGRITY_MULTIPLIER
 	else
 		obj_integrity = normal_integrity
 		max_integrity = normal_integrity
-	if(damage_deflection == AIRLOCK_DAMAGE_DEFLECTION_N && security_level > AIRLOCK_SECURITY_IRON)
+	if(damage_deflection == AIRLOCK_DAMAGE_DEFLECTION_N && security_level > AIRLOCK_SECURITY_ASBESTOS)
 		damage_deflection = AIRLOCK_DAMAGE_DEFLECTION_R
 	prepare_huds()
 	for(var/datum/atom_hud/data/diagnostic/diag_hud in GLOB.huds)
@@ -727,7 +727,7 @@
 		switch(security_level)
 			if(AIRLOCK_SECURITY_NONE)
 				. += "Its wires are exposed!"
-			if(AIRLOCK_SECURITY_IRON)
+			if(AIRLOCK_SECURITY_ASBESTOS)
 				. += "Its wires are hidden behind a welded metal cover."
 			if(AIRLOCK_SECURITY_PLASTEEL_I_S)
 				. += "There is some shredded plasteel inside."
@@ -740,7 +740,7 @@
 			if(AIRLOCK_SECURITY_PLASTEEL)
 				. += "There is a protective grille over its panel."
 	else if(security_level)
-		if(security_level == AIRLOCK_SECURITY_IRON)
+		if(security_level == AIRLOCK_SECURITY_ASBESTOS)
 			. += "It looks a bit stronger."
 		else
 			. += "It looks very robust."
@@ -908,18 +908,18 @@
 	if(panel_open)
 		switch(security_level)
 			if(AIRLOCK_SECURITY_NONE)
-				if(istype(C, /obj/item/stack/sheet/iron))
-					var/obj/item/stack/sheet/iron/S = C
+				if(istype(C, /obj/item/stack/sheet/asbestos))
+					var/obj/item/stack/sheet/asbestos/S = C
 					if(S.get_amount() < 2)
-						to_chat(user, "<span class='warning'>You need at least 2 iron sheets to reinforce [src].</span>")
+						to_chat(user, "<span class='warning'>You need at least 2 asbestos sheets to reinforce [src].</span>")
 						return
 					to_chat(user, "<span class='notice'>You start reinforcing [src].</span>")
 					if(do_after(user, 20, src))
 						if(!panel_open || !S.use(2))
 							return
-						user.visible_message("<span class='notice'>[user] reinforces \the [src] with iron.</span>",
-											"<span class='notice'>You reinforce \the [src] with iron.</span>")
-						security_level = AIRLOCK_SECURITY_IRON
+						user.visible_message("<span class='notice'>[user] reinforces \the [src] with asbestos.</span>",
+											"<span class='notice'>You reinforce \the [src] with asbestos.</span>")
+						security_level = AIRLOCK_SECURITY_ASBESTOS
 						update_icon()
 					return
 				else if(istype(C, /obj/item/stack/sheet/plasteel))
@@ -938,7 +938,7 @@
 						damage_deflection = AIRLOCK_DAMAGE_DEFLECTION_R
 						update_icon()
 					return
-			if(AIRLOCK_SECURITY_IRON)
+			if(AIRLOCK_SECURITY_ASBESTOS)
 				if(C.tool_behaviour == TOOL_WELDER)
 					if(!C.tool_start_check(user, amount=2))
 						return
@@ -950,7 +950,7 @@
 										"<span class='notice'>You cut through \the [src]'s shielding.</span>",
 										"<span class='italics'>You hear welding.</span>")
 						security_level = AIRLOCK_SECURITY_NONE
-						spawn_atom_to_turf(/obj/item/stack/sheet/iron, user.loc, 2)
+						spawn_atom_to_turf(/obj/item/stack/sheet/asbestos, user.loc, 2)
 						update_icon()
 					return
 			if(AIRLOCK_SECURITY_PLASTEEL_I_S)

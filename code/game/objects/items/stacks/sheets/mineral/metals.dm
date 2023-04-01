@@ -1,7 +1,7 @@
 /**********************
 Metals Sheets
 	Contains:
-		- Iron
+		- Asbestos
 		- Plasteel
 		- Runed Metal (cult)
 		- Brass (clockwork cult)
@@ -12,36 +12,36 @@ Metals Sheets
 		- Coal
 **********************/
 
-/* Iron */
+/* Asbestos */
 
-/obj/item/stack/sheet/iron
-	name = "iron"
-	desc = "Sheets made out of iron."
-	singular_name = "iron sheet"
+/obj/item/stack/sheet/asbestos
+	name = "asbestos"
+	desc = "Sheets made out of asbestos."
+	singular_name = "asbestos sheet"
 	icon_state = "sheet-metal"
 	item_state = "sheet-metal"
-	materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/asbestos=MINERAL_MATERIAL_AMOUNT)
 	throwforce = 10
 	flags_1 = CONDUCT_1
 	resistance_flags = FIRE_PROOF
-	merge_type = /obj/item/stack/sheet/iron
-	grind_results = list(/datum/reagent/iron = 20)
+	merge_type = /obj/item/stack/sheet/asbestos
+	grind_results = list(/datum/reagent/asbestos = 20)
 	point_value = 2
 	tableVariant = /obj/structure/table
 
-/obj/item/stack/sheet/iron/ratvar_act()
+/obj/item/stack/sheet/asbestos/ratvar_act()
 	new /obj/item/stack/sheet/brass(loc, amount)
 	qdel(src)
 
-/obj/item/stack/sheet/iron/narsie_act()
+/obj/item/stack/sheet/asbestos/narsie_act()
 	new /obj/item/stack/sheet/runed_metal(loc, amount)
 	qdel(src)
 
-/obj/item/stack/sheet/iron/Initialize(mapload, new_amount, merge = TRUE)
+/obj/item/stack/sheet/asbestos/Initialize(mapload, new_amount, merge = TRUE)
 	recipes = GLOB.metal_recipes
 	return ..()
 
-/obj/item/stack/sheet/iron/suicide_act(mob/living/carbon/user)
+/obj/item/stack/sheet/asbestos/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins whacking [user.p_them()]self over the head with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
 	return BRUTELOSS
 
@@ -50,16 +50,16 @@ Metals Sheets
 /obj/item/stack/sheet/plasteel
 	name = "plasteel"
 	singular_name = "plasteel sheet"
-	desc = "This sheet is an alloy of iron and plasma."
+	desc = "This sheet is an alloy of asbestos and plasma."
 	icon_state = "sheet-plasteel"
 	item_state = "sheet-metal"
-	materials = list(/datum/material/iron=2000, /datum/material/plasma=2000)
+	materials = list(/datum/material/asbestos=2000, /datum/material/plasma=2000)
 	throwforce = 10
 	flags_1 = CONDUCT_1
 	armor = list(MELEE = 0,  BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 80, STAMINA = 0)
 	resistance_flags = FIRE_PROOF
 	merge_type = /obj/item/stack/sheet/plasteel
-	grind_results = list(/datum/reagent/iron = 20, /datum/reagent/toxin/plasma = 20)
+	grind_results = list(/datum/reagent/asbestos = 20, /datum/reagent/toxin/plasma = 20)
 	point_value = 23
 	tableVariant = /obj/structure/table/reinforced
 
@@ -78,7 +78,7 @@ Metals Sheets
 	//icon = 'icons/obj/stacks/mineral.dmi'
 	sheettype = "runed"
 	merge_type = /obj/item/stack/sheet/runed_metal
-	grind_results = list(/datum/reagent/iron = 5, /datum/reagent/blood = 15)
+	grind_results = list(/datum/reagent/asbestos = 5, /datum/reagent/blood = 15)
 
 /obj/item/stack/sheet/runed_metal/ratvar_act()
 	new /obj/item/stack/sheet/brass(loc, amount)
@@ -113,9 +113,9 @@ Metals Sheets
 	max_amount = 50
 	throw_speed = 1
 	throw_range = 3
-	grind_results = list(/datum/reagent/iron = 5, /datum/reagent/teslium = 15)
+	grind_results = list(/datum/reagent/asbestos = 5, /datum/reagent/teslium = 15)
 	merge_type = /obj/item/stack/sheet/brass
-	materials = list(/datum/material/copper=MINERAL_MATERIAL_AMOUNT*0.5, /datum/material/iron=MINERAL_MATERIAL_AMOUNT*0.5)
+	materials = list(/datum/material/copper=MINERAL_MATERIAL_AMOUNT*0.5, /datum/material/asbestos=MINERAL_MATERIAL_AMOUNT*0.5)
 
 /obj/item/stack/sheet/brass/narsie_act()
 	new /obj/item/stack/sheet/runed_metal(loc, amount)
@@ -147,7 +147,7 @@ Metals Sheets
 	throw_speed = 1
 	throw_range = 3
 	novariants = FALSE
-	grind_results = list(/datum/reagent/iron = 5, /datum/reagent/copper = 3) //we have no "tin" reagent so this is the closest thing
+	grind_results = list(/datum/reagent/asbestos = 5, /datum/reagent/copper = 3) //we have no "tin" reagent so this is the closest thing
 	merge_type = /obj/item/stack/sheet/bronze
 	tableVariant = /obj/structure/table/bronze
 

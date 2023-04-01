@@ -403,7 +403,7 @@ Nothing else in the console has ID requirements.
 					design.category -= "Imported"
 				else
 					for(var/material in design.materials)
-						if( !(material in list(/datum/material/iron, /datum/material/glass)))
+						if( !(material in list(/datum/material/asbestos, /datum/material/glass)))
 							autolathe_friendly = FALSE
 							design.category -= "Imported"
 

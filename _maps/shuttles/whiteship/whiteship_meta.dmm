@@ -295,7 +295,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/syndicate/ranged{
-	environment_smash = 0;
+	envasbestosment_smash = 0;
 	name = "Syndicate Salvage Worker"
 	},
 /obj/machinery/atmospherics/components/trinary/filter/atmos/n2{
@@ -572,7 +572,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
-/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/asbestos/twenty,
 /obj/item/stack/sheet/glass{
 	amount = 10
 	},
@@ -1173,7 +1173,7 @@
 	req_access = null
 	},
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/asbestos/twenty,
 /obj/item/stack/sheet/glass{
 	amount = 10
 	},
@@ -1456,7 +1456,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/blood/gibs/old,
 /mob/living/simple_animal/hostile/syndicate/melee{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
@@ -1611,7 +1611,7 @@
 "kB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/syndicate/melee{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1748,7 +1748,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/syndicate/melee{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/abandoned/cargo)

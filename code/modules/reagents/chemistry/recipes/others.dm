@@ -58,7 +58,7 @@
 /datum/chemical_reaction/plasmasolidification
 	name = "Solid Plasma"
 	id = "solidplasma"
-	required_reagents = list(/datum/reagent/iron = 5, /datum/reagent/consumable/frostoil = 5, /datum/reagent/toxin/plasma = 20)
+	required_reagents = list(/datum/reagent/asbestos = 5, /datum/reagent/consumable/frostoil = 5, /datum/reagent/toxin/plasma = 20)
 	mob_react = FALSE
 
 /datum/chemical_reaction/plasmasolidification/on_reaction(datum/reagents/holder, created_volume)
@@ -69,7 +69,7 @@
 /datum/chemical_reaction/goldsolidification
 	name = "Solid Gold"
 	id = "solidgold"
-	required_reagents = list(/datum/reagent/consumable/frostoil = 5, /datum/reagent/gold = 20, /datum/reagent/iron = 1)
+	required_reagents = list(/datum/reagent/consumable/frostoil = 5, /datum/reagent/gold = 20, /datum/reagent/asbestos = 1)
 	mob_react = FALSE
 
 /datum/chemical_reaction/goldsolidification/on_reaction(datum/reagents/holder, created_volume)
@@ -465,13 +465,13 @@
 	s.start()
 	holder.clear_reagents()
 
-/datum/chemical_reaction/ironfoam
-	name = "Iron Foam"
-	id = "ironlfoam"
-	required_reagents = list(/datum/reagent/iron = 3, /datum/reagent/foaming_agent = 1, /datum/reagent/toxin/acid/fluacid = 1)
+/datum/chemical_reaction/asbestosfoam
+	name = "Asbestos Foam"
+	id = "asbestoslfoam"
+	required_reagents = list(/datum/reagent/asbestos = 3, /datum/reagent/foaming_agent = 1, /datum/reagent/toxin/acid/fluacid = 1)
 	mob_react = FALSE
 
-/datum/chemical_reaction/ironfoam/on_reaction(datum/reagents/holder, created_volume)
+/datum/chemical_reaction/asbestosfoam/on_reaction(datum/reagents/holder, created_volume)
 	var/location = get_turf(holder.my_atom)
 	for(var/mob/M as() in viewers(5, location))
 		to_chat(M, "<span class='danger'>The solution spews out a metallic foam!</span>")
@@ -490,7 +490,7 @@
 	name = "Smart foaming Agent"
 	id = /datum/reagent/smart_foaming_agent
 	results = list(/datum/reagent/smart_foaming_agent = 3)
-	required_reagents = list(/datum/reagent/foaming_agent = 3, /datum/reagent/acetone = 1, /datum/reagent/iron = 1)
+	required_reagents = list(/datum/reagent/foaming_agent = 3, /datum/reagent/acetone = 1, /datum/reagent/asbestos = 1)
 	mix_message = "The solution mixes into a frothy metal foam and conforms to the walls of its container."
 
 

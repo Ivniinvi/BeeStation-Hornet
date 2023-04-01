@@ -261,9 +261,9 @@
 		if(!(machine_stat & BROKEN))
 			canister_break()
 		if(disassembled)
-			new /obj/item/stack/sheet/iron (loc, 10)
+			new /obj/item/stack/sheet/asbestos (loc, 10)
 		else
-			new /obj/item/stack/sheet/iron (loc, 5)
+			new /obj/item/stack/sheet/asbestos (loc, 5)
 	qdel(src)
 
 /obj/machinery/portable_atmospherics/canister/welder_act(mob/living/user, obj/item/I)

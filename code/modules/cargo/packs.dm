@@ -1406,25 +1406,25 @@
 					/obj/item/stack/sheet/glass/fifty)
 	crate_name = "bulk glass sheets crate"
 
-/datum/supply_pack/materials/iron50
-	name = "50 Iron Sheets"
-	desc = "Any construction project begins with a good stack of fifty iron sheets!"
+/datum/supply_pack/materials/asbestos50
+	name = "50 Asbestos Sheets"
+	desc = "Any construction project begins with a good stack of fifty asbestos sheets!"
 	cost = 1000
 	max_supply = 8
-	contains = list(/obj/item/stack/sheet/iron/fifty)
-	crate_name = "iron sheets crate"
+	contains = list(/obj/item/stack/sheet/asbestos/fifty)
+	crate_name = "asbestos sheets crate"
 
-/datum/supply_pack/materials/iron250
-	name = "250 Iron Sheets"
-	desc = "Enough Iron to rebuild half a station!"
+/datum/supply_pack/materials/asbestos250
+	name = "250 Asbestos Sheets"
+	desc = "Enough Asbestos to rebuild half a station!"
 	cost = 2800 //20%
 	max_supply = 3
-	contains = list(/obj/item/stack/sheet/iron/fifty,
-					/obj/item/stack/sheet/iron/fifty,
-					/obj/item/stack/sheet/iron/fifty,
-					/obj/item/stack/sheet/iron/fifty,
-					/obj/item/stack/sheet/iron/fifty)
-	crate_name = "bulk iron sheets crate"
+	contains = list(/obj/item/stack/sheet/asbestos/fifty,
+					/obj/item/stack/sheet/asbestos/fifty,
+					/obj/item/stack/sheet/asbestos/fifty,
+					/obj/item/stack/sheet/asbestos/fifty,
+					/obj/item/stack/sheet/asbestos/fifty)
+	crate_name = "bulk asbestos sheets crate"
 
 /datum/supply_pack/materials/plasteel20
 	name = "20 Plasteel Sheets"
@@ -1907,7 +1907,7 @@
 	cost = 2500
 	max_supply = 4
 	access = ACCESS_ROBOTICS
-	contains = list(/obj/item/stack/sheet/iron/five,
+	contains = list(/obj/item/stack/sheet/asbestos/five,
 					/obj/item/stack/cable_coil/random/five,
 					/obj/item/circuitboard/machine/cyborgrecharger,
 					/obj/item/stock_parts/capacitor,

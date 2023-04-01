@@ -47,7 +47,7 @@
 		guardian.melee_damage = 50
 		guardian.armour_penetration = 100
 		guardian.obj_damage = 0
-		guardian.environment_smash = ENVIRONMENT_SMASH_NONE
+		guardian.envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 		new /obj/effect/temp_visual/guardian/phase/out(get_turf(guardian))
 		guardian.alpha = 15
 		updatestealthalert()
@@ -55,7 +55,7 @@
 		guardian.melee_damage = initial(guardian.melee_damage)
 		guardian.armour_penetration = initial(guardian.armour_penetration)
 		guardian.obj_damage = initial(guardian.obj_damage)
-		guardian.environment_smash = initial(guardian.environment_smash)
+		guardian.envasbestosment_smash = initial(guardian.envasbestosment_smash)
 		guardian.alpha = initial(guardian.alpha)
 		master_stats.Apply(guardian)
 		if(!forced)

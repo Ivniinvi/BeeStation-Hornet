@@ -23,7 +23,7 @@
 	throwforce = 0
 	throw_speed = 3
 	throw_range = 5
-	materials = list(/datum/material/iron=80)
+	materials = list(/datum/material/asbestos=80)
 	flags_1 = CONDUCT_1
 	attack_verb = list("attacked", "stabbed", "poked")
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -82,7 +82,7 @@
 	block_flags = BLOCKING_ACTIVE | BLOCKING_NASTY
 	throw_speed = 3
 	throw_range = 6
-	materials = list(/datum/material/iron=12000)
+	materials = list(/datum/material/asbestos=12000)
 	attack_verb = list("slashed", "stabbed", "sliced", "tore", "ripped", "diced", "cut")
 	sharpness = IS_SHARP_ACCURATE
 	armor = list(MELEE = 0,  BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, STAMINA = 0)
@@ -125,7 +125,7 @@
 	flags_1 = CONDUCT_1
 	force = 15
 	throwforce = 10
-	materials = list(/datum/material/iron=18000)
+	materials = list(/datum/material/asbestos=18000)
 	attack_verb = list("cleaved", "slashed", "stabbed", "sliced", "tore", "ripped", "diced", "cut")
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_price = 60

@@ -22,7 +22,7 @@
 	attacktext = "attacks"
 	attack_sound = 'sound/items/bikehorn.ogg'
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	del_on_death = TRUE
 	loot = list(/obj/effect/mob_spawn/human/clown/corpse)
 
@@ -175,7 +175,7 @@
 	melee_damage = 17
 	attacktext = "pummels"
 	obj_damage = 30
-	environment_smash = ENVIRONMENT_SMASH_WALLS
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_WALLS
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/human, /obj/item/soap)
 
 /mob/living/simple_animal/hostile/retaliate/clown/clownhulk/chlown
@@ -211,7 +211,7 @@
 	speed = -5
 	melee_damage = 10
 	attacktext = "ferociously mauls"
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/xeno/bodypartless, /obj/effect/particle_effect/foam, /obj/item/soap)
 	attack_reagent = /datum/reagent/peaceborg/confuse
 
@@ -231,7 +231,7 @@
 	stat_attack = UNCONSCIOUS
 	attacktext = "acts out divine vengeance on"
 	obj_damage = 50
-	environment_smash = ENVIRONMENT_SMASH_RWALLS
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_RWALLS
 	loot = list(/obj/item/clothing/mask/gas/clown_hat, /obj/effect/gibspawner/human, /obj/effect/particle_effect/foam, /obj/item/soap)
 
 /mob/living/simple_animal/hostile/retaliate/clown/mutant

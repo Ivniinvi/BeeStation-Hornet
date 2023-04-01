@@ -209,7 +209,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/bundles_TC/medical
 	name = "Medical bundle"
 	desc = "The support specialist: Aid your fellow operatives with this medical bundle. Contains a tactical medkit, \
-			a Donksoft LMG, a box of riot darts and a pair of magboots to rescue your friends in no-gravity environments."
+			a Donksoft LMG, a box of riot darts and a pair of magboots to rescue your friends in no-gravity envasbestosments."
 	item = /obj/item/storage/backpack/duffelbag/syndie/med/medicalbundle
 	cost = 15 // normally 20
 	purchasable_from = UPLINK_NUKE_OPS
@@ -1558,7 +1558,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	name = "Blood-Red Magboots"
 	desc = "A pair of magnetic boots with a Syndicate paintjob that assist with freer movement in space or on-station \
 			during gravitational generator failures. These reverse-engineered knockoffs of Nanotrasen's \
-			'Advanced Magboots' slow you down in simulated-gravity environments much like the standard issue variety."
+			'Advanced Magboots' slow you down in simulated-gravity envasbestosments much like the standard issue variety."
 	item = /obj/item/clothing/shoes/magboots/syndie
 	cost = 2
 	purchasable_from = (UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)

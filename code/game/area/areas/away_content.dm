@@ -9,7 +9,7 @@ Unused icons for new areas are "awaycontent1" ~ "awaycontent30"
 	icon_state = "away"
 	has_gravity = STANDARD_GRAVITY
 	ambience_index = AMBIENCE_AWAY
-	sound_environment = SOUND_ENVIRONMENT_ROOM
+	sound_envasbestosment = SOUND_ENVASBESTOSMENT_ROOM
 	airlock_hack_difficulty = AIRLOCK_WIRE_SECURITY_ELITE
 
 /area/awaymission/beach

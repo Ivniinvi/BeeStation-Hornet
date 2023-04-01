@@ -102,34 +102,34 @@
 		return
 
 	var/datum/gas_mixture/air_contents = airs[1]
-	var/datum/gas_mixture/environment = loc.return_air()
+	var/datum/gas_mixture/envasbestosment = loc.return_air()
 
-	if(environment == null)
+	if(envasbestosment == null)
 		return
 
-	var/environment_pressure = environment.return_pressure()
+	var/envasbestosment_pressure = envasbestosment.return_pressure()
 
 	if(pump_direction & RELEASING) // internal -> external
 		var/pressure_delta = 10000
 
 		if(pressure_checks&EXT_BOUND)
-			pressure_delta = min(pressure_delta, (external_pressure_bound - environment_pressure))
+			pressure_delta = min(pressure_delta, (external_pressure_bound - envasbestosment_pressure))
 		if(pressure_checks&INT_BOUND)
 			pressure_delta = min(pressure_delta, (air_contents.return_pressure() - internal_pressure_bound))
 
 		if(pressure_delta > 0)
 			if(air_contents.return_temperature() > 0 && air_contents.return_volume() > 0)
-				var/transfer_moles = pressure_delta*environment.return_volume()/(air_contents.return_temperature() * R_IDEAL_GAS_EQUATION)
+				var/transfer_moles = pressure_delta*envasbestosment.return_volume()/(air_contents.return_temperature() * R_IDEAL_GAS_EQUATION)
 
 				loc.assume_air_moles(air_contents, transfer_moles)
 				air_update_turf()
 
 	else // external -> internal
-		if(environment.return_pressure() > 0)
-			var/our_multiplier = air_contents.return_volume() / (environment.return_temperature() * R_IDEAL_GAS_EQUATION)
+		if(envasbestosment.return_pressure() > 0)
+			var/our_multiplier = air_contents.return_volume() / (envasbestosment.return_temperature() * R_IDEAL_GAS_EQUATION)
 			var/moles_delta = 10000 * our_multiplier
 			if(pressure_checks&EXT_BOUND)
-				moles_delta = min(moles_delta, (environment_pressure - external_pressure_bound) * environment.return_volume() / (environment.return_temperature() * R_IDEAL_GAS_EQUATION))
+				moles_delta = min(moles_delta, (envasbestosment_pressure - external_pressure_bound) * envasbestosment.return_volume() / (envasbestosment.return_temperature() * R_IDEAL_GAS_EQUATION))
 			if(pressure_checks&INT_BOUND)
 				moles_delta = min(moles_delta, (internal_pressure_bound - air_contents.return_pressure()) * our_multiplier)
 

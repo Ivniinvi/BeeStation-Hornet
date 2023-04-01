@@ -56,7 +56,7 @@ handles linking back and forth.
 	set_silo(null)
 
 	var/static/list/allowed_mats = list(
-		/datum/material/iron,
+		/datum/material/asbestos,
 		/datum/material/glass,
 		/datum/material/copper,
 		/datum/material/silver,

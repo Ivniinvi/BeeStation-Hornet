@@ -65,11 +65,11 @@
 				playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
 				new /obj/structure/lattice/catwalk/over(src)
 				return
-	if(istype(C, /obj/item/stack/sheet/iron) && attachment_holes)
+	if(istype(C, /obj/item/stack/sheet/asbestos) && attachment_holes)
 		if(broken || burnt)
 			to_chat(user, "<span class='warning'>Repair the plating first!</span>")
 			return
-		var/obj/item/stack/sheet/iron/R = C
+		var/obj/item/stack/sheet/asbestos/R = C
 		if (R.get_amount() < 1)
 			to_chat(user, "<span class='warning'>You need one sheet to make a reinforced floor!</span>")
 			return

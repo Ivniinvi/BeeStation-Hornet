@@ -137,7 +137,7 @@ export const PowerMonitorContent = (props, context) => {
             <Table.Cell collapsing title="Lighting">
               Lgt
             </Table.Cell>
-            <Table.Cell collapsing title="Environment">
+            <Table.Cell collapsing title="Envasbestosment">
               Env
             </Table.Cell>
           </Table.Row>

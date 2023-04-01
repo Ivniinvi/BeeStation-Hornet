@@ -72,7 +72,7 @@
 	if(overclocked && (output_starting_pressure-input_starting_pressure > 1000))//Overclocked pumps can only force gas a certain amount.
 		return
 
-	if(overclocked)//Some of the gas from the mixture leaks to the environment when overclocked
+	if(overclocked)//Some of the gas from the mixture leaks to the envasbestosment when overclocked
 		var/turf/open/T = loc
 		if(istype(T))
 			var/datum/gas_mixture/leaked = air1.remove_ratio(VOLUME_PUMP_LEAK_AMOUNT)

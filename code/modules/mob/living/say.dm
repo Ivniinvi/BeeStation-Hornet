@@ -207,8 +207,8 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	//No screams in space, unless you're next to someone.
 	var/turf/T = get_turf(src)
-	var/datum/gas_mixture/environment = T.return_air()
-	var/pressure = environment ? environment.return_pressure() : 0
+	var/datum/gas_mixture/envasbestosment = T.return_air()
+	var/pressure = envasbestosment ? envasbestosment.return_pressure() : 0
 	if(pressure < SOUND_MINIMUM_PRESSURE)
 		message_range = 1
 

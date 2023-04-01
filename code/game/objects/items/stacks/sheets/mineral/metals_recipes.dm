@@ -1,4 +1,4 @@
-/* Iron */
+/* Asbestos */
 
 GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("stool",										/obj/structure/chair/stool, one_per_turf = TRUE, on_floor = TRUE, time = 1.5 SECONDS), \
@@ -50,7 +50,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("canister",									/obj/machinery/portable_atmospherics/canister, 10, one_per_turf = TRUE, on_floor = TRUE, time = 1.5 SECONDS), \
 	null, \
 	new/datum/stack_recipe("floor tile",								/obj/item/stack/tile/plasteel, 1, 4, 20), \
-	new/datum/stack_recipe("iron rod",									/obj/item/stack/rods, 1, 2, 60), \
+	new/datum/stack_recipe("asbestos rod",									/obj/item/stack/rods, 1, 2, 60), \
 	null, \
 	new/datum/stack_recipe("wall girders",								/obj/structure/girder, 2, one_per_turf = TRUE, on_floor = TRUE, time = 4 SECONDS), \
 	null, \
@@ -96,7 +96,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("extinguisher cabinet frame",				/obj/item/wallframe/extinguisher_cabinet, 2), \
 	new/datum/stack_recipe("button frame",								/obj/item/wallframe/button, 1), \
 	null, \
-	new/datum/stack_recipe("iron door",									/obj/structure/mineral_door/iron, 20, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("asbestos door",									/obj/structure/mineral_door/asbestos, 20, one_per_turf = TRUE, on_floor = TRUE), \
 	new/datum/stack_recipe("desk bell", 								/obj/structure/desk_bell, 2, time = 3 SECONDS), \
 	new/datum/stack_recipe("filing cabinet", 							/obj/structure/filingcabinet, 2, one_per_turf = TRUE, on_floor = TRUE, time = 10 SECONDS), \
 	new/datum/stack_recipe("floodlight frame",							/obj/structure/floodlight_frame, 5, one_per_turf = TRUE, on_floor = TRUE), \
@@ -104,9 +104,9 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	new/datum/stack_recipe("sink frame",								/obj/structure/sinkframe, 2, time = 2 SECONDS), \
 ))
 
-STACKSIZE_MACRO(/obj/item/stack/sheet/iron)
+STACKSIZE_MACRO(/obj/item/stack/sheet/asbestos)
 
-/obj/item/stack/sheet/iron/cyborg
+/obj/item/stack/sheet/asbestos/cyborg
 	materials = list()
 	is_cyborg = 1
 	cost = 500

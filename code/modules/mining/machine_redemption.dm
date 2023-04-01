@@ -17,7 +17,7 @@
 	layer = BELOW_OBJ_LAYER
 	var/stored_points = 0
 	var/sheet_per_ore = 1
-	var/list/ore_values = list(/datum/material/iron = 2, /datum/material/glass = 2, /datum/material/copper = 6, /datum/material/plasma = 19,  /datum/material/silver = 20, /datum/material/gold = 23, /datum/material/titanium = 38, /datum/material/uranium = 38, /datum/material/diamond = 63, /datum/material/bluespace = 63, /datum/material/bananium = 63)
+	var/list/ore_values = list(/datum/material/asbestos = 2, /datum/material/glass = 2, /datum/material/copper = 6, /datum/material/plasma = 19,  /datum/material/silver = 20, /datum/material/gold = 23, /datum/material/titanium = 38, /datum/material/uranium = 38, /datum/material/diamond = 63, /datum/material/bluespace = 63, /datum/material/bananium = 63)
 	/// Variable that holds a timer which is used for callbacks to `send_console_message()`. Used for preventing multiple calls to this proc while the ORM is eating a stack of ores.
 	var/console_notify_timer
 	var/datum/techweb/stored_research

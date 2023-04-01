@@ -160,7 +160,7 @@
 	a_intent = INTENT_HELP
 	friendly = "caresses"
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	gold_core_spawnable = HOSTILE_SPAWN
 	icon_state = "maid"
 	icon_living = "maid"

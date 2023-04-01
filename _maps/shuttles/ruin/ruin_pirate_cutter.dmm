@@ -131,7 +131,7 @@
 /area/shuttle/caravan/pirate)
 "hh" = (
 /mob/living/simple_animal/hostile/pirate{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/caravan/pirate)
@@ -405,7 +405,7 @@
 /area/shuttle/caravan/pirate)
 "tM" = (
 /mob/living/simple_animal/hostile/pirate/ranged{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
@@ -624,7 +624,7 @@
 	icon_state = "0-2"
 	},
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/asbestos/twenty,
 /obj/item/stack/sheet/glass{
 	amount = 10
 	},
@@ -787,7 +787,7 @@
 	req_access = null
 	},
 /mob/living/simple_animal/hostile/pirate/ranged{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners/contrasted,
 /turf/open/floor/plasteel/dark,

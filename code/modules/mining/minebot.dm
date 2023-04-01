@@ -25,7 +25,7 @@
 	maxHealth = 125
 	melee_damage = 15
 	obj_damage = 10
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	healable = 0
 	deathmessage = "stops moving"
 	// AI stuff
@@ -36,7 +36,7 @@
 	stop_automated_movement_when_pulled = TRUE
 	wander = FALSE
 	wanted_objects = list(/obj/item/stack/ore/diamond, /obj/item/stack/ore/gold, /obj/item/stack/ore/silver,
-						  /obj/item/stack/ore/plasma, /obj/item/stack/ore/uranium, /obj/item/stack/ore/iron,
+						  /obj/item/stack/ore/plasma, /obj/item/stack/ore/uranium, /obj/item/stack/ore/asbestos,
 						  /obj/item/stack/ore/bananium, /obj/item/stack/ore/titanium)
 	// Response verbs
 	response_help = "pets"

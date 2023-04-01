@@ -312,7 +312,7 @@
 
 /obj/item/clothing/under/chameleon/envirosuit
 	name = "plasma envirosuit"
-	desc = "A special containment suit that allows plasma-based lifeforms to exist safely in an oxygenated environment, and automatically extinguishes them in a crisis. Despite being airtight, it's not spaceworthy. It has a small dial on the wrist."
+	desc = "A special containment suit that allows plasma-based lifeforms to exist safely in an oxygenated envasbestosment, and automatically extinguishes them in a crisis. Despite being airtight, it's not spaceworthy. It has a small dial on the wrist."
 	icon_state = "plasmaman"
 	item_state = "plasmaman"
 	resistance_flags = FIRE_PROOF
@@ -498,7 +498,7 @@
 
 /obj/item/clothing/head/chameleon/envirohelm
 	name = "plasma envirosuit helmet"
-	desc = "A special containment helmet that allows plasma-based lifeforms to exist safely in an oxygenated environment. It is space-worthy, and may be worn in tandem with other EVA gear."
+	desc = "A special containment helmet that allows plasma-based lifeforms to exist safely in an oxygenated envasbestosment. It is space-worthy, and may be worn in tandem with other EVA gear."
 	icon_state = "plasmaman-helm"
 	item_state = "plasmaman-helm"
 	resistance_flags = FIRE_PROOF

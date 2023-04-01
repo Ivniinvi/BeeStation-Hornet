@@ -27,7 +27,7 @@
 	maxHealth = 200
 	health = 200
 	healable = 0
-	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_STRUCTURES
 	obj_damage = 40
 	melee_damage = 10
 	see_in_dark = 8

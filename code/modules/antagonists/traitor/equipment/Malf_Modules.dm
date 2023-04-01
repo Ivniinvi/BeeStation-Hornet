@@ -338,7 +338,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 /obj/machinery/doomsday_device/Destroy()
 	QDEL_NULL(countdown)
 	STOP_PROCESSING(SSfastprocess, src)
-	SSshuttle.clearHostileEnvironment(src)
+	SSshuttle.clearHostileEnvasbestosment(src)
 	SSmapping.remove_nuke_threat(src)
 	for(var/A in GLOB.ai_list)
 		var/mob/living/silicon/ai/AI = A
@@ -352,7 +352,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 	timing = TRUE
 	countdown.start()
 	START_PROCESSING(SSfastprocess, src)
-	SSshuttle.registerHostileEnvironment(src)
+	SSshuttle.registerHostileEnvasbestosment(src)
 	SSmapping.add_nuke_threat(src) //This causes all blue "circuit" tiles on the map to change to animated red icon state.
 
 /obj/machinery/doomsday_device/proc/seconds_remaining()
@@ -362,7 +362,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 	var/turf/T = get_turf(src)
 	if(!T || !is_station_level(T.z))
 		minor_announce("DOOMSDAY DEVICE OUT OF STATION RANGE, ABORTING", "ERROR ER0RR $R0RRO$!R41.%%!!(%$^^__+ @#F0E4", TRUE)
-		SSshuttle.clearHostileEnvironment(src)
+		SSshuttle.clearHostileEnvasbestosment(src)
 		qdel(src)
 		return
 	if(!timing)
@@ -527,7 +527,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 /datum/AI_Module/large/break_air_alarms
 	module_name = "Air Alarm Safety Override"
 	mod_pick_name = "allow_flooding"
-	description = "Gives you the ability to disable safeties on all air alarms. This will allow you to use the environmental mode Flood, which disables scrubbers as well as pressure checks on vents. \
+	description = "Gives you the ability to disable safeties on all air alarms. This will allow you to use the envasbestosmental mode Flood, which disables scrubbers as well as pressure checks on vents. \
 	Anyone can check the air alarm's interface and may be tipped off by their nonfunctionality."
 	one_purchase = TRUE
 	cost = 50
@@ -547,7 +547,7 @@ GLOBAL_LIST_INIT(blacklisted_malf_machines, typecacheof(list(
 			continue
 		AA.obj_flags |= EMAGGED
 	owner.log_message("activated malf module [name]", LOG_GAME)
-	to_chat(owner, "<span class='notice'>All air alarm safeties on the station have been overridden. Air alarms may now use the Flood environmental mode.</span>")
+	to_chat(owner, "<span class='notice'>All air alarm safeties on the station have been overridden. Air alarms may now use the Flood envasbestosmental mode.</span>")
 	owner.playsound_local(owner, 'sound/machines/terminal_off.ogg', 50, 0)
 
 

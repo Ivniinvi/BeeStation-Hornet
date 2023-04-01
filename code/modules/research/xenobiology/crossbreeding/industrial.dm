@@ -79,7 +79,7 @@ Industrial extracts:
 	colour = "metal"
 	effect_desc = "Produces metal sheets."
 	plasmarequired = 3
-	itempath = /obj/item/stack/sheet/iron/ten
+	itempath = /obj/item/stack/sheet/asbestos/ten
 
 /obj/item/slimecross/industrial/yellow
 	colour = "yellow"
@@ -167,7 +167,7 @@ Industrial extracts:
 	plasmarequired = 10
 
 /obj/item/slimecross/industrial/gold/process()
-	itempath = pick(/obj/item/coin/silver, /obj/item/coin/iron, /obj/item/coin/gold, /obj/item/coin/diamond, /obj/item/coin/plasma, /obj/item/coin/uranium)
+	itempath = pick(/obj/item/coin/silver, /obj/item/coin/asbestos, /obj/item/coin/gold, /obj/item/coin/diamond, /obj/item/coin/plasma, /obj/item/coin/uranium)
 	..()
 
 /obj/item/slimecross/industrial/oil

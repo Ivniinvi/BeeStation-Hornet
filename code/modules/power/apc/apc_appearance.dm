@@ -65,8 +65,8 @@
 	. += emissive_appearance(icon, "apco0-[equipment]")
 	. += mutable_appearance(icon, "apco1-[lighting]")
 	. += emissive_appearance(icon, "apco1-[lighting]")
-	. += mutable_appearance(icon, "apco2-[environ]")
-	. += emissive_appearance(icon, "apco2-[environ]")
+	. += mutable_appearance(icon, "apco2-[envasbestos]")
+	. += emissive_appearance(icon, "apco2-[envasbestos]")
 
 /// Checks for what icon updates we will need to handle
 /obj/machinery/power/apc/proc/check_updates()
@@ -106,7 +106,7 @@
 		new_update_overlay |= (charging << UPOVERLAY_CHARGING_SHIFT)
 		new_update_overlay |= (equipment << UPOVERLAY_EQUIPMENT_SHIFT)
 		new_update_overlay |= (lighting << UPOVERLAY_LIGHTING_SHIFT)
-		new_update_overlay |= (environ << UPOVERLAY_ENVIRON_SHIFT)
+		new_update_overlay |= (envasbestos << UPOVERLAY_ENVASBESTOS_SHIFT)
 
 	if(new_update_overlay != update_overlay)
 		update_overlay = new_update_overlay

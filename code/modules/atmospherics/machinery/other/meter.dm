@@ -4,7 +4,7 @@
 	icon = 'icons/obj/atmospherics/pipes/meter.dmi'
 	icon_state = "meterX"
 	layer = GAS_PUMP_LAYER
-	power_channel = AREA_USAGE_ENVIRON
+	power_channel = AREA_USAGE_ENVASBESTOS
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 2
 	active_power_usage = 4
@@ -62,12 +62,12 @@
 
 	use_power(5)
 
-	var/datum/gas_mixture/environment = target.return_air()
-	if(!environment)
+	var/datum/gas_mixture/envasbestosment = target.return_air()
+	if(!envasbestosment)
 		icon_state = "meterX"
 		return 0
 
-	var/env_pressure = environment.return_pressure()
+	var/env_pressure = envasbestosment.return_pressure()
 	if(env_pressure <= 0.15*ONE_ATMOSPHERE)
 		icon_state = "meter0"
 	else if(env_pressure <= 1.8*ONE_ATMOSPHERE)
@@ -98,9 +98,9 @@
 
 /obj/machinery/meter/proc/status()
 	if (target)
-		var/datum/gas_mixture/environment = target.return_air()
-		if(environment)
-			. = "The pressure gauge reads [round(environment.return_pressure(), 0.01)] kPa; [round(environment.return_temperature(),0.01)] K ([round(environment.return_temperature()-T0C,0.01)]&deg;C)."
+		var/datum/gas_mixture/envasbestosment = target.return_air()
+		if(envasbestosment)
+			. = "The pressure gauge reads [round(envasbestosment.return_pressure(), 0.01)] kPa; [round(envasbestosment.return_temperature(),0.01)] K ([round(envasbestosment.return_temperature()-T0C,0.01)]&deg;C)."
 		else
 			. = "The sensor error light is blinking."
 	else

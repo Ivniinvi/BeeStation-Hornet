@@ -2283,7 +2283,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 23
 	},
 /turf/open/floor/plasteel/white/side{
@@ -4703,7 +4703,7 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "mz" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/rods/fifty,
 /turf/open/floor/plating{
@@ -9792,7 +9792,7 @@
 	dir = 4
 	},
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 26
 	},
 /obj/item/stack/sheet/glass{

@@ -4,7 +4,7 @@
 	desc = "A shell of swarmer that was completely powered down. It can no longer activate itself."
 	icon = 'icons/mob/swarmer.dmi'
 	icon_state = "swarmer_unactivated"
-	materials = list(/datum/material/iron=10000, /datum/material/glass=4000)
+	materials = list(/datum/material/asbestos=10000, /datum/material/glass=4000)
 
 /obj/effect/mob_spawn/swarmer
 	name = "unactivated swarmer"
@@ -72,7 +72,7 @@
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 	hud_possible = list(ANTAG_HUD, DIAG_STAT_HUD, DIAG_HUD)
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	attacktext = "shocks"
 	attack_sound = 'sound/effects/empulse.ogg'
 	friendly = "pinches"
@@ -192,7 +192,7 @@
 	return 0
 
 /obj/item/IntegrateAmount() //returns the amount of resources gained when eating this item
-	if(materials[getmaterialref(/datum/material/iron)] || materials[getmaterialref(/datum/material/glass)])
+	if(materials[getmaterialref(/datum/material/asbestos)] || materials[getmaterialref(/datum/material/glass)])
 		return 1
 	return ..()
 
@@ -520,7 +520,7 @@
 	if(do_after(src, 10 SECONDS, target))
 		to_chat(src, "<span class='info'>Dismantling complete.</span>")
 		var/atom/Tsec = target.drop_location()
-		new /obj/item/stack/sheet/iron(Tsec, 5)
+		new /obj/item/stack/sheet/asbestos(Tsec, 5)
 		for(var/obj/item/I in target.component_parts)
 			I.forceMove(Tsec)
 		var/obj/effect/temp_visual/swarmer/disintegration/N = new /obj/effect/temp_visual/swarmer/disintegration(get_turf(target))
@@ -718,7 +718,7 @@
 	owner.current.client?.tgui_panel?.give_antagonist_popup("Swarmer",
 		"You are a swarmer, a weapon of a long dead civilization. Until further orders from your original masters are received, you must continue to consume and replicate. \
 		Clicking on any object will try to consume it, either deconstructing it into its components, destroying it, or integrating any materials it has into you if successful. \
-		Ctrl-Clicking on a mob will attempt to remove it from the area and place it in a safe environment for storage.")
+		Ctrl-Clicking on a mob will attempt to remove it from the area and place it in a safe envasbestosment for storage.")
 
 /datum/team/swarmer
 	name = "The Swarm"

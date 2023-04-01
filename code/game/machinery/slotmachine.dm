@@ -29,7 +29,7 @@
 	var/balance = 0 //How much money is in the machine, ready to be CONSUMED.
 	var/jackpots = 0
 	var/paymode = HOLOCHIP //toggles between HOLOCHIP/COIN, defined above
-	var/cointype = /obj/item/coin/iron //default cointype
+	var/cointype = /obj/item/coin/asbestos //default cointype
 	var/list/coinvalues = list()
 	var/list/reels = list(list("", "", "") = 0, list("", "", "") = 0, list("", "", "") = 0, list("", "", "") = 0, list("", "", "") = 0)
 	var/list/symbols = list(SEVEN = 1, "<font color='orange'>&</font>" = 2, "<font color='yellow'>@</font>" = 2, "<font color='green'>$</font>" = 2, "<font color='blue'>?</font>" = 2, "<font color='grey'>#</font>" = 2, "<font color='white'>!</font>" = 2, "<font color='fuchsia'>%</font>" = 2) //if people are winning too much, multiply every number in this list by 2 and see if they are still winning too much.
@@ -311,7 +311,7 @@
 	if(paymode == HOLOCHIP)
 		cointype = /obj/item/holochip
 	else
-		cointype = obj_flags & EMAGGED ? /obj/item/coin/iron : /obj/item/coin/silver
+		cointype = obj_flags & EMAGGED ? /obj/item/coin/asbestos : /obj/item/coin/silver
 
 	if(!(obj_flags & EMAGGED))
 		amount = dispense(amount, cointype, null, 0)

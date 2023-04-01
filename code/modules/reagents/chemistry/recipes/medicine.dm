@@ -54,13 +54,13 @@
 	name = "Miner's Salve"
 	id = /datum/reagent/medicine/mine_salve
 	results = list(/datum/reagent/medicine/mine_salve = 3)
-	required_reagents = list(/datum/reagent/oil = 1, /datum/reagent/water = 1, /datum/reagent/iron = 1)
+	required_reagents = list(/datum/reagent/oil = 1, /datum/reagent/water = 1, /datum/reagent/asbestos = 1)
 
 /datum/chemical_reaction/mine_salve2
 	name = "Miner's Salve"
 	id = /datum/reagent/medicine/mine_salve
 	results = list(/datum/reagent/medicine/mine_salve = 15)
-	required_reagents = list(/datum/reagent/toxin/plasma = 5, /datum/reagent/iron = 5, /datum/reagent/consumable/sugar = 1) // A sheet of plasma, a twinkie and a sheet of metal makes four of these
+	required_reagents = list(/datum/reagent/toxin/plasma = 5, /datum/reagent/asbestos = 5, /datum/reagent/consumable/sugar = 1) // A sheet of plasma, a twinkie and a sheet of metal makes four of these
 
 /datum/chemical_reaction/synthflesh
 	name = "Synthflesh"
@@ -226,7 +226,7 @@
 	name = "Dexalin Plus"
 	id = "dexalinp"
 	results = list(/datum/reagent/medicine/dexalinp = 3)
-	required_reagents = list(/datum/reagent/medicine/dexalin = 1, /datum/reagent/carbon = 1, /datum/reagent/iron = 1)
+	required_reagents = list(/datum/reagent/medicine/dexalin = 1, /datum/reagent/carbon = 1, /datum/reagent/asbestos = 1)
 
 /datum/chemical_reaction/kelotane
 	name = "Kelotane"

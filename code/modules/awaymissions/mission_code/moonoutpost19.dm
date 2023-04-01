@@ -20,7 +20,7 @@
 /area/awaymission/moonoutpost19/main
 	name = "Khonsu 19"
 	always_unpowered = TRUE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	poweralm = FALSE
@@ -30,7 +30,7 @@
 /area/awaymission/moonoutpost19/hive
 	name = "The Hive"
 	always_unpowered = TRUE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	poweralm = FALSE

@@ -113,7 +113,7 @@
 	melee_damage = 22
 	attacktext = "blasts"
 	attack_sound = 'sound/weapons/sonic_jackhammer.ogg'
-	environment_smash = ENVIRONMENT_SMASH_WALLS
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_WALLS
 	loot = list(/obj/effect/decal/remains/plasma, /obj/item/pickaxe/drill/jackhammer)
 
 /mob/living/simple_animal/hostile/skeleton/plasmaminer/Initialize(mapload)

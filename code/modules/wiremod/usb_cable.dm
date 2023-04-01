@@ -6,7 +6,7 @@
 	icon_state = "usb_cable"
 	item_state = "coil"
 	w_class = WEIGHT_CLASS_TINY
-	custom_materials = list(/datum/material/iron = 75)
+	custom_materials = list(/datum/material/asbestos = 75)
 
 	/// The currently connected circuit
 	var/obj/item/integrated_circuit/attached_circuit

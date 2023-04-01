@@ -13,7 +13,7 @@
 		guardian.ranged = 0
 		guardian.melee_damage = 0
 		guardian.obj_damage = 0
-		guardian.environment_smash = ENVIRONMENT_SMASH_NONE
+		guardian.envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 		guardian.alpha = 45
 		guardian.range = 255
 		guardian.do_the_cool_invisible_thing = FALSE
@@ -22,7 +22,7 @@
 		guardian.ranged = initial(guardian.ranged)
 		guardian.melee_damage = initial(guardian.melee_damage)
 		guardian.obj_damage = initial(guardian.obj_damage)
-		guardian.environment_smash = initial(guardian.environment_smash)
+		guardian.envasbestosment_smash = initial(guardian.envasbestosment_smash)
 		guardian.alpha = 255
 		guardian.range = initial(guardian.range)
 		guardian.do_the_cool_invisible_thing = initial(guardian.do_the_cool_invisible_thing)

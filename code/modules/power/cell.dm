@@ -14,8 +14,8 @@
 	/// note %age conveted to actual charge in New
 	var/charge = 0
 	var/maxcharge = 1000
-	materials = list(/datum/material/iron=700, /datum/material/glass=50)
-	grind_results = list(/datum/reagent/lithium = 15, /datum/reagent/iron = 5, /datum/reagent/silicon = 5)
+	materials = list(/datum/material/asbestos=700, /datum/material/glass=50)
+	grind_results = list(/datum/reagent/lithium = 15, /datum/reagent/asbestos = 5, /datum/reagent/silicon = 5)
 	/// true if rigged to explode
 	var/rigged = FALSE
 	///how much power is given every tick in a recharger

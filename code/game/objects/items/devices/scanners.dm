@@ -22,7 +22,7 @@ GENE SCANNER
 	item_state = "electronic"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
-	materials = list(/datum/material/iron=150)
+	materials = list(/datum/material/asbestos=150)
 
 /obj/item/t_scanner/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins to emit terahertz-rays into [user.p_their()] brain with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -84,7 +84,7 @@ GENE SCANNER
 	w_class = WEIGHT_CLASS_TINY
 	throw_speed = 3
 	throw_range = 7
-	materials = list(/datum/material/iron=200)
+	materials = list(/datum/material/asbestos=200)
 	var/scanmode = 0
 	var/advanced = FALSE
 
@@ -444,7 +444,7 @@ GENE SCANNER
 	advanced = TRUE
 
 /obj/item/analyzer
-	desc = "A hand-held environmental scanner which can be used to scan gases in the atmosphere or within containers. Can also be used to scan unusual station phenomena. Alt-Click to use the built in barometer function."
+	desc = "A hand-held envasbestosmental scanner which can be used to scan gases in the atmosphere or within containers. Can also be used to scan unusual station phenomena. Alt-Click to use the built in barometer function."
 	name = "analyzer"
 	custom_price = 10
 	icon = 'icons/obj/device.dmi'
@@ -462,8 +462,8 @@ GENE SCANNER
 	throw_speed = 3
 	throw_range = 7
 	tool_behaviour = TOOL_ANALYZER
-	materials = list(/datum/material/iron=30, /datum/material/glass=20)
-	grind_results = list(/datum/reagent/mercury = 5, /datum/reagent/iron = 5, /datum/reagent/silicon = 5)
+	materials = list(/datum/material/asbestos=30, /datum/material/glass=20)
+	grind_results = list(/datum/reagent/mercury = 5, /datum/reagent/asbestos = 5, /datum/reagent/silicon = 5)
 	var/cooldown = FALSE
 	var/cooldown_time = 250
 	var/accuracy // 0 is the best accuracy.
@@ -614,10 +614,10 @@ GENE SCANNER
 
 /obj/item/analyzer/proc/scan_turf(mob/user, turf/location)
 	var/list/message = list()
-	var/datum/gas_mixture/environment = location.return_air()
+	var/datum/gas_mixture/envasbestosment = location.return_air()
 
-	var/pressure = environment.return_pressure()
-	var/total_moles = environment.total_moles()
+	var/pressure = envasbestosment.return_pressure()
+	var/total_moles = envasbestosment.total_moles()
 
 	message += "<span class='info'><B>Results:</B></span>"
 	if(abs(pressure - ONE_ATMOSPHERE) < 10)
@@ -625,37 +625,37 @@ GENE SCANNER
 	else
 		message += "<span class='alert'>Pressure: [round(pressure, 0.01)] kPa</span>"
 	if(total_moles)
-		var/o2_concentration = environment.get_moles(GAS_O2)/total_moles
-		var/n2_concentration = environment.get_moles(GAS_N2)/total_moles
-		var/co2_concentration = environment.get_moles(GAS_CO2)/total_moles
-		var/plasma_concentration = environment.get_moles(GAS_PLASMA)/total_moles
+		var/o2_concentration = envasbestosment.get_moles(GAS_O2)/total_moles
+		var/n2_concentration = envasbestosment.get_moles(GAS_N2)/total_moles
+		var/co2_concentration = envasbestosment.get_moles(GAS_CO2)/total_moles
+		var/plasma_concentration = envasbestosment.get_moles(GAS_PLASMA)/total_moles
 
 		if(abs(n2_concentration - N2STANDARD) < 20)
-			message += "<span class='info'>Nitrogen: [round(n2_concentration*100, 0.01)] % ([round(environment.get_moles(GAS_N2), 0.01)] mol)</span>"
+			message += "<span class='info'>Nitrogen: [round(n2_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(GAS_N2), 0.01)] mol)</span>"
 		else
-			message += "<span class='alert'>Nitrogen: [round(n2_concentration*100, 0.01)] % ([round(environment.get_moles(GAS_N2), 0.01)] mol)</span>"
+			message += "<span class='alert'>Nitrogen: [round(n2_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(GAS_N2), 0.01)] mol)</span>"
 
 		if(abs(o2_concentration - O2STANDARD) < 2)
-			message += "<span class='info'>Oxygen: [round(o2_concentration*100, 0.01)] % ([round(environment.get_moles(GAS_O2), 0.01)] mol)</span>"
+			message += "<span class='info'>Oxygen: [round(o2_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(GAS_O2), 0.01)] mol)</span>"
 		else
-			message += "<span class='alert'>Oxygen: [round(o2_concentration*100, 0.01)] % ([round(environment.get_moles(GAS_O2), 0.01)] mol)</span>"
+			message += "<span class='alert'>Oxygen: [round(o2_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(GAS_O2), 0.01)] mol)</span>"
 
 		if(co2_concentration > 0.01)
-			message += "<span class='alert'>CO2: [round(co2_concentration*100, 0.01)] % ([round(environment.get_moles(GAS_CO2), 0.01)] mol)</span>"
+			message += "<span class='alert'>CO2: [round(co2_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(GAS_CO2), 0.01)] mol)</span>"
 		else
-			message += "<span class='info'>CO2: [round(co2_concentration*100, 0.01)] % ([round(environment.get_moles(GAS_CO2), 0.01)] mol)</span>"
+			message += "<span class='info'>CO2: [round(co2_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(GAS_CO2), 0.01)] mol)</span>"
 
 		if(plasma_concentration > 0.005)
-			message += "<span class='alert'>Plasma: [round(plasma_concentration*100, 0.01)] % ([round(environment.get_moles(GAS_PLASMA), 0.01)] mol)</span>"
+			message += "<span class='alert'>Plasma: [round(plasma_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(GAS_PLASMA), 0.01)] mol)</span>"
 		else
-			message += "<span class='info'>Plasma: [round(plasma_concentration*100, 0.01)] % ([round(environment.get_moles(GAS_PLASMA), 0.01)] mol)</span>"
+			message += "<span class='info'>Plasma: [round(plasma_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(GAS_PLASMA), 0.01)] mol)</span>"
 
-		for(var/id in environment.get_gases())
+		for(var/id in envasbestosment.get_gases())
 			if(id in GLOB.hardcoded_gases)
 				continue
-			var/gas_concentration = environment.get_moles(id)/total_moles
-			message += "<span class='alert'>[GLOB.gas_data.names[id]]: [round(gas_concentration*100, 0.01)] % ([round(environment.get_moles(id), 0.01)] mol)</span>"
-		message += "<span class='info'>Temperature: [round(environment.return_temperature()-T0C, 0.01)] &deg;C ([round(environment.return_temperature(), 0.01)] K)</span>"
+			var/gas_concentration = envasbestosment.get_moles(id)/total_moles
+			message += "<span class='alert'>[GLOB.gas_data.names[id]]: [round(gas_concentration*100, 0.01)] % ([round(envasbestosment.get_moles(id), 0.01)] mol)</span>"
+		message += "<span class='info'>Temperature: [round(envasbestosment.return_temperature()-T0C, 0.01)] &deg;C ([round(envasbestosment.return_temperature(), 0.01)] K)</span>"
 	to_chat(user, EXAMINE_BLOCK(jointext(message, "\n")))
 
 /obj/item/analyzer/ranged
@@ -687,7 +687,7 @@ GENE SCANNER
 	throwforce = 0
 	throw_speed = 3
 	throw_range = 7
-	materials = list(/datum/material/iron=30, /datum/material/glass=20)
+	materials = list(/datum/material/asbestos=30, /datum/material/glass=20)
 
 /obj/item/slime_scanner/attack(mob/living/M, mob/living/user)
 	if(user.stat || user.is_blind())
@@ -797,7 +797,7 @@ GENE SCANNER
 	w_class = WEIGHT_CLASS_TINY
 	throw_speed = 3
 	throw_range = 7
-	materials = list(/datum/material/iron=200)
+	materials = list(/datum/material/asbestos=200)
 
 /obj/item/nanite_scanner/attack(mob/living/M, mob/living/carbon/human/user)
 	user.visible_message("<span class='notice'>[user] analyzes [M]'s nanites.</span>", \
@@ -824,7 +824,7 @@ GENE SCANNER
 	w_class = WEIGHT_CLASS_TINY
 	throw_speed = 3
 	throw_range = 7
-	materials = list(/datum/material/iron=200)
+	materials = list(/datum/material/asbestos=200)
 	var/list/discovered = list() //hit a dna console to update the scanners database
 	var/list/buffer
 	var/ready = TRUE

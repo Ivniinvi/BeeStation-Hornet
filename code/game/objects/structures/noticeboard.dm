@@ -105,7 +105,7 @@
 
 /obj/structure/noticeboard/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
-		new /obj/item/stack/sheet/iron (loc, 1)
+		new /obj/item/stack/sheet/asbestos (loc, 1)
 	for(var/obj/item/content in contents)
 		remove_item(content)
 	qdel(src)

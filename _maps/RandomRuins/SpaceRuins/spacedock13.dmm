@@ -21,9 +21,9 @@
 /area/ruin/space/has_grav/powered)
 "f" = (
 /obj/structure/rack,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /turf/open/floor/plasteel/airless,
 /area/ruin/space/has_grav/powered)
 "g" = (

@@ -119,7 +119,7 @@
 
 /obj/item/organ/cyberimp/chest/thrusters
 	name = "implantable thrusters set"
-	desc = "An implantable set of thruster ports. They use the gas from environment or subject's internals for propulsion in zero-gravity areas. \
+	desc = "An implantable set of thruster ports. They use the gas from envasbestosment or subject's internals for propulsion in zero-gravity areas. \
 	Unlike regular jetpacks, this device has no stabilization system."
 	slot = ORGAN_SLOT_THRUSTERS
 	icon_state = "imp_jetpack"
@@ -189,9 +189,9 @@
 		return 0
 	if(owner.is_flying() && owner.has_gravity())
 		return 0
-	// Priority 1: use air from environment.
-	var/datum/gas_mixture/environment = T.return_air()
-	if(environment && environment.return_pressure() > 30)
+	// Priority 1: use air from envasbestosment.
+	var/datum/gas_mixture/envasbestosment = T.return_air()
+	if(envasbestosment && envasbestosment.return_pressure() > 30)
 		return 1
 
 	// Priority 2: use plasma from internal plasma storage.

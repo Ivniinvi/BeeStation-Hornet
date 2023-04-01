@@ -210,7 +210,7 @@
 	M.visible_message("<span class='warning'>[M] swallows [src] whole!</span>", "<span class='userdanger'>[src] burrows into your cytoplasm when you bite it!</span>")
 	qdel(src)
 
-/mob/living/simple_animal/hostile/redgrub/environment_temperature_is_safe(datum/gas_mixture/environment)
+/mob/living/simple_animal/hostile/redgrub/envasbestosment_temperature_is_safe(datum/gas_mixture/envasbestosment)
 	if(isliving(loc))
 		var/mob/living/L = loc
 		if(L.bodytemperature > BODYTEMP_HEAT_DAMAGE_LIMIT)

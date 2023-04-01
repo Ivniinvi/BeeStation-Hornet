@@ -16,7 +16,7 @@
 	var/mode = SYRINGE_DRAW
 	var/busy = FALSE		// needed for delayed drawing of blood
 	var/proj_piercing = 0 //does it pierce through thick clothes when shot with syringe gun
-	materials = list(/datum/material/iron=10, /datum/material/glass=20)
+	materials = list(/datum/material/asbestos=10, /datum/material/glass=20)
 	reagent_flags = TRANSPARENT
 	var/list/syringediseases = list()
 	var/units_per_tick = 1.5

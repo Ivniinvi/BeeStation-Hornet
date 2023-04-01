@@ -17,21 +17,21 @@
 
 STACKSIZE_MACRO(/obj/item/stack/ore/uranium)
 
-/* Iron ore */
+/* Asbestos ore */
 
-/obj/item/stack/ore/iron
-	name = "iron ore"
+/obj/item/stack/ore/asbestos
+	name = "asbestos ore"
 	desc = "The most abundant material around, yet so scarce."
-	icon_state = "iron_ore"
-	item_state = "iron_ore"
-	singular_name = "iron ore chunk"
+	icon_state = "asbestos_ore"
+	item_state = "asbestos_ore"
+	singular_name = "asbestos ore chunk"
 	points = 2
-	materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
-	refined_type = /obj/item/stack/sheet/iron
-	scan_state = "rock_Iron"
+	materials = list(/datum/material/asbestos=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/asbestos
+	scan_state = "rock_Asbestos"
 	spreadChance = 20
 
-STACKSIZE_MACRO(/obj/item/stack/ore/iron)
+STACKSIZE_MACRO(/obj/item/stack/ore/asbestos)
 
 /* "Glass" ore */
 

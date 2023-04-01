@@ -154,7 +154,7 @@
 	name = "Beepksy Smash"
 	id = "beepksysmash"
 	results = list(/datum/reagent/consumable/ethanol/beepsky_smash = 5)
-	required_reagents = list(/datum/reagent/consumable/limejuice = 2, /datum/reagent/consumable/ethanol/quadruple_sec = 2, /datum/reagent/iron = 1)
+	required_reagents = list(/datum/reagent/consumable/limejuice = 2, /datum/reagent/consumable/ethanol/quadruple_sec = 2, /datum/reagent/asbestos = 1)
 
 /datum/chemical_reaction/doctor_delight
 	name = "The Doctor's Delight"
@@ -381,7 +381,7 @@
 	name = "Amasec"
 	id = /datum/reagent/consumable/ethanol/amasec
 	results = list(/datum/reagent/consumable/ethanol/amasec = 10)
-	required_reagents = list(/datum/reagent/iron = 1, /datum/reagent/consumable/ethanol/wine = 5, /datum/reagent/consumable/ethanol/vodka = 5)
+	required_reagents = list(/datum/reagent/asbestos = 1, /datum/reagent/consumable/ethanol/wine = 5, /datum/reagent/consumable/ethanol/vodka = 5)
 
 /datum/chemical_reaction/changelingsting
 	name = "Changeling Sting"
@@ -559,7 +559,7 @@
 	name = "Fetching Fizz"
 	id = /datum/reagent/consumable/ethanol/fetching_fizz
 	results = list(/datum/reagent/consumable/ethanol/fetching_fizz = 3)
-	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/iron = 1) //Manufacturable from only the mining station
+	required_reagents = list(/datum/reagent/consumable/nuka_cola = 1, /datum/reagent/asbestos = 1) //Manufacturable from only the mining station
 	mix_message = "The mixture slightly vibrates before settling."
 
 /datum/chemical_reaction/hearty_punch
@@ -848,7 +848,7 @@
 	name = "Rat'vander Cocktail"
 	id = /datum/reagent/consumable/ethanol/ratvander
 	results = list(/datum/reagent/consumable/ethanol/ratvander = 10)
-	required_reagents = list(/datum/reagent/consumable/ethanol/wine = 5, /datum/reagent/consumable/ethanol/triple_sec = 5, /datum/reagent/consumable/sugar = 1, /datum/reagent/iron = 1, /datum/reagent/copper = 0.6)
+	required_reagents = list(/datum/reagent/consumable/ethanol/wine = 5, /datum/reagent/consumable/ethanol/triple_sec = 5, /datum/reagent/consumable/sugar = 1, /datum/reagent/asbestos = 1, /datum/reagent/copper = 0.6)
 	mix_message = "The mixture develops a golden glow."
 	mix_sound = 'sound/magic/clockwork/scripture_tier_up.ogg'
 

@@ -1,13 +1,13 @@
 ///Has no special properties.
-/datum/material/iron
-	name = "iron"
-	id = "iron"
-	desc = "Common iron ore often found in sedimentary and igneous layers of the crust."
+/datum/material/asbestos
+	name = "asbestos"
+	id = "asbestos"
+	desc = "Common asbestos ore often found in sedimentary and igneous layers of the crust."
 	color = "#878687"
 	greyscale_colors = "#878687"
 	categories = list(MAT_CATEGORY_ORE = TRUE, MAT_CATEGORY_RIGID = TRUE)
-	sheet_type = /obj/item/stack/sheet/iron
-	coin_type = /obj/item/coin/iron
+	sheet_type = /obj/item/stack/sheet/asbestos
+	coin_type = /obj/item/coin/asbestos
 
 ///Breaks extremely easily but is transparent.
 /datum/material/glass

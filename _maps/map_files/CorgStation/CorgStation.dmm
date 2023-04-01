@@ -26074,7 +26074,7 @@
 /area/hallway/primary/central)
 "isl" = (
 /obj/structure/table/glass,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/ducts/fifty,
 /obj/item/stack/ducts/fifty{
 	pixel_x = 2;
@@ -29430,7 +29430,7 @@
 /area/science/robotics/lab)
 "jBN" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/machinery/light,
@@ -30861,7 +30861,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/mineral/copper{
 	amount = 5
 	},
@@ -39365,7 +39365,7 @@
 "mJa" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/copper{
 	amount = 5
@@ -40634,7 +40634,7 @@
 /obj/item/target/syndicate,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/machinery/button/massdriver{
 	id = "toxinsdriver";
 	pixel_y = 25
@@ -45698,9 +45698,9 @@
 "oNO" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass{
 	amount = 40;
 	pixel_x = 3;
@@ -47312,9 +47312,9 @@
 /area/hallway/secondary/exit)
 "pul" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/bodypart/r_arm/robot,
 /obj/item/bodypart/r_arm/robot,
 /obj/effect/turf_decal/stripes/line{
@@ -47536,8 +47536,8 @@
 /area/hallway/primary/fore)
 "pxs" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/pipe_dispenser,
 /obj/machinery/light{
@@ -54978,7 +54978,7 @@
 /area/medical/genetics)
 "rQz" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/effect/turf_decal/stripes/end,
 /obj/item/stack/sheet/glass/fifty{
 	pixel_x = 3;
@@ -56425,7 +56425,7 @@
 /obj/item/reagent_containers/glass/bottle/lithium{
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/iodine{
@@ -57816,10 +57816,10 @@
 /area/hydroponics)
 "sMh" = (
 /obj/structure/closet/crate,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
-/obj/item/stack/ore/iron,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
+/obj/item/stack/ore/asbestos,
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/layer2{
 	dir = 4
 	},

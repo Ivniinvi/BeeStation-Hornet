@@ -13,13 +13,13 @@
 	var/obj/item/storage/bag/money/bag_to_use
 	var/produced_coins = 0 // how many coins the machine has made in it's last cycle
 	var/processing = FALSE
-	var/chosen = /datum/material/iron //which material will be used to make coins
+	var/chosen = /datum/material/asbestos //which material will be used to make coins
 
 
 /obj/machinery/mineral/mint/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/material_container, list(
-		/datum/material/iron,
+		/datum/material/asbestos,
 		/datum/material/plasma,
 		/datum/material/silver,
 		/datum/material/gold,

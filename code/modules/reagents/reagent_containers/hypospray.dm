@@ -130,7 +130,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/suicide_act(mob/living/carbon/user)
 	user.visible_message("<span class='suicide'>[user] begins to choke on \the [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
-	return OXYLOSS//ironic. he could save others from oxyloss, but not himself.
+	return OXYLOSS//asbestosic. he could save others from oxyloss, but not himself.
 
 /obj/item/reagent_containers/hypospray/medipen/inject(mob/living/M, mob/user)
 	. = ..()
@@ -220,7 +220,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/survival
 	name = "survival medipen"
-	desc = "A medipen for surviving in the harshest of environments, heals and protects from environmental hazards. WARNING: Do not inject more than one pen in quick succession."
+	desc = "A medipen for surviving in the harshest of envasbestosments, heals and protects from envasbestosmental hazards. WARNING: Do not inject more than one pen in quick succession."
 	icon_state = "survpen"
 	item_state = "survpen"
 	volume = 57

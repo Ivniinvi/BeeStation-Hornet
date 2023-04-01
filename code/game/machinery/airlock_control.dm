@@ -89,7 +89,7 @@
 	name = "airlock sensor"
 	resistance_flags = FIRE_PROOF
 
-	power_channel = AREA_USAGE_ENVIRON
+	power_channel = AREA_USAGE_ENVASBESTOS
 
 	var/master_tag
 	var/frequency = FREQ_AIRLOCK_CONTROL

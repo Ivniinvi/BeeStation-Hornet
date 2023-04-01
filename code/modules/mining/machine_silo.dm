@@ -16,7 +16,7 @@ GLOBAL_LIST_EMPTY(silo_access_logs)
 /obj/machinery/ore_silo/Initialize(mapload)
 	. = ..()
 	var/static/list/materials_list = list(
-		/datum/material/iron,
+		/datum/material/asbestos,
 		/datum/material/glass,
 		/datum/material/copper,
 		/datum/material/silver,

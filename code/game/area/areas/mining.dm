@@ -16,7 +16,7 @@
 	always_unpowered = TRUE
 	requires_power = TRUE
 	poweralm = FALSE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	outdoors = TRUE
@@ -24,7 +24,7 @@
 	ambience_index = AMBIENCE_MINING
 	min_ambience_cooldown = 70 SECONDS
 	max_ambience_cooldown = 220 SECONDS
-	sound_environment = SOUND_AREA_STANDARD_STATION
+	sound_envasbestosment = SOUND_AREA_STANDARD_STATION
 	area_flags = VALID_TERRITORY | UNIQUE_AREA
 
 /area/mine/unexplored
@@ -33,7 +33,7 @@
 	always_unpowered = TRUE
 	requires_power = TRUE
 	poweralm = FALSE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	outdoors = TRUE
@@ -123,7 +123,7 @@
 	icon_state = "mining"
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
-	sound_environment = SOUND_AREA_LAVALAND
+	sound_envasbestosment = SOUND_AREA_LAVALAND
 	ambient_buzz = 'sound/ambience/magma.ogg'
 	ambient_buzz_vol = 20
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
@@ -133,7 +133,7 @@
 	icon_state = "explored"
 	always_unpowered = TRUE
 	poweralm = FALSE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	requires_power = TRUE
@@ -147,7 +147,7 @@
 	always_unpowered = TRUE
 	requires_power = TRUE
 	poweralm = FALSE
-	power_environ = FALSE
+	power_envasbestos = FALSE
 	power_equip = FALSE
 	power_light = FALSE
 	ambience_index = AMBIENCE_MINING

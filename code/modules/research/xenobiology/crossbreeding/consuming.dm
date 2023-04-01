@@ -332,7 +332,7 @@ Consuming extracts:
 	name = "blood cookie"
 	desc = "A red cookie, oozing a thick red fluid. Vampires might enjoy it."
 	icon_state = "red"
-	taste = "red velvet and iron"
+	taste = "red velvet and asbestos"
 
 /obj/item/slime_cookie/red/do_effect(mob/living/M, mob/user)
 	new /obj/effect/decal/cleanable/blood(get_turf(M))

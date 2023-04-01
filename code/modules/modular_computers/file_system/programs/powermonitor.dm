@@ -101,7 +101,7 @@
 					"charging" = A.integration_cog ? 2 : A.charging,
 					"eqp" = A.equipment,
 					"lgt" = A.lighting,
-					"env" = A.environ
+					"env" = A.envasbestos
 				))
 
 	return data

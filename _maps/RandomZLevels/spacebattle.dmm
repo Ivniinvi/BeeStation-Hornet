@@ -511,7 +511,7 @@
 	},
 /area/awaymission/spacebattle/cruiser)
 "cx" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/item/ammo_casing/c10mm,
 /turf/open/floor/plasteel,
 /area/awaymission/spacebattle/cruiser)
@@ -613,7 +613,7 @@
 	},
 /area/awaymission/spacebattle/cruiser)
 "cQ" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plasteel,
 /area/awaymission/spacebattle/cruiser)
 "cS" = (
@@ -1193,7 +1193,7 @@
 	},
 /area/awaymission/spacebattle/cruiser)
 "fL" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plasteel{
 	icon_state = "damaged1"
 	},
@@ -1672,7 +1672,7 @@
 /turf/open/floor/wood,
 /area/awaymission/spacebattle/cruiser)
 "hF" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plasteel{
 	icon_state = "damaged3"
 	},
@@ -1723,7 +1723,7 @@
 /turf/open/floor/engine,
 /area/awaymission/spacebattle/cruiser)
 "hQ" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plasteel{
 	icon_state = "damaged4"
 	},
@@ -2139,14 +2139,14 @@
 /turf/open/floor/engine,
 /area/awaymission/spacebattle/cruiser)
 "jR" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/wood,
 /area/awaymission/spacebattle/cruiser)
 "jS" = (
 /turf/open/floor/plasteel/airless,
 /area/awaymission/spacebattle/cruiser)
 "jT" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/floor/plasteel/airless,
 /area/awaymission/spacebattle/cruiser)
 "jU" = (
@@ -2355,7 +2355,7 @@
 /turf/open/floor/plating,
 /area/awaymission/spacebattle/cruiser)
 "kI" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /turf/open/space,
 /area/space/nearstation)
 "kJ" = (
@@ -2593,7 +2593,7 @@
 /obj/item/ammo_casing/shotgun,
 /obj/item/ammo_casing/c10mm,
 /obj/item/ammo_casing/c10mm,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 8
 	},

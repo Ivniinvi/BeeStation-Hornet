@@ -50,7 +50,7 @@
 		melee_damage = initial(melee_damage)
 		armour_penetration = initial(armour_penetration)
 		obj_damage = initial(obj_damage)
-		environment_smash = initial(environment_smash)
+		envasbestosment_smash = initial(envasbestosment_smash)
 		alpha = initial(alpha)
 		if(!forced)
 			to_chat(src, "<span class='danger'><B>You exit stealth.</span></B>")
@@ -67,7 +67,7 @@
 		melee_damage = 50
 		armour_penetration = 100
 		obj_damage = 0
-		environment_smash = ENVIRONMENT_SMASH_NONE
+		envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 		new /obj/effect/temp_visual/guardian/phase/out(get_turf(src))
 		alpha = 15
 		if(!forced)

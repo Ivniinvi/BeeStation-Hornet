@@ -34,7 +34,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	throw_speed = 3
 	throw_range = 5
-	materials = list(/datum/material/iron=500)
+	materials = list(/datum/material/asbestos=500)
 	breakouttime = 1 MINUTES
 	armor = list(MELEE = 0,  BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 50, STAMINA = 0)
 	var/cuffsound = 'sound/weapons/handcuffs.ogg'
@@ -110,7 +110,7 @@
 	color = "#ff0000"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	materials = list(/datum/material/iron=150, /datum/material/glass=75)
+	materials = list(/datum/material/asbestos=150, /datum/material/glass=75)
 	breakouttime = 30 SECONDS
 	cuffsound = 'sound/weapons/cablecuff.ogg'
 
@@ -159,10 +159,10 @@
 		else
 			to_chat(user, "<span class='warning'>You need one rod to make a wired rod!</span>")
 			return
-	else if(istype(I, /obj/item/stack/sheet/iron))
-		var/obj/item/stack/sheet/iron/M = I
+	else if(istype(I, /obj/item/stack/sheet/asbestos))
+		var/obj/item/stack/sheet/asbestos/M = I
 		if(M.get_amount() < 6)
-			to_chat(user, "<span class='warning'>You need at least six iron sheets to make good enough weights!</span>")
+			to_chat(user, "<span class='warning'>You need at least six asbestos sheets to make good enough weights!</span>")
 			return
 		to_chat(user, "<span class='notice'>You begin to apply [I] to [src]...</span>")
 		if(do_after(user, 35, target = src))

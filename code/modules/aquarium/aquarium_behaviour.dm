@@ -218,8 +218,8 @@
 	if(feed_reagents.has_reagent(food))
 		last_feeding = world.time
 
-/// Checks if our current environment lets us live.
-/datum/aquarium_behaviour/fish/proc/proper_environment()
+/// Checks if our current envasbestosment lets us live.
+/datum/aquarium_behaviour/fish/proc/proper_envasbestosment()
 	var/obj/structure/aquarium/aquarium = parent.current_aquarium
 	if(!aquarium)
 		return FALSE
@@ -233,7 +233,7 @@
 	set waitfor = FALSE
 
 	var/health_change_per_second = 0
-	if(!proper_environment())
+	if(!proper_envasbestosment())
 		health_change_per_second -= 3 //Dying here
 	if(world.time - last_feeding >= feeding_frequency)
 		health_change_per_second -= 0.5 //Starving

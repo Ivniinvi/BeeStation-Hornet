@@ -8,11 +8,11 @@ you use one of the material IDs below. These are NOT ids in the usual sense (the
 they are simply references used as part of a "has materials?" type proc. They all start with a $ to denote that they aren't reagents.
 The currently supporting non-reagent materials. All material amounts are set as the define MINERAL_MATERIAL_AMOUNT, which defaults to 2000
 
-Don't add new keyword/IDs if they are made from an existing one (such as rods which are made from iron). Only add raw materials.
+Don't add new keyword/IDs if they are made from an existing one (such as rods which are made from asbestos). Only add raw materials.
 
 Design Guidelines
 - When adding new designs, check rdreadme.dm to see what kind of things have already been made and where new stuff is needed.
-- A single sheet of anything is 2000 units of material. Materials besides iron/glass require help from other jobs (mining for
+- A single sheet of anything is 2000 units of material. Materials besides asbestos/glass require help from other jobs (mining for
 other types of metals and chemistry for reagents).
 - Add the AUTOLATHE tag to
 */
@@ -76,7 +76,7 @@ other types of metals and chemistry for reagents).
 	name = "Component Design Disk"
 	desc = "A disk for storing device design data for construction in lathes."
 	icon_state = "datadisk1"
-	materials = list(/datum/material/iron = 300, /datum/material/glass =100)
+	materials = list(/datum/material/asbestos = 300, /datum/material/glass =100)
 	var/list/blueprints = list()
 	var/max_blueprints = 1
 
@@ -90,5 +90,5 @@ other types of metals and chemistry for reagents).
 /obj/item/disk/design_disk/adv
 	name = "Advanced Component Design Disk"
 	desc = "A disk for storing device design data for construction in lathes. This one has extra storage space."
-	materials = list(/datum/material/iron = 300, /datum/material/glass = 100, /datum/material/silver = 50)
+	materials = list(/datum/material/asbestos = 300, /datum/material/glass = 100, /datum/material/silver = 50)
 	max_blueprints = 5

@@ -21,7 +21,7 @@
 	var/armor = CLAMP((max(6 - defense, 1)/2.5)/2, 0.25, 1)
 	guardian.damage_coeff = list(BRUTE = armor, BURN = armor, TOX = armor, CLONE = armor, STAMINA = 0, OXY = armor)
 	if(damage == 5)
-		guardian.environment_smash = ENVIRONMENT_SMASH_WALLS
+		guardian.envasbestosment_smash = ENVASBESTOSMENT_SMASH_WALLS
 	guardian.atk_cooldown = (15 / speed) * 1.5
 	if(ability)
 		ability.guardian = guardian
@@ -37,7 +37,7 @@
 	guardian.melee_damage = initial(guardian.melee_damage)
 	guardian.obj_damage = initial(guardian.obj_damage)
 	guardian.damage_coeff = initial(guardian.damage_coeff)
-	guardian.environment_smash = initial(guardian.environment_smash)
+	guardian.envasbestosment_smash = initial(guardian.envasbestosment_smash)
 	guardian.atk_cooldown = initial(guardian.atk_cooldown)
 	if(ability)
 		ability.Remove()

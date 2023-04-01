@@ -87,7 +87,7 @@
 /obj/item/stack/tile/carpet/black/fifty,
 /obj/structure/closet,
 /obj/item/stack/tile/wood,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/wood,
 /area/template_noop)

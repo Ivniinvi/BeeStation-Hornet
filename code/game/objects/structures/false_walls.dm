@@ -19,7 +19,7 @@
 	CanAtmosPass = ATMOS_PASS_DENSITY
 	rad_flags = RAD_PROTECT_CONTENTS | RAD_NO_CONTAMINATE
 	rad_insulation = RAD_MEDIUM_INSULATION
-	var/mineral = /obj/item/stack/sheet/iron
+	var/mineral = /obj/item/stack/sheet/asbestos
 	var/mineral_amount = 2
 	var/walltype = /turf/closed/wall
 	var/girder_type = /obj/structure/girder/displaced
@@ -264,7 +264,7 @@
 	if(W.is_hot() > 300)
 		if(plasma_ignition(6, user))
 			new /obj/structure/girder/displaced(loc)
-			
+
 	else
 		return ..()
 
@@ -272,7 +272,7 @@
 	if(exposed_temperature > 300)
 		if(plasma_ignition(6))
 			new /obj/structure/girder/displaced(loc)
-			
+
 
 /obj/structure/falsewall/plasma/bullet_act(obj/item/projectile/Proj)
 	if(!(Proj.nodamage) && Proj.damage_type == BURN)
@@ -329,18 +329,18 @@
 	mineral = /obj/item/stack/sheet/bamboo
 	walltype = /turf/closed/wall/mineral/bamboo
 
-/obj/structure/falsewall/iron
-	name = "rough iron wall"
-	desc = "A wall with rough iron plating."
+/obj/structure/falsewall/asbestos
+	name = "rough asbestos wall"
+	desc = "A wall with rough asbestos plating."
 	icon = 'icons/turf/walls/iron_wall.dmi'
-	icon_state = "iron_wall-0"
-	base_icon_state = "iron_wall"
+	icon_state = "asbestos_wall-0"
+	base_icon_state = "asbestos_wall"
 	smoothing_flags = SMOOTH_BITMASK
-	smoothing_groups = list(SMOOTH_GROUP_WALLS, SMOOTH_GROUP_IRON_WALLS)
-	canSmoothWith = list(SMOOTH_GROUP_IRON_WALLS)
+	smoothing_groups = list(SMOOTH_GROUP_WALLS, SMOOTH_GROUP_ASBESTOS_WALLS)
+	canSmoothWith = list(SMOOTH_GROUP_ASBESTOS_WALLS)
 	mineral = /obj/item/stack/rods
 	mineral_amount = 5
-	walltype = /turf/closed/wall/mineral/iron
+	walltype = /turf/closed/wall/mineral/asbestos
 
 /obj/structure/falsewall/abductor
 	name = "alien wall"

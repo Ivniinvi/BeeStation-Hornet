@@ -20,7 +20,7 @@
 	a_intent = "harm"
 	spacewalk = TRUE
 
-	environment_smash = 0
+	envasbestosment_smash = 0
 	melee_damage = 15
 	pass_flags = PASSTABLE
 	attacktext = "bites"

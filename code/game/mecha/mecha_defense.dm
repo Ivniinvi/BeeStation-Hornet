@@ -78,13 +78,13 @@
 		return 0
 	else
 		var/play_soundeffect = 1
-		if(user.environment_smash)
+		if(user.envasbestosment_smash)
 			play_soundeffect = 0
 			playsound(src, 'sound/effects/bang.ogg', 50, 1)
 		var/animal_damage = user.melee_damage
 		if(user.obj_damage)
 			animal_damage = user.obj_damage
-		animal_damage = min(animal_damage, 20*user.environment_smash)
+		animal_damage = min(animal_damage, 20*user.envasbestosment_smash)
 		log_combat(user, src, "attacked")
 		attack_generic(user, animal_damage, user.melee_damage_type, MELEE, play_soundeffect)
 		return 1

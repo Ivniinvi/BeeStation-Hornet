@@ -48,7 +48,7 @@
 	var/attacktext = "attacks"
 	var/attack_sound = null
 	var/friendly = "nuzzles" //If the mob does no damage with it's attack
-	var/environment_smash = ENVIRONMENT_SMASH_NONE //Set to 1 to allow breaking of crates,lockers,racks,tables; 2 for walls; 3 for Rwalls
+	var/envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE //Set to 1 to allow breaking of crates,lockers,racks,tables; 2 for walls; 3 for Rwalls
 	var/hardattacks = FALSE //if true, a simplemob is unaffected by NASTY_BLOCKING
 
 	var/speed = 1 //LETS SEE IF I CAN SET SPEEDS FOR SIMPLE MOBS WITHOUT DESTROYING EVERYTHING. Higher speed is slower, negative speed is faster
@@ -218,7 +218,7 @@
 					else
 						emote("me", 2, pick(emote_hear))
 
-/mob/living/simple_animal/proc/environment_air_is_safe()
+/mob/living/simple_animal/proc/envasbestosment_air_is_safe()
 	. = TRUE
 
 	if(pulledby && pulledby.grab_state >= GRAB_KILL && atmos_requirements["min_oxy"])
@@ -252,22 +252,22 @@
 			if(atmos_requirements["min_oxy"] || atmos_requirements["min_tox"] || atmos_requirements["min_n2"] || atmos_requirements["min_co2"])
 				. = FALSE
 
-/mob/living/simple_animal/proc/environment_temperature_is_safe(datum/gas_mixture/environment)
+/mob/living/simple_animal/proc/envasbestosment_temperature_is_safe(datum/gas_mixture/envasbestosment)
 	. = TRUE
-	var/areatemp = get_temperature(environment)
+	var/areatemp = get_temperature(envasbestosment)
 	if((areatemp < minbodytemp) || (areatemp > maxbodytemp))
 		. = FALSE
 
-/mob/living/simple_animal/handle_environment(datum/gas_mixture/environment)
+/mob/living/simple_animal/handle_envasbestosment(datum/gas_mixture/envasbestosment)
 	var/atom/A = loc
 	if(isturf(A))
-		var/areatemp = get_temperature(environment)
+		var/areatemp = get_temperature(envasbestosment)
 		if(abs(areatemp - bodytemperature) > 5)
 			var/diff = areatemp - bodytemperature
 			diff = diff / 5
 			adjust_bodytemperature(diff)
 
-	if(!environment_air_is_safe())
+	if(!envasbestosment_air_is_safe())
 		adjustHealth(unsuitable_atmos_damage)
 		if(unsuitable_atmos_damage > 0)
 			throw_alert("not_enough_oxy", /atom/movable/screen/alert/not_enough_oxy)

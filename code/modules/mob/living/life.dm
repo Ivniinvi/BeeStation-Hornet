@@ -31,10 +31,10 @@
 			//Random events (vomiting etc)
 			handle_random_events()
 
-		//Handle temperature/pressure differences between body and environment
-		var/datum/gas_mixture/environment = loc.return_air()
-		if(environment)
-			handle_environment(environment)
+		//Handle temperature/pressure differences between body and envasbestosment
+		var/datum/gas_mixture/envasbestosment = loc.return_air()
+		if(envasbestosment)
+			handle_envasbestosment(envasbestosment)
 
 		//Handle gravity
 		var/gravity = has_gravity()
@@ -70,7 +70,7 @@
 /mob/living/proc/handle_random_events()
 	return
 
-/mob/living/proc/handle_environment(datum/gas_mixture/environment)
+/mob/living/proc/handle_envasbestosment(datum/gas_mixture/envasbestosment)
 	return
 
 /mob/living/proc/handle_fire()
@@ -83,7 +83,7 @@
 	else
 		ExtinguishMob()
 		return TRUE //mob was put out, on_fire = FALSE via ExtinguishMob(), no need to update everything down the chain.
-	var/datum/gas_mixture/G = loc.return_air() // Check if we're standing in an oxygenless environment
+	var/datum/gas_mixture/G = loc.return_air() // Check if we're standing in an oxygenless envasbestosment
 	if(G.get_moles(GAS_O2) < 1)
 		ExtinguishMob() //If there's no oxygen in the tile we're on, put out the fire
 		return TRUE

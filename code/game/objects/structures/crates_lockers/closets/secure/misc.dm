@@ -58,7 +58,7 @@
 /obj/structure/closet/secure_closet/ertEngi/PopulateContents()
 	..()
 	new /obj/item/stack/sheet/plasteel(src, 50)
-	new /obj/item/stack/sheet/iron(src, 50)
+	new /obj/item/stack/sheet/asbestos(src, 50)
 	new /obj/item/stack/sheet/glass(src, 50)
 	new /obj/item/stack/sheet/sandbags(src, 30)
 	new /obj/item/clothing/shoes/magboots(src)

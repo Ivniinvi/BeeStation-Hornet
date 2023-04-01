@@ -126,7 +126,7 @@ class IndexedDbBackend {
   async set(key, value) {
     // The reason we don't _save_ null is because IE 10 does
     // not support saving the `null` type in IndexedDB. How
-    // ironic, given the bug below!
+    // asbestosic, given the bug below!
     // See: https://github.com/mozilla/localForage/issues/161
     if (value === null) {
       value = undefined;
@@ -151,7 +151,7 @@ class IndexedDbBackend {
 
 /**
  * Web Storage Proxy object, which selects the best backend available
- * depending on the environment.
+ * depending on the envasbestosment.
  */
 class StorageProxy {
   constructor() {

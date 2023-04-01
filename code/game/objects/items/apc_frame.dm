@@ -1,6 +1,6 @@
 /obj/item/wallframe
 	icon = 'icons/obj/wallframe.dmi'
-	materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT*2)
+	materials = list(/datum/material/asbestos=MINERAL_MATERIAL_AMOUNT*2)
 	flags_1 = CONDUCT_1
 	item_state = "syringe_kit"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
@@ -66,13 +66,13 @@
 		if(iswallturf(T))
 			T.attackby(src, user, params)
 
-	var/iron_amt = round(materials[/datum/material/iron]/MINERAL_MATERIAL_AMOUNT) //Replace this shit later
+	var/asbestos_amt = round(materials[/datum/material/asbestos]/MINERAL_MATERIAL_AMOUNT) //Replace this shit later
 	var/glass_amt = round(materials[/datum/material/glass]/MINERAL_MATERIAL_AMOUNT) //Replace this shit later
 
-	if(W.tool_behaviour == TOOL_WRENCH && (iron_amt || glass_amt))
+	if(W.tool_behaviour == TOOL_WRENCH && (asbestos_amt || glass_amt))
 		to_chat(user, "<span class='notice'>You dismantle [src].</span>")
-		if(iron_amt)
-			new /obj/item/stack/sheet/iron(get_turf(src), iron_amt)
+		if(asbestos_amt)
+			new /obj/item/stack/sheet/asbestos(get_turf(src), asbestos_amt)
 		if(glass_amt)
 			new /obj/item/stack/sheet/glass(get_turf(src), glass_amt)
 		qdel(src)
@@ -119,5 +119,5 @@
 	righthand_file = 'icons/mob/inhands/misc/devices_righthand.dmi'
 	flags_1 = CONDUCT_1
 	w_class = WEIGHT_CLASS_SMALL
-	materials = list(/datum/material/iron=50, /datum/material/glass=50)
-	grind_results = list(/datum/reagent/iron = 10, /datum/reagent/silicon = 10)
+	materials = list(/datum/material/asbestos=50, /datum/material/glass=50)
+	grind_results = list(/datum/reagent/asbestos = 10, /datum/reagent/silicon = 10)

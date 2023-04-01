@@ -69,7 +69,7 @@ effective or pretty fucking useless.
 */
 
 /obj/item/healthanalyzer/rad_laser
-	custom_materials = list(/datum/material/iron=400)
+	custom_materials = list(/datum/material/asbestos=400)
 
 
 	var/irradiate = TRUE

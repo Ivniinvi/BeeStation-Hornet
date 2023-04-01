@@ -56,7 +56,7 @@
 "q" = (
 /obj/structure/table,
 /obj/item/circuitboard/machine/paystand,
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel,
 /area/template_noop)

@@ -552,10 +552,10 @@
 	. = FALSE
 	if(!istype(T))
 		return
-	var/datum/gas_mixture/environment = T.return_air()
-	if(!istype(environment))
+	var/datum/gas_mixture/envasbestosment = T.return_air()
+	if(!istype(envasbestosment))
 		return
-	var/pressure = environment.return_pressure()
+	var/pressure = envasbestosment.return_pressure()
 	if(pressure <= MAXIMUM_LAVALAND_EQUIPMENT_EFFECT_PRESSURE)
 		. = TRUE
 

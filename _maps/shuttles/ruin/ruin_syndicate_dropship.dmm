@@ -350,7 +350,7 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/syndicate/ranged/smg/pilot{
-	environment_smash = 0
+	envasbestosment_smash = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/caravan/syndicate3)
@@ -434,7 +434,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/asbestos/twenty,
 /obj/item/stack/sheet/glass{
 	amount = 10
 	},

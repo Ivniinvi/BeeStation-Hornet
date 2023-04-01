@@ -19,7 +19,7 @@
 
 /datum/symptom/inorganic_adaptation
 	name = "Inorganic Biology"
-	desc = "The virus can survive and replicate even in an inorganic environment, increasing its resistance and infection rate."
+	desc = "The virus can survive and replicate even in an inorganic envasbestosment, increasing its resistance and infection rate."
 	stealth = -1
 	resistance = 4
 	stage_speed = -2

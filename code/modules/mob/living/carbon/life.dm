@@ -98,9 +98,9 @@
 	if(istype(loc, /obj/machinery/atmospherics/components/unary/cryo_cell))
 		return
 
-	var/datum/gas_mixture/environment
+	var/datum/gas_mixture/envasbestosment
 	if(loc)
-		environment = loc.return_air()
+		envasbestosment = loc.return_air()
 
 	var/datum/gas_mixture/breath
 
@@ -131,8 +131,8 @@
 
 			else if(isturf(loc)) //Breathe from loc as turf
 				var/breath_ratio = 0
-				if(environment)
-					breath_ratio = BREATH_VOLUME/environment.return_volume()
+				if(envasbestosment)
+					breath_ratio = BREATH_VOLUME/envasbestosment.return_volume()
 
 				breath = loc.remove_air_ratio(breath_ratio)
 		else //Breathe from loc as obj again
@@ -481,7 +481,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 				adjustFireLoss(-0.06, FALSE)
 		else
 			SEND_SIGNAL(src, COMSIG_CLEAR_MOOD_EVENT, "drunk")
-			sound_environment_override = SOUND_ENVIRONMENT_NONE
+			sound_envasbestosment_override = SOUND_ENVASBESTOSMENT_NONE
 
 		if(drunkenness >= 11 && slurring < 5)
 			slurring += 1.2
@@ -545,7 +545,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 		if(drunkenness >= 101)
 			adjustToxLoss(2) //Let's be honest you shouldn't be alive by now
 
-//used in human and monkey handle_environment()
+//used in human and monkey handle_envasbestosment()
 /mob/living/carbon/proc/natural_bodytemperature_stabilization()
 	var/body_temperature_difference = BODYTEMP_NORMAL - bodytemperature
 	switch(bodytemperature)

@@ -27,7 +27,7 @@ export const AirAlarm = (props, context) => {
 
 const AirAlarmStatus = (props, context) => {
   const { data } = useBackend(context);
-  const entries = (data.environment_data || [])
+  const entries = (data.envasbestosment_data || [])
     .filter(entry => entry.value >= 0.01);
   const dangerMap = {
     0: {

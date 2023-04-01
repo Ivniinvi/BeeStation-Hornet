@@ -16,7 +16,7 @@
 	speak_chance = 1
 	turns_per_move = 8
 	obj_damage = 0
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	move_to_delay = 15
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"

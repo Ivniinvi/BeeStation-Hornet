@@ -26,7 +26,7 @@
 	vision_range = 5
 	aggro_vision_range = 9
 	mob_size = MOB_SIZE_SMALL
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 	gold_core_spawnable = HOSTILE_SPAWN
 	var/wumbo = 0
 	var/inflate_cooldown = 0
@@ -86,7 +86,7 @@
 	F.retreat_distance = null
 	F.minimum_distance = 1
 	F.move_to_delay = 6
-	F.environment_smash = ENVIRONMENT_SMASH_WALLS
+	F.envasbestosment_smash = ENVASBESTOSMENT_SMASH_WALLS
 	F.mob_size = MOB_SIZE_LARGE
 	F.speed = 1
 	addtimer(CALLBACK(F, /mob/living/simple_animal/hostile/asteroid/fugu/proc/Deflate), 100)
@@ -103,7 +103,7 @@
 		minimum_distance = 9
 		move_to_delay = 2
 		inflate_cooldown = 4
-		environment_smash = ENVIRONMENT_SMASH_NONE
+		envasbestosment_smash = ENVASBESTOSMENT_SMASH_NONE
 		mob_size = MOB_SIZE_SMALL
 		speed = 0
 
@@ -133,7 +133,7 @@
 		A.health = min(A.maxHealth,A.health*1.5)
 		A.melee_damage = max((A.melee_damage * 2), 10)
 		A.transform *= 2
-		A.environment_smash |= ENVIRONMENT_SMASH_STRUCTURES | ENVIRONMENT_SMASH_RWALLS
+		A.envasbestosment_smash |= ENVASBESTOSMENT_SMASH_STRUCTURES | ENVASBESTOSMENT_SMASH_RWALLS
 		to_chat(user, "<span class='info'>You increase the size of [A], giving it a surge of strength!</span>")
 		qdel(src)
 

@@ -5,7 +5,7 @@
 	build_path = /obj/item/integrated_circuit
 	build_type = IMPRINTER | COMPONENT_PRINTER
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_CORE)
-	materials = list(/datum/material/glass = 1000, /datum/material/iron = 1000, /datum/material/copper = 500)
+	materials = list(/datum/material/glass = 1000, /datum/material/asbestos = 1000, /datum/material/copper = 500)
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
 /datum/design/circuit_multitool
@@ -15,7 +15,7 @@
 	build_path = /obj/item/multitool/circuit
 	build_type = PROTOLATHE | COMPONENT_PRINTER
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_CORE)
-	materials = list(/datum/material/glass = 1000, /datum/material/iron = 1000, /datum/material/copper = 500)
+	materials = list(/datum/material/glass = 1000, /datum/material/asbestos = 1000, /datum/material/copper = 500)
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
 /datum/design/usb_cable
@@ -26,7 +26,7 @@
 	build_type = PROTOLATHE | COMPONENT_PRINTER
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_CORE)
 	// Yes, it would make sense to make them take plastic, but then less people would make them, and I think they're cool
-	materials = list(/datum/material/iron = 1000, /datum/material/copper = 1500)
+	materials = list(/datum/material/asbestos = 1000, /datum/material/copper = 1500)
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
 
 /datum/design/component
@@ -306,7 +306,7 @@
 	desc = "A handheld shell with one big button."
 	id = "compact_remote_shell"
 	build_path = /obj/item/compact_remote
-	materials = list(/datum/material/glass = 2000, /datum/material/iron = 5000)
+	materials = list(/datum/material/glass = 2000, /datum/material/asbestos = 5000)
 	build_type = PROTOLATHE | COMPONENT_PRINTER
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_SHELLS)
 
@@ -316,7 +316,7 @@
 	id = "controller_shell"
 	build_path = /obj/item/controller
 	build_type = PROTOLATHE | COMPONENT_PRINTER
-	materials = list(/datum/material/glass = 2000, /datum/material/iron = 7000)
+	materials = list(/datum/material/glass = 2000, /datum/material/asbestos = 7000)
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_SHELLS)
 
 /datum/design/scanner_shell
@@ -325,7 +325,7 @@
 	id = "scanner_shell"
 	build_path = /obj/item/scanner
 	build_type = PROTOLATHE | COMPONENT_PRINTER
-	materials = list(/datum/material/glass = 4000, /datum/material/iron = 5000)
+	materials = list(/datum/material/glass = 4000, /datum/material/asbestos = 5000)
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_SHELLS)
 
 /datum/design/bot_shell
@@ -334,7 +334,7 @@
 	id = "bot_shell"
 	build_path = /obj/item/shell/bot
 	build_type = PROTOLATHE | COMPONENT_PRINTER
-	materials = list(/datum/material/glass = 2000, /datum/material/iron = 10000)
+	materials = list(/datum/material/glass = 2000, /datum/material/asbestos = 10000)
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_SHELLS)
 
 /datum/design/money_bot_shell
@@ -343,7 +343,7 @@
 	id = "money_bot_shell"
 	build_path = /obj/item/shell/money_bot
 	build_type = PROTOLATHE | COMPONENT_PRINTER
-	materials = list(/datum/material/glass = 2000, /datum/material/iron = 10000, /datum/material/gold = 50)
+	materials = list(/datum/material/glass = 2000, /datum/material/asbestos = 10000, /datum/material/gold = 50)
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_SHELLS)
 
 /datum/design/drone_shell
@@ -354,7 +354,7 @@
 	build_type = PROTOLATHE | COMPONENT_PRINTER
 	materials = list(
 		/datum/material/glass = 2000,
-		/datum/material/iron = 11000,
+		/datum/material/asbestos = 11000,
 		/datum/material/gold = 500,
 	)
 	category = list(WIREMOD_CIRCUITRY, WIREMOD_SHELLS)
@@ -365,7 +365,7 @@
 	id = "server_shell"
 	materials = list(
 		/datum/material/glass = 5000,
-		/datum/material/iron = 15000,
+		/datum/material/asbestos = 15000,
 		/datum/material/gold = 1500,
 	)
 	build_path = /obj/item/shell/server
@@ -378,7 +378,7 @@
 	id = "door_shell"
 	materials = list(
 		/datum/material/glass = 5000,
-		/datum/material/iron = 15000,
+		/datum/material/asbestos = 15000,
 	)
 	build_path = /obj/item/shell/airlock
 	build_type = PROTOLATHE | COMPONENT_PRINTER
@@ -390,7 +390,7 @@
 	id = "assembly_shell"
 	materials = list(
 		/datum/material/glass = 2000,
-		/datum/material/iron = 5000,
+		/datum/material/asbestos = 5000,
 	)
 	build_path = /obj/item/assembly/modular
 	build_type = PROTOLATHE | COMPONENT_PRINTER

@@ -5,7 +5,7 @@
 	icon_state = "doorctrl"
 	var/skin = "doorctrl"
 	layer = ABOVE_WINDOW_LAYER
-	power_channel = AREA_USAGE_ENVIRON
+	power_channel = AREA_USAGE_ENVASBESTOS
 	var/obj/item/assembly/device
 	var/obj/item/electronics/airlock/board
 	var/device_type = null
@@ -288,4 +288,4 @@
 	desc = "Used for building buttons."
 	icon_state = "button"
 	result_path = /obj/machinery/button
-	materials = list(/datum/material/iron=MINERAL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/asbestos=MINERAL_MATERIAL_AMOUNT)

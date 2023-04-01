@@ -144,7 +144,7 @@
 /area/awaymission/research/interior/engineering)
 "aF" = (
 /obj/item/stack/rods,
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/item/stock_parts/cell/high/empty,
 /turf/open/floor/plating,
 /area/awaymission/research/interior/engineering)
@@ -2435,7 +2435,7 @@
 /turf/open/floor/plasteel/white,
 /area/awaymission/research/interior)
 "pQ" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
 	},
@@ -4438,7 +4438,7 @@
 /turf/open/floor/plasteel/white,
 /area/awaymission/research/interior)
 "UO" = (
-/obj/item/stack/sheet/iron,
+/obj/item/stack/sheet/asbestos,
 /obj/effect/turf_decal/tile/yellow/fourcorners/contrasted,
 /turf/open/floor/plasteel/white,
 /area/awaymission/research/interior/engineering)

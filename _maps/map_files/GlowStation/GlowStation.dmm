@@ -16781,8 +16781,8 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/upper/secondary/command)
 "dHd" = (
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/structure/table,
 /obj/item/stack/sheet/plasteel{
 	amount = 10
@@ -17809,7 +17809,7 @@
 /area/hallway/primary/port)
 "dSs" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/electronics/airlock,
@@ -22400,7 +22400,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/mineral/copper{
 	amount = 5
 	},
@@ -27361,7 +27361,7 @@
 /obj/item/stack/sheet/rglass{
 	amount = 50
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/storage/toolbox/emergency,
 /obj/item/flashlight,
@@ -31505,7 +31505,7 @@
 "gKC" = (
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/target,
 /obj/item/target/syndicate,
 /obj/item/target/alien,
@@ -47523,7 +47523,7 @@
 /area/engine/engine_smes)
 "jYu" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/machinery/airalarm{
 	dir = 1;
@@ -49787,7 +49787,7 @@
 	pixel_y = 30
 	},
 /obj/structure/table,
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/item/circuitboard/machine/paystand,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel,
@@ -61679,7 +61679,7 @@
 /obj/item/reagent_containers/glass/bottle/lithium{
 	pixel_x = -6
 	},
-/obj/item/reagent_containers/glass/bottle/iron{
+/obj/item/reagent_containers/glass/bottle/asbestos{
 	pixel_x = 6
 	},
 /obj/item/reagent_containers/glass/bottle/iodine{
@@ -67258,7 +67258,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 26
 	},
-/obj/item/stack/sheet/iron/twenty,
+/obj/item/stack/sheet/asbestos/twenty,
 /turf/open/floor/plasteel/white,
 /area/science/robotics/lab)
 "odv" = (
@@ -72930,7 +72930,7 @@
 /area/library)
 "pns" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass{
 	amount = 30
 	},
@@ -78531,7 +78531,7 @@
 /obj/item/stack/sheet/rglass{
 	amount = 50
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 26
 	},
@@ -83323,7 +83323,7 @@
 /obj/machinery/status_display/evac{
 	pixel_y = 30
 	},
-/obj/item/stack/sheet/iron/five,
+/obj/item/stack/sheet/asbestos/five,
 /obj/item/circuitboard/machine/paystand,
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary/commissary1)
@@ -88973,7 +88973,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/floor/mineral/plastitanium,
 /area/science/shuttle)
@@ -89550,7 +89550,7 @@
 "sIV" = (
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/target,
 /obj/item/target/syndicate,
 /obj/item/target/alien,
@@ -91326,7 +91326,7 @@
 /area/science/storage)
 "tai" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/copper/five,
 /obj/effect/turf_decal/bot,
@@ -97944,7 +97944,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
 	dir = 4
 	},
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/dark,
@@ -100411,8 +100411,8 @@
 /turf/open/floor/plating/asteroid/snow,
 /area/iceland/planetgen)
 "uUL" = (
-/obj/item/stack/sheet/iron/fifty,
-/obj/item/stack/sheet/iron/fifty{
+/obj/item/stack/sheet/asbestos/fifty,
+/obj/item/stack/sheet/asbestos/fifty{
 	pixel_x = 2;
 	pixel_y = 2
 	},
@@ -106946,7 +106946,7 @@
 /obj/item/stack/sheet/glass{
 	amount = 30
 	},
-/obj/item/stack/sheet/iron{
+/obj/item/stack/sheet/asbestos{
 	amount = 30
 	},
 /obj/item/crowbar,
@@ -110015,7 +110015,7 @@
 /area/engine/atmos)
 "wYU" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/mineral/plasma{
 	amount = 20
@@ -112593,7 +112593,7 @@
 /area/security/main)
 "xCf" = (
 /obj/structure/table,
-/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/asbestos/fifty,
 /obj/item/stack/rods/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /obj/effect/spawner/lootdrop/techstorage/engineering,

@@ -1,7 +1,7 @@
 //Chameleon causes the owner to slowly become transparent when not moving.
 /datum/mutation/chameleon
 	name = "Chameleon"
-	desc = "A mutation that adapts the user's skin pigmentation to their environment. The adaptation has been observed to be most effective while the user is standing still."
+	desc = "A mutation that adapts the user's skin pigmentation to their envasbestosment. The adaptation has been observed to be most effective while the user is standing still."
 	quality = POSITIVE
 	difficulty = 16
 	instability = 25

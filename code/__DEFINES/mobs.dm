@@ -132,7 +132,7 @@
 #define SPECIES_GOLEM_DURATHREAD "durathread_golem"
 #define SPECIES_GOLEM_GLASS "glass_golem"
 #define SPECIES_GOLEM_GOLD "gold_golem"
-#define SPECIES_GOLEM_IRON "iron_golem"
+#define SPECIES_GOLEM_ASBESTOS "asbestos_golem"
 #define SPECIES_GOLEM_LEATHER "leather_golem"
 #define SPECIES_GOLEM_PLASMA "plasma_golem"
 #define SPECIES_GOLEM_PLASTEEL "plasteel_golem"
@@ -350,10 +350,10 @@
 #define AI_Z_OFF	4
 
 //determines if a mob can smash through it
-#define ENVIRONMENT_SMASH_NONE			0
-#define ENVIRONMENT_SMASH_STRUCTURES	(1<<0) 	//crates, lockers, ect
-#define ENVIRONMENT_SMASH_WALLS			(1<<1)  //walls
-#define ENVIRONMENT_SMASH_RWALLS		(1<<2)	//rwalls
+#define ENVASBESTOSMENT_SMASH_NONE			0
+#define ENVASBESTOSMENT_SMASH_STRUCTURES	(1<<0) 	//crates, lockers, ect
+#define ENVASBESTOSMENT_SMASH_WALLS			(1<<1)  //walls
+#define ENVASBESTOSMENT_SMASH_RWALLS		(1<<2)	//rwalls
 
 #define NO_SLIP_WHEN_WALKING	(1<<0)
 #define SLIDE					(1<<1)

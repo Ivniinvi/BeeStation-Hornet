@@ -117,11 +117,11 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
-/obj/item/stack/ore/iron{
+/obj/item/stack/ore/asbestos{
 	pixel_x = 6;
 	pixel_y = 4
 	},
-/obj/item/stack/ore/iron{
+/obj/item/stack/ore/asbestos{
 	pixel_x = -2;
 	pixel_y = -8
 	},
@@ -611,11 +611,11 @@
 /area/shuttle/mining/large)
 "tQ" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/ore/iron{
+/obj/item/stack/ore/asbestos{
 	pixel_x = 6;
 	pixel_y = 4
 	},
-/obj/item/stack/ore/iron{
+/obj/item/stack/ore/asbestos{
 	pixel_x = -2;
 	pixel_y = -8
 	},

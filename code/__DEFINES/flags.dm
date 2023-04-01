@@ -23,7 +23,7 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define DF_ISPROCESSING (1<<2)
 
 //! ## FLAGS BITMASK
-#define CONDUCT_1					(1<<5)		//!  conducts electricity (iron etc.)
+#define CONDUCT_1					(1<<5)		//!  conducts electricity (asbestos etc.)
 #define NODECONSTRUCT_1				(1<<7)		//!  For machines and structures that should not break into parts, eg, holodeck stuff
 #define OVERLAY_QUEUED_1			(1<<8)		//!  atom queued to SSoverlay
 #define ON_BORDER_1					(1<<9)		//!  item has priority to check when entering or leaving

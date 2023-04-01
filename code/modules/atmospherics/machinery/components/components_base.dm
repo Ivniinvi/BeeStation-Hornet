@@ -141,12 +141,12 @@
 	var/turf/T = get_turf(src)
 	if(T)
 		//Remove the gas from airs and assume it
-		var/datum/gas_mixture/environment = T.return_air()
+		var/datum/gas_mixture/envasbestosment = T.return_air()
 		var/lost = null
 		var/times_lost = 0
 		for(var/i in 1 to device_type)
 			var/datum/gas_mixture/air = airs[i]
-			lost += pressures*environment.return_volume()/(air.return_temperature() * R_IDEAL_GAS_EQUATION)
+			lost += pressures*envasbestosment.return_volume()/(air.return_temperature() * R_IDEAL_GAS_EQUATION)
 			times_lost++
 		var/shared_loss = lost/times_lost
 
